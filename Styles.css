@@ -5,7 +5,7 @@ body {
 
 #header {
     background-image: url(sunset1.jpg);
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
     position: absolute;
     width: 100%;
@@ -13,6 +13,17 @@ body {
     margin-top: -1%;
     height: 105%;
     margin-left: -9px;
+}
+
+#header2 {
+    position: absolute;
+    width: 100.5%;
+    margin-left: -1%;
+    margin-top: -1%;
+    height: 100%;
+    background-image: url(IMG_20161017_135403.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #header3 {
@@ -23,19 +34,19 @@ body {
     width: 100%;
     margin-left: -1%;
     margin-top: -1%;
-    height: 90%;
+    height: 100%;
     margin-left: -9px;
 }
 
 #header4 {
-    background-image: url(third.jpg) ;
+    background-image: url(third.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
     width: 100%;
     margin-left: -1%;
     margin-top: -1%;
-    height: 90%;
+    height: 100%;
     margin-left: -9px;
 }
 
@@ -48,7 +59,7 @@ body {
 }
 
 #title h1 {
-    font-family: sans-serif;
+    font-family: Century Gothic, sans-serif;
     font-size: 30px;
     color: greenyellow;
 }
@@ -56,9 +67,9 @@ body {
 #title p {
     color: white;
     font-style: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.7;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-family: Century Gothic, sans-serif;
 }
 
 #my {
@@ -77,8 +88,8 @@ body {
     float: left;
     color: white;
     font-style: normal;
-    font-size: 20px;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    font-family: Century Gothic, sans-serif;
     width: 47%;
     margin-left: 1%;
     line-height: 1.8;
@@ -92,8 +103,8 @@ body {
     width: 47%;
     color: white;
     font-style: normal;
-    font-size: 20px;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    font-family: Century Gothic, sans-serif;
     line-height: 1.8;
     background-color: rgba(0, 117, 13, 0.3)
 }
@@ -103,7 +114,7 @@ body {
     margin-left: 40px;
     font-style: normal;
     font-size: 25px;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
 #gd h4 {
@@ -111,7 +122,7 @@ body {
     margin-left: 40px;
     font-style: normal;
     font-size: 25px;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
 #gd a {
@@ -119,37 +130,12 @@ body {
     text-decoration: none;
 }
 
-#header2 {
-    position: absolute;
-    width: 100.5%;
-    margin-left: -1%;
-    margin-top: -1%;
-    height: 100%;
-    background-image: url(IMG_20161017_135403.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-45%) translateY(-120%);
-    font-family: "Trebuchet MS";
-    font-size: 45px;
-    padding-right: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    letter-spacing: 10px;
-    color: rgba(0, 0, 0, 0.5)
-}
-
 #name1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-45%) translateY(-115%);
-    font-family: "Trebuchet MS"; 
+    transform: translateX(-50%) translateY(-80%);
+    font-family: "Trebuchet MS";
     font-size: 45px;
     padding-right: 50px;
     padding-top: 25px;
@@ -160,7 +146,7 @@ body {
 
 #Menu {
     position: absolute;
-    transform: translateX(40%) translateY(0%);
+    transform: translateX(55%) translateY(0%);
 }
 
 #Menu li {
@@ -173,7 +159,7 @@ body {
     color: white;
     font-style: normal;
     font-size: 20px;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;;
     text-decoration: none;
 }
 
@@ -187,7 +173,7 @@ body {
     margin-top: -10px;
     position: absolute;
     font-size: 30px;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-family: Century Gothic, sans-serif;
 }
 
 #sunset {
@@ -300,57 +286,57 @@ body {
 
 #volunteer {
     position: absolute;
-    top: 93%;
-    width: 98%; 
+    top: 99%;
+    width: 98%;
 }
 
 #volunteer h1 {
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
     font-size: 30px;
     color: greenyellow;
     align-items: center;
 }
 
 #volunteer h3 {
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-    font-size: 23px;
+    font-family: Century Gothic, sans-serif;
+    font-size: 22px;
     color: aquamarine;
-    margin-left: 6%
+    margin-left: 4%
 }
 
 #volunteer p {
     color: white;
     font-style: normal;
     margin-top: -5px;
-     margin-left: 7%;
-    font-size: 20px;
+    margin-left: 4%;
+    font-size: 19px;
     line-height: 1.7;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-family: Century Gothic, sans-serif;
 }
 
-#content2 a{ 
-    color:aquamarine;
+#content2 a {
+    color: aquamarine;
     text-decoration: none;
 }
 
-#content2 a:hover{ 
-    color:orangered
+#content a:hover {
+    color: orangered
 }
 
-#content2 h3{ 
-    color:greenyellow; 
-    font-size: 25px; 
-    margin-left:3%
+#content2 h3 {
+    color: greenyellow;
+    font-size: 25px;
+    margin-left: 3%
 }
 
-#content2{ 
+#content2 {
     position: absolute;
-    top: 90%;
+    top: 99%;
     width: 99.5%;
     margin-left: -0.5%;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
-#content2 img{ 
-    margin-left: 5%;
+#content2 img {
+    margin-left: 3%;
 }
