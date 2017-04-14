@@ -299,6 +299,13 @@ a.fancybox:hover img {
     padding: 2px;
 }
 
+#forthCat h4 a{
+    font-size: 19px;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-decoration: None;
+    color: greenyellow
+}
+
 #first-para {
     position: relative;
     width: 99.5%;
@@ -352,6 +359,11 @@ a.fancybox:hover img {
     font-size: 19px;
     line-height: 1.7;
     font-family: Century Gothic, sans-serif;
+}
+
+#volunteer p a{ 
+    color:greenyellow;
+    text-decoration: none;
 }
 
 #content2 h3 a {
