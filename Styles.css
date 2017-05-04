@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-    background-color: rgb(62, 62, 62);
+    background-color: rgb(55, 55, 55);
 }
 
 #header {
@@ -46,7 +46,7 @@ body {
     width: 100%;
     margin-left: -1%;
     margin-top: -1%;
-    height: 85%;
+    height: 100%;
     margin-left: -9px;
 }
 
@@ -100,120 +100,137 @@ body {
 #content {
     position: absolute;
     width: 99.5%%;
-    top: 110%;
+    top: 112%;
     width: 99%;
     margin-top: -3%;
 }
 
+#content a{ 
+    color: rgb(105,49,48)
+}
 #content a:hover {
     color: orangered
 }
-
-#title h1 {
+#title h7 {
     font-family: Century Gothic, sans-serif;
     font-size: 30px;
-    color: greenyellow;
+    color: white;
+    align-self: center;
+    border-bottom: 4px solid #FFF;
+    padding-bottom: 5px
 }
-
+#title h8 {
+    font-family: Century Gothic, sans-serif;
+    font-size: 20px;
+    color: white;
+    border-bottom: 3px solid #FFF;
+    padding-bottom: 5px;
+    margin-left: 3%;
+    margin-right: 3%
+}
 #title p {
     color: white;
     font-style: normal;
     font-size: 20px;
     line-height: 1.7;
+    margin-left: 3%;
     font-family: Century Gothic, sans-serif;
+    margin-right: 3%
 }
-
 #my {
     position: absolute;
     transform: translateX(20%) translateY(-10%);
     font-size: 40px;
 }
-
 #wrapper {
     display: inline-block;
     width: 100%;
 }
-
 #cs {
     position: relative;
     float: left;
     color: white;
     font-style: normal;
-    font-size: 19px;
+    font-size: 20px;
     font-family: Century Gothic, sans-serif;
-    width: 50%;
-    margin-left: 1%;
-    line-height: 1.8;
-    background-color: rgba(0, 31, 117, 0.3);
+    width: 40%;
+    padding: 10px;
+    margin-left: 6%;
+    line-height: 1.6;
+    background-color: rgba(255, 138, 33, 1);
 }
-
 #gd {
     position: relative;
     float: right;
-    margin-right: 1%;
-    width: 47%;
+    margin-right: 6%;
+    width: 40%;
+    padding: 10px;
     color: white;
     font-style: normal;
-    font-size: 19px;
+    font-size: 20px;
     font-family: Century Gothic, sans-serif;
     line-height: 1.9;
-    background-color: rgba(0, 117, 13, 0.3);
+    background-color: rgba(255, 138, 33, 1);
 }
-
-#cs h4 {
-    color: aquamarine;
-    margin-left: 30px;
+#cs li {
+    margin-top: 2%;
+}
+#gd li {
+    margin-top: 2%
+}
+#cs h7 {
+    color: white;
+    margin-left: 10px;
     font-style: normal;
     font-size: 25px;
     font-family: Tahoma, Geneva, sans-serif;
+    border-bottom: 4px solid #FFF;
+    padding-bottom: 6px
 }
-
-#gd h4 {
-    color: aquamarine;
-    margin-left: 30px;
+#gd h7 {
+    color: white;
+    margin-left: 10px;
     font-style: normal;
     font-size: 25px;
     font-family: Tahoma, Geneva, sans-serif;
+    border-bottom: 4px solid #FFF;
+    padding-bottom: 6px
 }
-
 #gd a {
     color: aquamarine;
     text-decoration: none;
 }
-
-#sunset {
+#myDiv {
     position: absolute;
-    top: 105%;
+    top: 100%;
+}
+#sunset {
+    position: relative;
     width: 99.5%;
     display: block;
     z-index: 1;
-    background-color: rgb(62, 62, 62);
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
-
 #sunset img {
     width: 420px;
     padding: 2px;
 }
-
 #first-pic {
-    position: absolute;
+    position: relative;
     background-image: url(first1.jpg);
     background-size: auto;
     background-attachment: fixed;
-    height: 60%;
     width: 99.5%;
-    top: 180%;
 }
-
 #nature {
-    position: absolute;
-    top: 244%;
+    position: relative;
     width: 99.5%;
     display: block;
     z-index: 1;
-    background-color: rgb(62, 62, 62)
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
-
 a.fancybox img {
     border: none;
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
@@ -228,7 +245,6 @@ a.fancybox img {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-
 a.fancybox:hover img {
     position: relative;
     z-index: 999;
@@ -238,119 +254,91 @@ a.fancybox:hover img {
     -webkit-transform: scale(1.03, 1.03);
     transform: scale(1.03, 1.03);
 }
-
 #nature img {
     width: 420px;
     padding: 2px;
 }
-
 #second-pic {
     background-image: url(third6.jpg);
     background-size: cover;
     background-attachment: fixed;
     height: 70%;
     width: 99.5%;
-    top: 317%;
-    position: absolute;
+    position: relative;
 }
-
-#first-para {
-    width: 99.5%;
-    top: 210%;
-    position: absolute;
-    height: 40%
-}
-
 #thridCat {
-    position: absolute;
-    top: 390%;
+    position: relative;
     width: 99.5%;
     display: block;
     z-index: 1;
-    background-color: rgb(62, 62, 62);
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
-
 #thridCat img {
     width: 420px;
     padding: 2px;
 }
-
 #third-pic {
     background-image: url(nature9.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 65%;
     width: 99.5%;
-    top: 448%;
-    position: absolute;
+    position: relative;
 }
-
 #forthCat {
-    position: absolute;
-    top: 518%;
+    position: relative;
     width: 99.5%;
     display: block;
     z-index: 1;
-    background-color: rgb(62, 62, 62)
+    padding-top: 2%;
 }
-
 #forthCat img {
     width: 420px;
     padding: 2px;
 }
-
-#forthCat h4 a{
-    font-size: 19px;
+#forthCat h7 {
+    margin-top: 3%;
+}
+#forthCat h7 a {
+    font-size: 20px;
     font-family: Tahoma, Geneva, sans-serif;
     text-decoration: None;
-    color: greenyellow
+    color: rgb(188, 211, 193);
 }
-
-#first-para {
-    position: relative;
-    width: 99.5%;
-    z-index: 1;
-}
-
 #first-para img {
-    width: 100%;
+    width: 97%;
 }
-
-#text h4 {
-    position: absolute;
-    font-size: 19px;
+#text h7 {
+    position: relative;
+    font-size: 20px;
     font-family: Tahoma, Geneva, sans-serif;
-    top: 98.5%;
     text-align: center;
     width: 99%;
-    color: greenyellow
+    color: rgb(188, 211, 193)
 }
-
 #title a {
     text-decoration: none;
     color: aquamarine;
 }
-
 #volunteer {
     position: absolute;
     top: 99%;
     width: 98%;
 }
-
-#volunteer h1 {
+#volunteer h7 {
     font-family: Tahoma, Geneva, sans-serif;
-    font-size: 30px;
-    color: greenyellow;
+    font-size: 33px;
+    color: rgb(234, 144, 83);
     align-items: center;
+    border-bottom: 4px solid rgb(234, 144, 83);
+    padding-bottom: 7px;
 }
-
-#volunteer h3 {
+#volunteer h8 {
     font-family: Century Gothic, sans-serif;
     font-size: 22px;
-    color: aquamarine;
-    margin-left: 4%
+    color: rgb(102, 170, 235);
+    margin-left: 4%;
 }
-
 #volunteer p {
     color: white;
     font-style: normal;
@@ -360,31 +348,98 @@ a.fancybox:hover img {
     line-height: 1.7;
     font-family: Century Gothic, sans-serif;
 }
-
-#volunteer p a{ 
-    color:greenyellow;
+#volunteer p a {
+    color: rgb(234, 144, 83);
     text-decoration: none;
 }
-
-#content2 h3 a {
-    color: greenyellow;
+#content2 h5 a {
+    color: #FFF;
     text-decoration: none;
     font-size: 24px;
     margin-left: 3%
 }
-
-#content2 h3 a:hover {
+#content2 h5 a:hover {
     color: orangered
 }
-
 #content2 {
     position: absolute;
     top: 85%;
     width: 99.5%;
     margin-left: -0.5%;
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: Century Gothic, sans-serif;
 }
-
 #content2 img {
     margin-left: 3%;
+}
+#b {
+    display: block;
+    margin: 20px 0;
+    line-height: 40;
+}
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+#myDiv {
+    display: none;
+    text-align: center;
 }

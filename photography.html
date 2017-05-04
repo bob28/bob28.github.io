@@ -8,122 +8,141 @@
     <a name="top"></a>
 </head>
 
-<body>
-    <div id="header2">
-        <div id="name1">
-            <h1>PHOTOGRAPHY</h1>
-        </div>
-
-        <div id="Menu">
-            <ul>
-                <li>
-                    <h4><a href="index.html"><strong>HOME</strong> </a></h4>
-                </li>
-                <li>
-                    <h4><a href="experience.html"><strong>EXPERIENCE</strong> </a></h4>
-                </li>
-                <li>
-                    <h4><a href="photography.html"><strong>PHOTOGRAPHY</strong> </a></h4>
-                </li>
-                <li>
-                    <h4><a href="contact.html"><strong>CONTACT</strong> </a></h4>
-                </li>
-            </ul>
-        </div>
-        <div align='right' id="myname">
-            <h2>Bhavik Naik</h2>
-        </div>
-    </div>
-    <center>
-        <div id="text">
-            <h4><center>Below, I have included all the pictures I have taken and edited.</center></h4>
-        </div>
-        <div id='sunset'>
-            <img src="sunset6.jpg" />
-            <img src="abstact2.jpg" />
-            <img src="abstract6.jpg" />
-            <img src="abstact4.jpg" />
-            <img src="abstact5.jpg" />
-            <img src="nature7.jpg" />
-            <img src="abstact8.jpg" />
-            <img src="abstact9.jpg" />
-        </div>
-
-        <div id="first-pic">
-        </div>
-    </center>
-    <center>
-        <div id='nature'>
-            <img src="nature1.jpg" />
-            <img src="nature2.jpg" />
-            <img src="nature3.jpg" />
-            <img src="nature5.jpg" />
-            <img src="nature6.jpg" />
-            <img src="sunset1.jpg" />
-            <img src="nature8.jpg" />
-            <img src="sunset4.jpg" />
-
-        </div>
-    </center>
-    <div id="second-pic">
-    </div>
-    <center>
-        <div id="thridCat">
-            <img src="abstact7.jpg" />
-            <img src="abstac1t.jpg" />
-            <img src="nature9.jpg" />
-            <img src="third1.jpg" />
-            <img src="sunset8.gif" />
-            <img src="sunset7.jpg" />
-            <img src="thrid9.jpg" />
-            <img src="third7.jpg" />
-        </div>
-    </center>
-    <div id="third-pic">
-    </div>
-    <center>
-        <div id="forthCat">
-            <img src="sunset2.jpg" />
-            <img src="third2.jpg" />
-            <img src="third4.jpg" />
-            <img src="third5.jpg" />
-            <img src="third6.jpg" />
-            <img src="sunset5.gif" />
-            <img src="third8.jpg" />
-            <img src="sunet9.jpg" />
-            <img src="new.jpg" />
-            <div id="first-para">
-                <img src="seondpara.jpg" />
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <
+        <div id="header2">
+            <div id="name1">
+                <h1>PHOTOGRAPHY</h1>
             </div>
-            <br>
-            <h4><a href='#top'>Back to Top</a></h4>
-            <br>
+
+            <div id="Menu">
+                <ul>
+                    <li>
+                        <h4><a href="index.html"><strong>HOME</strong> </a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="experience.html"><strong>EXPERIENCE</strong> </a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="photography.html"><strong>PHOTOGRAPHY</strong> </a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="contact.html"><strong>CONTACT</strong> </a></h4>
+                    </li>
+                </ul>
+            </div>
+            <div align='right' id="myname">
+                <h2>Bhavik Naik</h2>
+            </div>
         </div>
-        <br>
-    </center>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
-    <script type="text/javascript">
-        $(function ($) {
-            var addToAll = true;
-            var gallery = true;
-            var titlePosition = 'inside';
-            $(addToAll ? 'img' : 'img.fancybox').each(function () {
-                var $this = $(this);
-                var title = $this.attr('title');
-                var src = $this.attr('data-big') || $this.attr('src');
-                var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
-                $this.wrap(a);
-            });
-            if (gallery)
-                $('a.fancybox').attr('rel', 'fancyboxgallery');
-            $('a.fancybox').fancybox({
-                titlePosition: titlePosition
-            });
-        });
-        $.noConflict();
-    </script>
+
+        <div style="display:none;" id="myDiv" class="animate-bottom">>
+            <center>
+                <div id="text">
+                    <h7>
+                        <center>Below, I have included all the pictures I have taken and edited.</center>
+                    </h7>
+                </div>
+                <div id='sunset'>
+                    <img src="sunset6.jpg" />
+                    <img src="abstact2.jpg" />
+                    <img src="abstract6.jpg" />
+                    <img src="abstact4.jpg" />
+                    <img src="abstact5.jpg" />
+                    <img src="nature7.jpg" />
+                    <img src="abstact8.jpg" />
+                    <img src="abstact9.jpg" />
+                </div>
+            </center>
+            <div id="first-pic">
+                <br id="b">
+            </div>
+            <center>
+                <div id='nature'>
+                    <img src="nature1.jpg" />
+                    <img src="nature2.jpg" />
+                    <img src="nature3.jpg" />
+                    <img src="nature5.jpg" />
+                    <img src="nature6.jpg" />
+                    <img src="sunset1.jpg" />
+                    <img src="nature8.jpg" />
+                    <img src="sunset4.jpg" />
+                </div>
+            </center>
+            <div id="second-pic">
+                <br id="b">
+            </div>
+            <center>
+                <div id="thridCat">
+                    <img src="abstact7.jpg" />
+                    <img src="abstac1t.jpg" />
+                    <img src="nature9.jpg" />
+                    <img src="third1.jpg" />
+                    <img src="sunset8.gif" />
+                    <img src="sunset7.jpg" />
+                    <img src="thrid9.jpg" />
+                    <img src="third7.jpg" />
+                </div>
+            </center>
+            <div id="third-pic">
+                <br id="b">
+            </div>
+            <center>
+                <div id="forthCat">
+                    <img src="sunset2.jpg" />
+                    <img src="third2.jpg" />
+                    <img src="third4.jpg" />
+                    <img src="third5.jpg" />
+                    <img src="third6.jpg" />
+                    <img src="sunset5.gif" />
+                    <img src="third8.jpg" />
+                    <img src="sunet9.jpg" />
+                    <img src="new.jpg" />
+                    <div id="first-para">
+                        <img src="seondpara.jpg" />
+                    </div>
+                    <h7><a href='#top'>Back to Top</a></h7>
+                </div>
+            </center </div>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+            <script type="text/javascript">
+                $(function ($) {
+                    var addToAll = true;
+                    var gallery = true;
+                    var titlePosition = 'inside';
+                    $(addToAll ? 'img' : 'img.fancybox').each(function () {
+                        var $this = $(this);
+                        var title = $this.attr('title');
+                        var src = $this.attr('data-big') || $this.attr('src');
+                        var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+                        $this.wrap(a);
+                    });
+                    if (gallery)
+                        $('a.fancybox').attr('rel', 'fancyboxgallery');
+                    $('a.fancybox').fancybox({
+                        titlePosition: titlePosition
+                    });
+                });
+                $.noConflict();
+            </script>
+            </center>
+        </div>
+        <script>
+            var myVar;
+
+            function myFunction() {
+                myVar = setTimeout(showPage, 3000);
+            }
+
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
+
 </body>
 
 </html>
