@@ -364,21 +364,21 @@ a.fancybox:hover img {
 #volunteer h7 {
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 30px;
-    color: lightskyblue;
+    color: mediumblue;
     align-items: center;
-    border-bottom: 5px solid lightskyblue;
+    border-bottom: 5px solid mediumblue;
     padding-bottom: 7px;
 }
 
 #volunteer h8 {
     font-family: Century Gothic, sans-serif;
     font-size: 22px;
-    color: lightgreen;
+    color: orangered;
     margin-left: 4%;
 }
 
 #volunteer p {
-    color: white;
+    color: black;
     font-style: normal;
     margin-top: -5px;
     margin-left: 4%;
@@ -389,7 +389,7 @@ a.fancybox:hover img {
 }
 
 #volunteer p a {
-    color: lawngreen;
+    color: orangered;
     text-decoration: none;
 }
 
