@@ -8,7 +8,7 @@ body {
 }
 
 #b2 {
-    background-color: rgb(154, 154, 154);
+    background-color: rgb(147, 147, 147);
 }
 
 #b3 {
@@ -364,43 +364,44 @@ a.fancybox:hover img {
 #volunteer h7 {
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 30px;
-    color: mediumblue;
+    color: #1A2930;
     align-items: center;
-    border-bottom: 5px solid mediumblue;
+    border-bottom: 5px solid #1A2930;
     padding-bottom: 7px;
 }
 
 #volunteer h8 {
     font-family: Century Gothic, sans-serif;
     font-size: 22px;
-    color: orangered;
+    color: #045d1c;
     margin-left: 4%;
+    font-weight: 500;
 }
 
 #volunteer p {
     color: black;
-    font-style: normal;
     margin-top: -5px;
     margin-left: 4%;
     font-size: 19px;
-    text-emphasis: bold;
+    font-weight: 500;
     line-height: 1.7;
     font-family: Century Gothic, sans-serif;
 }
 
 #volunteer p a {
-    color: orangered;
+    color: #045d1c;
     text-decoration: none;
+    font-size: 20px;
 }
 
-#content2 h7 a {
+#content2 h8 a {
     color: #FFF;
     text-decoration: none;
     font-size: 24px;
     margin-left: 3%
 }
 
-#content2 h7 a:hover {
+#content2 h8 a:hover {
     color: orangered
 }
 
@@ -412,16 +413,15 @@ a.fancybox:hover img {
     font-family: Century Gothic, sans-serif;
 }
 
-#contactimg { 
+#contactimg {
     position: relative;
-    margin-top:1.2%;
-    width:99.5%
+    margin-top: 1.2%;
+    width: 99.5%
 }
 
-#contactimg img{ 
-    margin-left:4%
+#contactimg img {
+    margin-left: 4%
 }
-
 
 #b {
     display: block;
