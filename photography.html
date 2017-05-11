@@ -9,6 +9,17 @@
 </head>
 
 <body onload="myFunction()" style="margin:0;" id="b3">
+    <script type='text/javascript'>
+        (function () {
+            if (window.localStorage) {
+                if (!localStorage.getItem('firstLoad')) {
+                    localStorage['firstLoad'] = true;
+                    window.location.reload();
+                } else
+                    localStorage.removeItem('firstLoad');
+            }
+        })();
+    </script>
     <div id="loader"></div>
     < <div id="header2">
         <div id="name1">
