@@ -15,53 +15,6 @@ body {
     background-color: rgb(60, 60, 60)
 }
 
-#header {
-    background-image: url(pictures/sunset1.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    position: absolute;
-    width: 100%;
-    margin-left: -1%;
-    margin-top: -1%;
-    height: 105%;
-    margin-left: -9px;
-}
-
-#header2 {
-    position: absolute;
-    width: 101%;
-    margin-left: -1%;
-    margin-top: -2%;
-    height: 100%;
-    background-image: url(pictures/IMG_20161017_135403.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-}
-
-#header3 {
-    background-image: url(pictures/second13.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    position: absolute;
-    width: 100%;
-    margin-left: -1%;
-    margin-top: -1%;
-    height: 100%;
-    margin-left: -9px;
-}
-
-#header4 {
-    background-image: url(pictures/third.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    position: absolute;
-    width: 100%;
-    margin-left: -1%;
-    margin-top: -1%;
-    height: 101%;
-    margin-left: -9px;
-}
-
 #myname h7 {
     color: white;
     font-size: 30px;
@@ -107,6 +60,10 @@ body {
     margin-top: -3%;
 }
 
+#content a {
+    text-decoration: none
+}
+
 #content a:hover {
     color: orangered
 }
@@ -127,16 +84,6 @@ body {
     border-bottom: 3px solid #FFF;
     padding-bottom: 5px;
     margin-left: 3%;
-    margin-right: 3%
-}
-
-#title p {
-    color: white;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 1.7;
-    margin-left: 3%;
-    font-family: Century Gothic, sans-serif;
     margin-right: 3%
 }
 
@@ -215,41 +162,9 @@ body {
     color: black;
     text-decoration: none;
 }
-
-#myDiv {
-    position: absolute;
-    top: 102%;
-}
-
-#sunset {
-    position: relative;
-    width: 99.5%;
-    display: block;
-    z-index: 1;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
 #sunset img {
     width: 420px;
     padding: 2px;
-}
-
-#first-pic {
-    position: relative;
-    background-image: url(pictures/first1.jpg);
-    background-size: auto;
-    background-attachment: scroll;
-    width: 99.5%;
-}
-
-#nature {
-    position: relative;
-    width: 99.5%;
-    display: block;
-    z-index: 1;
-    padding-top: 2%;
-    padding-bottom: 2%;
 }
 
 a.fancybox img {
@@ -282,43 +197,9 @@ a.fancybox:hover img {
     padding: 2px;
 }
 
-#second-pic {
-    background-image: url(pictures/third6.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    height: 70%;
-    width: 99.5%;
-    position: relative;
-}
-
-#thridCat {
-    position: relative;
-    width: 99.5%;
-    display: block;
-    z-index: 1;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
 #thridCat img {
     width: 420px;
     padding: 2px;
-}
-
-#third-pic {
-    background-image: url(pictures/nature9.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    width: 99.5%;
-    position: relative;
-}
-
-#forthCat {
-    position: relative;
-    width: 99.5%;
-    display: block;
-    z-index: 1;
-    padding-top: 2%;
 }
 
 #forthCat img {
@@ -326,56 +207,17 @@ a.fancybox:hover img {
     padding: 2px;
 }
 
-#forthCat h7 {
-    margin-top: 3%;
-}
-
-#forthCat h7 a {
-    font-size: 20px;
-    font-family: Tahoma, Geneva, sans-serif;
-    text-decoration: None;
-    color: rgb(188, 211, 193);
-}
-
 #first-para img {
-    width: 97%;
+    width: 97%
 }
 
 #text h7 {
-    : relative;
+    position: relative;
     font-size: 20px;
     font-family: Tahoma, Geneva, sans-serif;
     text-align: center;
     width: 99%;
     color: rgb(188, 211, 193)
-}
-
-#title a {
-    text-decoration: none;
-    color: aquamarine;
-}
-
-#volunteer {
-    position: absolute;
-    top: 102%;
-    width: 98%;
-}
-
-#volunteer h7 {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 30px;
-    color: #1A2930;
-    align-items: center;
-    border-bottom: 5px solid #1A2930;
-    padding-bottom: 7px;
-}
-
-#volunteer h8 {
-    font-family: Century Gothic, sans-serif;
-    font-size: 22px;
-    color: #045d1c;
-    margin-left: 4%;
-    font-weight: 500;
 }
 
 #volunteer p {
@@ -388,35 +230,8 @@ a.fancybox:hover img {
     font-family: Century Gothic, sans-serif;
 }
 
-#volunteer p a {
-    color: #045d1c;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-#content2 h7 a {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 24px;
-    margin-left: 3%
-}
-
 #content2 h8 a:hover {
     color: orangered
-}
-
-#content2 {
-    position: absolute;
-    top: 85%;
-    width: 99.5%;
-    margin-left: -0.5%;
-    font-family: Century Gothic, sans-serif;
-}
-
-#contactimg {
-    position: relative;
-    margin-top: 1.2%;
-    width: 99.5%
 }
 
 #contactimg img {
@@ -427,31 +242,6 @@ a.fancybox:hover img {
     display: block;
     margin: 20px 0;
     line-height: 40;
-}
-
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 110%;
-    z-index: 1;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1 s;
-    animation-name: animatebottom;
-    animation-duration: 1s
 }
 
 #myDiv {
@@ -648,45 +438,5 @@ nav ul li a:hover {
         width: 100%;
         height: 100%;
         background: #333;
-    }
-}
-
-@-webkit-keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-    to {
-        bottom: 0px;
-        opacity: 1
-    }
-}
-
-@keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-    to {
-        bottom: 0;
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
     }
 }
