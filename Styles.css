@@ -11,10 +11,6 @@ body {
     background-color: rgb(147, 147, 147);
 }
 
-#b3 {
-    background-color: rgb(60, 60, 60)
-}
-
 #myname h7 {
     color: white;
     font-size: 30px;
@@ -52,14 +48,6 @@ body {
     color: rgba(255, 255, 255, 0.8)
 }
 
-#content {
-    position: absolute;
-    width: 99.5%%;
-    top: 112%;
-    width: 99%;
-    margin-top: -3%;
-}
-
 #content a {
     text-decoration: none
 }
@@ -95,11 +83,6 @@ body {
     position: absolute;
     transform: translateX(20%) translateY(-10%);
     font-size: 40px;
-}
-
-#wrapper {
-    display: inline-block;
-    width: 100%;
 }
 
 #cs {
@@ -161,54 +144,6 @@ body {
 #gd a {
     color: black;
     text-decoration: none;
-}
-#sunset img {
-    width: 420px;
-    padding: 2px;
-}
-
-a.fancybox img {
-    border: none;
-    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
-    -o-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
-a.fancybox:hover img {
-    position: relative;
-    z-index: 999;
-    -o-transform: scale(1.03, 1.03);
-    -ms-transform: scale(1.03, 1.03);
-    -moz-transform: scale(1.03, 1.03);
-    -webkit-transform: scale(1.03, 1.03);
-    transform: scale(1.03, 1.03);
-}
-
-#nature img {
-    width: 420px;
-    padding: 2px;
-}
-
-#thridCat img {
-    width: 420px;
-    padding: 2px;
-}
-
-#forthCat img {
-    width: 420px;
-    padding: 2px;
-}
-
-#first-para img {
-    width: 97%
 }
 
 #text h7 {
