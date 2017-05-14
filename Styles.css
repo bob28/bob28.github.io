@@ -1,15 +1,4 @@
 @charset "UTF-8";
-body {
-    background-color: rgb(55, 55, 55);
-}
-
-#b1 {
-    background-color: #000;
-}
-
-#b2 {
-    background-color: rgb(147, 147, 147);
-}
 
 #myname h7 {
     color: white;
@@ -160,7 +149,7 @@ body {
     margin-top: -5px;
     margin-left: 4%;
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.7;
     font-family: Century Gothic, sans-serif;
 }
