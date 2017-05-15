@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 #myname h7 {
     color: white;
     font-size: 30px;
@@ -363,4 +362,8 @@ nav ul li a:hover {
         height: 100%;
         background: #333;
     }
+}
+
+.hideme {
+    opacity: 0;
 }

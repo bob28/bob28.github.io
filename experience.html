@@ -4,6 +4,7 @@
 <head>
     <title>Experience</title>
     <link href="Styles.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <a name="top"></a>
 </head>
 
@@ -18,6 +19,23 @@
                     localStorage.removeItem('firstLoad');
             }
         })();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $('.hideme').each(function (i) {
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    if (bottom_of_window > bottom_of_object) {
+
+                        $(this).animate({
+                            'opacity': '1'
+                        }, 500);
+                    }
+                });
+            });
+        });
     </script>
     <div id="header3" style=" background-image: url(pictures/second13.jpg);background-size: cover;background-attachment: scroll;position: absolute;width: 100%;margin-left: -1%;margin-top: -1%;height: 100%;margin-left: -9px;">
         <div id="name1">
@@ -43,29 +61,29 @@
     </div>
     <div id="volunteer" style="position: absolute;top: 102%;width: 98%;">
         <center>
-            <h7 style="font-family: Tahoma, Geneva, sans-serif;font-size: 30px;color: #1A2930;align-items: center;border-bottom: 5px solid #1A2930;padding-bottom: 7px;">Programming Experience</h7>
+            <h7 class="hideme" style="font-family: Tahoma, Geneva, sans-serif;font-size: 30px;color: #1A2930;align-items: center;border-bottom: 5px solid #1A2930;padding-bottom: 7px;">Programming Experience</h7>
         </center>
         <br>
-        <p>I have taken both ICS3U and ICS4U in high School. Throughout these courses, I have completed a lot of projects and have gained a lot of experience in Java. This also allowed me to improve my time management skills as there were due dates to follow. During ICS4U, I was given the task to create some classic games namely Asteroids and Checkers. Other games include Hangman, Tic-tac-toe, Connect 4 and Tetris.</p>
+        <p class="hideme">I have taken both ICS3U and ICS4U in high School. Throughout these courses, I have completed a lot of projects and have gained a lot of experience in Java. This also allowed me to improve my time management skills as there were due dates to follow. During ICS4U, I was given the task to create some classic games namely Asteroids and Checkers. Other games include Hangman, Tic-tac-toe, Connect 4 and Tetris.</p>
         <br>
-        <p>In CSC148 and CSC108, introduction of computer science and computer programming at the University of Toronto, I have gained a lot of experience in Python. The projects that I had to complete allowed me use my skills in this language.</p>
+        <p class="hideme">In CSC148 and CSC108, introduction of computer science and computer programming at the University of Toronto, I have gained a lot of experience in Python. The projects that I had to complete allowed me use my skills in this language.</p>
         <br>
-        <p>In CSC148, one of the assignments were to create to Tower of Hanoi game. I had to implement code to make the code work in the console and after I was finished the assignment, I had a full game of The Towers of Hanoi working in a GUI window and in the console. A feature that I had to implement was an algorithm that solves the game with the optimal number of moves from a number of disks and pegs, selected by the user.</p>
+        <p class="hideme">In CSC148, one of the assignments were to create to Tower of Hanoi game. I had to implement code to make the code work in the console and after I was finished the assignment, I had a full game of The Towers of Hanoi working in a GUI window and in the console. A feature that I had to implement was an algorithm that solves the game with the optimal number of moves from a number of disks and pegs, selected by the user.</p>
         <br>
-        <p>Another project that I completed in CSC148 at the University of Toronto was to use Huffman coding to compress and decompress files. I had to program the functions which followed an algorithm which used Huffman Trees to compress or decompress files without losing data. </p>
-        <p>I have a lot of experience in HTML and CSS and have created many websites that showcase my work in high school. Through those experiences, I have learnt a little of JavaScript.
+        <p class="hideme">Another project that I completed in CSC148 at the University of Toronto was to use Huffman coding to compress and decompress files. I had to program the functions which followed an algorithm which used Huffman Trees to compress or decompress files without losing data. </p>
+        <p class="hideme">I have a lot of experience in HTML and CSS and have created many websites that showcase my work in high school. Through those experiences, I have learnt a little of JavaScript.
             <center>
-                <h7 style="font-family: Tahoma, Geneva, sans-serif;font-size: 30px;color: #1A2930;align-items: center;border-bottom: 5px solid #1A2930;padding-bottom: 7px;">Volunteering and Extracurricular Experiences</h7>
+                <h7 class="hideme" style="font-family: Tahoma, Geneva, sans-serif;font-size: 30px;color: #1A2930;align-items: center;border-bottom: 5px solid #1A2930;padding-bottom: 7px;">Volunteering and Extracurricular Experiences</h7>
             </center>
             <br>
-            <h8 style="font-family: Century Gothic, sans-serif;font-size: 22px;color: #045d1c;margin-left: 4%;font-weight: 500;">City of Mississauga Tennis Lessons | Assistant Coach | November 2013 - January 2014</h8>
-            <p>I worked with the coach on improving skills of students between the ages of six to adult. I used my leadership skills to manage the students and I accurately conveyed instructions to the students. This experience made my communication skills better and I learned how to be leader in a group. </p>
-            <h8 style="font-family: Century Gothic, sans-serif;font-size: 22px;color: #045d1c;margin-left: 4%;font-weight: 500;">Model United Nations | 2014 to present</h8>
-            <p>I have used my communication skills and my innovative ideas to solve major world issues. I joined in grade 10 and still continue to represent the University of Toronto at conferences. This experience has taught me how a communicate my ideas effectively and this allowed me to more concise when speaking my thoughts. </p>
-            <h8 style="font-family: Century Gothic, sans-serif;font-size: 22px;color: #045d1c;margin-left: 4%;font-weight: 500;">DECA | 2014</h8>
-            <p>I have taken part in the partner regionals in grade 11. This activity has also allowed me to gain experience in communicating ideas to people. </p>
+            <h8 class="hideme" style="font-family: Century Gothic, sans-serif;font-size: 22px;color: #045d1c;margin-left: 4%;font-weight: 500;">City of Mississauga Tennis Lessons | Assistant Coach | November 2013 - January 2014</h8>
+            <p class="hideme">I worked with the coach on improving skills of students between the ages of six to adult. I used my leadership skills to manage the students and I accurately conveyed instructions to the students. This experience made my communication skills better and I learned how to be leader in a group. </p>
+            <h8 class="hideme" style="font-family: Century Gothic, sans-serif;font-size: 22px;color: #045d1c;margin-left: 4%;font-weight: 500;">Model United Nations | 2014 to present</h8>
+            <p class="hideme">I have used my communication skills and my innovative ideas to solve major world issues. I joined in grade 10 and still continue to represent the University of Toronto at conferences. This experience has taught me how a communicate my ideas effectively and this allowed me to more concise when speaking my thoughts. </p>
+            <h8 class="hideme" style="font-family: Century Gothic, sans-serif;font-size: 22px;color: #045d1c;margin-left: 4%;font-weight: 500;">DECA | 2014</h8>
+            <p class="hideme">I have taken part in the partner regionals in grade 11. This activity has also allowed me to gain experience in communicating ideas to people. </p>
             <h8 style="font-family: Century Gothic, sans-serif;font-size: 22px;color: #045d1c;margin-left: 4%;font-weight: 500;">Tennis Team | 2012 to present</h8>
-            <p>I represented my high school at tennis tournaments in Ontario. I also take part in the University of Toronto tennis team. I have been playing the sport for 14 years.
+            <p class="hideme">I represented my high school at tennis tournaments in Ontario. I also take part in the University of Toronto tennis team. I have been playing the sport for 14 years.
                 <br> <a href='#top' style="color: #045d1c;text-decoration: none;font-size: 20px;"><strong>Back to Top</strong></a></p <br>
     </div>
 </body>
