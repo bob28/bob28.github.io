@@ -9,7 +9,7 @@
 
 <body style="background-color: #000;">
     <script type='text/javascript'>
-        (function() {
+        (function () {
             if (window.localStorage) {
                 if (!localStorage.getItem('firstLoad')) {
                     localStorage['firstLoad'] = true;
@@ -18,27 +18,25 @@
                     localStorage.removeItem('firstLoad');
             }
         })();
-
     </script>
     <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                $('.hideme').each(function(i) {
-                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $('.hideme').each(function (i) {
+                    var bottom_of_object = $(this).offset().top;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
                     if (bottom_of_window >= bottom_of_object) {
                         $(this).animate({
                             'opacity': '1'
-                        }, 300);
+                        }, 1500);
                     }
                 });
             });
         });
-
     </script>
     <div id="header" style="background-image: url(pictures/sunset1.jpg);background-size: cover;background-attachment: scroll;position: absolute;width: 100%;margin-left: -1%;margin-top: -1%;height: 105%;margin-left: -9px;">
         <div id="name1">
-            <h1>
+            <h1 style="width:100%">
                 <center>BHAVIK NAIK</center>
             </h1>
         </div>

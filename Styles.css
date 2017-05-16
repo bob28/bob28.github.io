@@ -1,16 +1,4 @@
 @charset "UTF-8";
-body {
-    background-color: rgb(55, 55, 55);
-}
-
-#b1 {
-    background-color: #000;
-}
-
-#b2 {
-    background-color: rgb(147, 147, 147);
-}
-
 #myname h7 {
     color: white;
     font-size: 30px;
