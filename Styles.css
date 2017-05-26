@@ -321,7 +321,7 @@ nav.shift3 ul li a:hover:after {
 }
 
 nav {
-    transform: translateX(55%) translateY(0%);
+    transform: translateX(50%) translateY(0%);
     position: absolute;
     margin-top: 2.5%;
 }
