@@ -1,6 +1,7 @@
 <html>
 
 <body style="margin:0;background-color:rgb(50, 50, 50)">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div id="header2" style="position: absolute;width: 101%;margin-left: -1%;margin-top:-1%;height:100%;background-image: url(pictures/IMG_20161017_135403.jpg);background-size: cover;background-attachment: scroll;">
         <div id="name1">
             <h1>PHOTOGRAPHY</h1>
@@ -27,7 +28,7 @@
         <center>
             <div id="something" style="position:absolute;top:99%;width:99%">
                 <p style="color:rgb(188, 211, 193);position:relative;font-family:Century Gothic, sans-serif;font-size:20px;">These are all the pictures that I have taken and editied</p>
-                <div style="-webkit-column-count: 3;-moz-column-count: 3;column-count: 3; -webkit-column-width: 460px;-moz-column-width: 460px;column-width: 460px;">
+                <div style="-webkit-column-count: 3;-moz-column-count: 3;column-count: 3; -webkit-column-width: 500px;-moz-column-width: 500px;column-width: 500px;">
                     <img src="pictures/sunset6.jpg" style="width:100%" alt="Sunset">
                     <img src="pictures/abstact2.jpg" style="width:100%" alt="Raindrops on a window">
                     <img src="pictures/abstact7.jpg" style="width:100%" alt="Jellyfish">
@@ -68,9 +69,6 @@
                     <img src="pictures/new.jpg" style="width:100%" alt="Foggy fields">
                     <img src="pictures/third6.jpg" style="width:100%" alt="U of T">
                 </div>
-
-                <h7 style="margin-top: 3%;"><a href='#top' style="font-size: 20px;font-family: Tahoma, Geneva, sans-serif;text-decoration: None;color: rgb(188, 211, 193);">Back to Top</a></h7>
-                <br>
                 <br>
             </div>
         </center>
@@ -117,111 +115,6 @@
             padding-bottom: 25px;
             letter-spacing: 10px;
             color: rgba(255, 255, 255, 0.8);
-        }
-        
-        nav.shift ul li a {
-            z-index: 1;
-            position: relative;
-        }
-        
-        nav.shift ul li a:hover {
-            color: black;
-        }
-        
-        nav.shift ul li a:after {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            margin: auto;
-            width: 100%;
-            height: 1px;
-            content: '.';
-            color: transparent;
-            background: orange;
-            visibility: none;
-            opacity: 0;
-            z-index: -1;
-        }
-        
-        nav.shift ul li a:hover:after {
-            opacity: 1;
-            visibility: visible;
-            height: 100%;
-        }
-        
-        nav.shift2 ul li a:hover:after {
-            opacity: 1;
-            visibility: visible;
-            height: 100%;
-        }
-        
-        nav.shift2 ul li a {
-            z-index: 1;
-            position: relative;
-        }
-        
-        nav.shift2 ul li a:hover {
-            color: white;
-        }
-        
-        nav.shift2 ul li a:after {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            margin: auto;
-            width: 100%;
-            height: 1px;
-            content: '.';
-            color: transparent;
-            background: forestgreen;
-            visibility: none;
-            opacity: 0;
-            z-index: -1;
-        }
-        
-        nav.shift2 ul li a:hover:after {
-            opacity: 1;
-            visibility: visible;
-            height: 100%;
-        }
-        
-        nav.shift1 ul li a {
-            z-index: 1;
-            position: relative;
-        }
-        
-        nav.shift1 ul li a:hover {
-            color: black;
-        }
-        
-        nav.shift1 ul li a:after {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            margin: auto;
-            width: 100%;
-            height: 1px;
-            content: '.';
-            color: transparent;
-            background: rgb(177, 208, 228);
-            visibility: none;
-            opacity: 0;
-            z-index: -1;
-        }
-        
-        nav.shift1 ul li a:hover:after {
-            opacity: 1;
-            visibility: visible;
-            height: 100%;
         }
         
         nav.shift3 ul li a {
@@ -310,8 +203,51 @@
                 background: #333;
             }
         }
+        
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 999;
+            border: none;
+            outline: none;
+            font-size: 30px;
+            background-color: rgb(188, 212, 196);
+            color: black;
+            cursor: default;
+            padding: 20px;
+            border-radius: 10px;
+            -webkit-box-shadow: -8px 5px 53px 5px rgba(0, 0, 0, 1);
+            -moz-box-shadow: -8px 5px 53px 5px rgba(0, 0, 0, 1);
+            box-shadow: -8px 5px 53px 5px rgba(0, 0, 0, 1);
+        }
+        
+        #myBtn:hover {
+            background-color: #555;
+        }
 
     </style>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
 </body>
 
 </html>
