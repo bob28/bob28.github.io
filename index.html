@@ -12,11 +12,12 @@
         google_ad_client: "ca-pub-6592585488299308",
         enable_page_level_ads: true
     });
+
 </script>
 
 <body style="background-color: #000;">
     <script type='text/javascript'>
-        (function () {
+        (function() {
             if (window.localStorage) {
                 if (!localStorage.getItem('firstLoad')) {
                     localStorage['firstLoad'] = true;
@@ -25,11 +26,12 @@
                     localStorage.removeItem('firstLoad');
             }
         })();
+
     </script>
     <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                $('.hideme').each(function (i) {
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                $('.hideme').each(function(i) {
                     var bottom_of_object = $(this).offset().top;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
                     if (bottom_of_window >= bottom_of_object) {
@@ -40,6 +42,7 @@
                 });
             });
         });
+
     </script>
     <div id="header" style="background-image: url(pictures/sunset1.jpg);background-size: cover;background-attachment: scroll;position: absolute;width: 100%;margin-left: -1%;margin-top: -1%;height: 105%;margin-left: -9px;">
         <div id="name1">
@@ -76,7 +79,7 @@
             <br>
             <br>
             <h8>About Me</h8>
-            <p style="color: white;font-style: normal;font-size: 20px;line-height: 1.7;margin-left: 3%;font-family: Century Gothic, sans-serif;margin-right: 3%">Hi, I am Bhavik Naik and I am an undergraduate student at the University of Toronto. My field of study is computer science and I have programmed many projects and games. I also have a hobby in graphic design and in the <a href="photography.html">photography</a> page, you can see my work. In the <a href="experience.html">experience</a> page, I have listed all the volunteering experience and the computer science projects that I have completed. You can find my social media accounts and my email address in the <a href="contact.html">contact</a> page. Below, I have listed the skills I have in computer science and graphic design.
+            <p style="color: white;font-style: normal;font-size: 20px;line-height: 1.7;margin-left: 3%;font-family: Century Gothic, sans-serif;margin-right: 3%">Hi, I am Bhavik Naik and I am an undergraduate student at the University of Toronto. My field of study is computer science and I have programmed many projects and games. I also have a hobby in graphic design and in the <a href="photography.html">photography</a> page, you can see my work. Make sure that you follow my <a href="https://bhaviksblogs.wordpress.com/">blog</a> as it is always being updated with new posts. In the <a href="experience.html">experience</a> page, I have listed all the volunteering experience and the computer science projects that I have completed. You can find my social media accounts and my email address in the <a href="contact.html">contact</a> page. Below, I have listed the skills I have in computer science and graphic design.
         </div>
         <div class="hideme" id='wrapper' style=" display: inline-block;width: 100%;">
             <div id="cs">
