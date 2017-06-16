@@ -9,7 +9,7 @@
 
 <body style="background-color: #000;">
     <script type='text/javascript'>
-        (function () {
+        (function() {
             if (window.localStorage) {
                 if (!localStorage.getItem('firstLoad')) {
                     localStorage['firstLoad'] = true;
@@ -18,11 +18,12 @@
                     localStorage.removeItem('firstLoad');
             }
         })();
+
     </script>
     <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                $('.hideme').each(function (i) {
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                $('.hideme').each(function(i) {
                     var bottom_of_object = $(this).offset().top;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
                     if (bottom_of_window >= bottom_of_object) {
@@ -33,6 +34,7 @@
                 });
             });
         });
+
     </script>
     <div id="header" style="background-image: url(pictures/sunset1.jpg);background-size: cover;background-attachment: scroll;position: absolute;width: 100%;margin-left: -1%;margin-top: -1%;height: 105%;margin-left: -9px;">
         <div id="name1">
@@ -116,19 +118,16 @@
         }
         
         @media screen and (max-device-width: 450px) {
-            #gd,
-            #cs {
+            #title h8 {
+                font-size: 3228px;
+            }
+            #gd li,
+            #cs li {
                 font-size: 26px;
             }
             #gd h7,
             #cs h7 {
                 font-size: 35px;
-            }
-            #title h8 {
-                font-size: 28px;
-            }
-            #title h7 {
-                font-size: 38px;
             }
             #title p {
                 font-size: 28px;
@@ -361,6 +360,7 @@
         .hideme {
             opacity: 0;
         }
+
     </style>
 </body>
 
