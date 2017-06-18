@@ -9,7 +9,7 @@
 
 <body style="background-color: #000;">
     <script type='text/javascript'>
-        (function() {
+        (function () {
             if (window.localStorage) {
                 if (!localStorage.getItem('firstLoad')) {
                     localStorage['firstLoad'] = true;
@@ -18,12 +18,11 @@
                     localStorage.removeItem('firstLoad');
             }
         })();
-
     </script>
     <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                $('.hideme').each(function(i) {
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $('.hideme').each(function (i) {
                     var bottom_of_object = $(this).offset().top;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
                     if (bottom_of_window >= bottom_of_object) {
@@ -34,7 +33,6 @@
                 });
             });
         });
-
     </script>
     <div id="header" style="background-image: url(pictures/sunset1.jpg);background-size: cover;background-attachment: scroll;position: absolute;width: 100%;margin-left: -1%;margin-top: -1%;height: 105%;margin-left: -9px;">
         <div id="name1">
@@ -66,17 +64,19 @@
 
         <div class="hideme" id='title'>
             <center>
-                <h7>Welcome</h7>
+                <a><h7>Welcome</h7></a>
             </center>
             <br>
             <br>
-            <h8>About Me</h8>
+            <a>
+                <h8>About Me</h8>
+            </a>
             <p>Hi, I am Bhavik Naik and I am an undergraduate student at the University of Toronto. My field of study is computer science and I have programmed many projects and games. I also have a hobby in graphic design and in the <a href="photography.html">photography</a> page, you can see my work. In the <a href="experience.html">experience</a> page, I have listed all the volunteering experience and the computer science projects that I have completed. You can find my social media accounts and my email address in the <a href="contact.html">contact</a> page. Below, I have listed the skills I have in computer science and graphic design.
         </div>
         <div class="hideme" id='wrapper' style=" display: inline-block;width: 100%;">
             <div id="cs">
                 <ul>
-                    <h7>Computer Science</h7>
+                    <a><h7>Computer Science</h7></a>
 
                     <li>I have experience in
                         <bold>Java</bold> and worked in object-oriented programming. </li>
@@ -93,7 +93,7 @@
             </div>
             <div id="gd">
                 <ul>
-                    <h7>Graphic Design</h7>
+                    <a><h7>Graphic Design</h7></a>
                     <li>I have used Adobe Photoshop and created a lot of edits of photographs, some of them are in the <a href="photography.html">photography</a> page. </li>
                     <li>Applied the Adobe Illustrator program to create logos.</li>
                     <li>Experimented with Gimp and paint.net.</li>
@@ -125,13 +125,24 @@
             #cs li {
                 font-size: 26px;
             }
-            #gd h7,
-            #cs h7 {
+            #gd a h7,
+            #cs a h7 {
                 font-size: 35px;
             }
             #title p {
                 font-size: 28px;
             }
+            #title a h8 {
+                font-size:30px;
+            }
+            #title a h7{ 
+                font-size: 35px;
+            }
+            nav ul li a{ 
+            font-size: 237px;
+            }
+            
+            
         }
         
         #myname h7 {
@@ -360,7 +371,6 @@
         .hideme {
             opacity: 0;
         }
-
     </style>
 </body>
 
