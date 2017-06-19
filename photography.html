@@ -3,11 +3,32 @@
 <head>
 	<title>Photography</title>
 	<meta name="theme-color" content="#BBD1C4">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+<script>
+	window.onscroll = function() {
+		scrollFunction()
+	};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("topbtn").style.display = "block";
+		} else {
+			document.getElementById("topbtn").style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+
+</script>
 
 <body style="margin:0;background-color:rgb(50, 50, 50)">
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-	<div id="header2" style="position: absolute;width: 101%;margin-left: -1%;margin-top:-1%;height:100%;background-image: url(pictures/IMG_20161017_135403.jpg);background-size: cover;background-attachment: scroll;">
+	<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
+	<div id="header2">
 		<div id="name1">
 			<center>
 				<h1>PHOTOGRAPHY</h1>
@@ -65,7 +86,7 @@
 					<img src="pictures/sunset4.jpg" style="width:100%" alt="Tennis courts">
 					<img src="pictures/nature13.jpg" style="width:100%" alt="Spring">
 					<img src="pictures/nature9.jpg" style="width:100%" alt="Spring bloom">
-					<img src="pictures/sunset8.gif" style="width:100%" alt="Fantastic clouds">
+					<img src="pictures/second13.jpg" style="width:100%" alt="Panning of a car">
 					<img src="pictures/third2.jpg" style="width:100%" alt="Fast cars">
 					<img src="pictures/thrid16.jpeg" style="width:100%" alt="Reflection lakes">
 					<img src="pictures/third7.jpg" style="width:100%" alt="Paintings">
@@ -78,7 +99,7 @@
 					<img src="pictures/third6.jpg" style="width:100%" alt="U of T">
 					<img src="pictures/building2.jpg" style="width:100%;" alt="cn tower">
 					<img src="pictures/video.gif" style="width:100%" alt="highway 403">
-					<img src="pictures/second13.jpg" style="width:100%" alt="Panning of a car">
+					<img src="pictures/sunset8.gif" style="width:100%" alt="Fantastic clouds">
 
 				</div>
 				<br>
@@ -87,42 +108,20 @@
 	</div>
 
 	<style>
+		#header2 {
+			position: absolute;
+			width: 101%;
+			margin-left: -1%;
+			margin-top: -1%;
+			height: 100%;
+			background-image: url(pictures/IMG_20161017_135403.jpg);
+			background-size: cover;
+			background-attachment: scroll;
+		}
+		
 		img {
 			margin-bottom: 2%;
 			border: 3px solid rgb(182, 204, 191);
-		}
-		
-		#myname h7 {
-			color: white;
-			font-size: 30px;
-			border-bottom: 4px solid #FFF;
-			margin-left: 25%;
-			text-align: left;
-		}
-		
-		#myname h6 {
-			padding-left: 23px;
-			margin-top: -1.3%;
-			font-size: 55px;
-			position: absolute;
-			color: white;
-		}
-		
-		#myname {
-			padding-left: 4%;
-			margin-top: 2%;
-			position: absolute;
-			font-family: Century Gothic, sans-serif;
-		}
-		
-		#name1 {
-			position: absolute;
-			top: 30%;
-			width: 100%;
-			font-family: "Trebuchet MS";
-			font-size: 45px;
-			letter-spacing: 10px;
-			color: rgba(255, 255, 255, 0.8);
 		}
 		
 		nav.shift3 ul li a {
@@ -158,61 +157,7 @@
 			height: 100%;
 		}
 		
-		nav {
-			transform: translateX(50%) translateY(0%);
-			position: absolute;
-			margin-top: 2.5%;
-		}
-		
-		nav ul {
-			list-style: none;
-		}
-		
-		nav ul li {
-			display: inline-block;
-			border-bottom: 3px solid #FFF;
-			padding-bottom: 6px;
-		}
-		
-		nav ul li a {
-			display: block;
-			text-decoration: none;
-			color: #aaa;
-			font-weight: 800;
-			text-transform: uppercase;
-			margin: 0 10px;
-			color: white;
-			font-size: 21px;
-			font-family: Century Gothic, sans-serif;
-		}
-		
-		nav ul li a,
-		nav ul li a:after,
-		nav ul li a:before {
-			transition: all .5s;
-		}
-		
-		nav ul li a:hover {
-			color: #555;
-		}
-		
-		@-webkit-keyframes fill {
-			0% {
-				width: 0%;
-				height: 1px;
-			}
-			50% {
-				width: 100%;
-				height: 1px;
-			}
-			100% {
-				width: 100%;
-				height: 100%;
-				background: #333;
-			}
-		}
-		
-		#myBtn {
+		#topbtn {
 			display: none;
 			position: fixed;
 			bottom: 20px;
@@ -231,31 +176,11 @@
 			box-shadow: -8px 5px 53px 5px rgba(0, 0, 0, 1);
 		}
 		
-		#myBtn:hover {
+		#topbtn:hover {
 			background-color: #555;
 		}
 
 	</style>
-	<script>
-		window.onscroll = function() {
-			scrollFunction()
-		};
-
-		function scrollFunction() {
-			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				document.getElementById("myBtn").style.display = "block";
-			} else {
-				document.getElementById("myBtn").style.display = "none";
-			}
-		}
-
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}
-
-	</script>
 </body>
 
 </html>
