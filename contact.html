@@ -20,7 +20,7 @@
 		})();
 
 	</script>
-	<div id="header4" style=" background-image: url(pictures/third.jpg);background-size: cover;background-attachment: scroll;position: absolute;width: 100%;margin-left: -1%;margin-top: -1%;height: 101%;margin-left: -9px;  display: inline-block;">
+	<div id="header4">
 		<div id="name1">
 			<center>
 				<h1>CONTACT</h1>
@@ -48,9 +48,9 @@
 	</div>
 	<center>
 		<div id='content2' style="position: absolute;top: 85%;width: 99.5%;margin-left: -0.5%;font-family: Century Gothic, sans-serif;">
-			<h7><a href="mailto:bhavik.naik28@gmail.com" style="color: #FFF;text-decoration: none;font-size: 24px;margin-left: 3%;border-bottom:1px solid white"> bhavik.naik28@gmail.com</a></h7>
+			<h7><a href="mailto:bhavik.naik28@gmail.com"> bhavik.naik28@gmail.com</a></h7>
 			<br>
-			<h7><a href="https://bhaviksblogs.wordpress.com/feedback/" style="color: #FFF;text-decoration: none;font-size: 24px;margin-left: 3%;margin-top:122%;border-bottom:1px solid white">I would love some feedback!</a></h7>
+			<h7><a href="https://bhaviksblogs.wordpress.com/feedback/">I would love some feedback!</a></h7>
 			<div id='contactimg' style=" position: relative;margin-top: 1.2%;width: 99.5%">
 				<a href="https://www.linkedin.com/in/bhavik-naik/" target="_blank"><img src="pictures/linkedin.png" width="38px"></a>
 				<a href="https://www.instagram.com/bhavik.28/?hl=en" target="_blank"> <img src="pictures/inst.png" width="40px"></a>
@@ -60,6 +60,36 @@
 		</div>
 	</center>
 	<style>
+		#header4 {
+			background-image: url(pictures/third.jpg);
+			background-size: cover;
+			background-attachment: scroll;
+			position: absolute;
+			width: 100%;
+			margin-left: -1%;
+			margin-top: -1%;
+			height: 101%;
+			margin-left: -9px;
+		}
+		
+		#content2 h7 a{
+			color:white;
+			text-decoration:none;
+			font-size: 24px;
+			margin-left: 3%;
+			border-bottom: 1px solid white;
+		}
+		
+		@media screen and (max-device-width: 450px) {
+			#content2 h7 a{
+				font-size: 35px;
+			}
+			#content2 img {
+				width: 60px;
+			}
+			#content2
+		}
+		
 		#myname h7 {
 			color: white;
 			font-size: 30px;
@@ -85,8 +115,8 @@
 		
 		#name1 {
 			position: absolute;
-			top:30%;
-			width:100%;
+			top: 30%;
+			width: 100%;
 			font-family: "Trebuchet MS";
 			font-size: 45px;
 			letter-spacing: 10px;
