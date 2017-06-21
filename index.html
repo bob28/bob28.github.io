@@ -2,297 +2,296 @@
 <html>
 
 <head>
-	<title>Bhavik Naik</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-	<meta name="theme-color" content="#222229">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Bhavik Naik</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <meta name="theme-color" content="#222229">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body style="background-color: #000;">
-	<script type='text/javascript'>
-		(function() {
-			if (window.localStorage) {
-				if (!localStorage.getItem('firstLoad')) {
-					localStorage['firstLoad'] = true;
-					window.location.reload();
-				} else
-					localStorage.removeItem('firstLoad');
-			}
-		})();
-
-	</script>
-	<script>
-		$(document).ready(function() {
-			$(window).scroll(function() {
-				$('.hideme').each(function(i) {
-					var bottom_of_object = $(this).offset().top;
-					var bottom_of_window = $(window).scrollTop() + $(window).height();
-					if (bottom_of_window >= bottom_of_object) {
-						$(this).animate({
-							'opacity': '1'
-						}, 1600);
-					}
-				});
-			});
-		});
-
-	</script>
-	<div id="header">
-		<div id="name1">
-			<h1 style="width:100%">
+    <script type='text/javascript'>
+        (function () {
+            if (window.localStorage) {
+                if (!localStorage.getItem('firstLoad')) {
+                    localStorage['firstLoad'] = true;
+                    window.location.reload();
+                } else
+                    localStorage.removeItem('firstLoad');
+            }
+        })();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $('.hideme').each(function (i) {
+                    var bottom_of_object = $(this).offset().top;
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    if (bottom_of_window >= bottom_of_object) {
+                        $(this).animate({
+                            'opacity': '1'
+                        }, 1600);
+                    }
+                });
+            });
+        });
+    </script>
+    <div id="header">
+        <div id="name1">
+            <h1 style="width:100%">
 				<center>BHAVIK NAIK</center>
 			</h1>
-		</div>
+        </div>
 
-		<nav class="shift">
-			<ul>
-				<li>
-					<a href="index.html">HOME </a></li>
-				<li>
-					<a href="https://bhaviksblogs.wordpress.com/">BLOG</a></li>
-				<li>
-					<a href="experience.html">EXPERIENCE </a></li>
-				<li>
-					<a href="photography.html">PHOTOGRAPHY </a></li>
-				<li>
-					<a href="contact.html">CONTACT</a></li>
-			</ul>
-		</nav>
-		<div align='right' id="myname">
-			<h7>BHAVIK</h7>
-			<h6>NAIK</h6>
-		</div>
-	</div>
-	<div id="content" style="position: absolute;width: 99.5%%;top: 112%;width: 99%;margin-top: -3%;">
+        <nav class="shift">
+            <ul>
+                <li>
+                    <a href="index.html">HOME </a></li>
+                <li>
+                    <a href="https://bhaviksblogs.wordpress.com/">BLOG</a></li>
+                <li>
+                    <a href="experience.html">EXPERIENCE </a></li>
+                <li>
+                    <a href="photography.html">PHOTOGRAPHY </a></li>
+                <li>
+                    <a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div align='right' id="myname">
+            <h7>BHAVIK</h7>
+            <h6>NAIK</h6>
+        </div>
+    </div>
+    <div id="content" style="position: absolute;width: 99.5%%;top: 112%;width: 99%;margin-top: -3%;">
 
-		<div class="hideme" id='title'>
-			<center>
-				<a>
-					<h7>Welcome</h7>
-				</a>
-			</center>
-			<br>
-			<br>
-			<a>
-				<h8>About Me</h8>
-			</a>
-			<p>Hi, I am Bhavik Naik and I am an undergraduate student at the University of Toronto. My field of study is computer science and I have programmed many projects and games. I also have a hobby in graphic design and in the <a href="photography.html">photography</a> page, you can see my work. In the <a href="experience.html">experience</a> page, I have listed all the volunteering experience and the computer science projects that I have completed. You can find my social media accounts and my email address in the <a href="contact.html">contact</a> page. Click <a href="https://bhaviksblogs.wordpress.com/2017/05/27/welcome-to-my-blog/">here</a> to read more about me where I have included my hobbies and more! Below, I have listed the skills I have in computer science and graphic design.
-		</div>
-		<div class="hideme" id='wrapper' style=" display: inline-block;width: 100%;">
-			<div id="cs">
-				<ul>
-					<a>
-						<h7>Computer Science</h7>
-					</a>
+        <div class="hideme" id='title'>
+            <center>
+                <a>
+                    <h7>Welcome</h7>
+                </a>
+            </center>
+            <br>
+            <br>
+            <a>
+                <h8>About Me</h8>
+            </a>
+            <p>
+                Hi, I am Bhavik Naik and I am an undergraduate student at the University of Toronto. My field of study is computer science and I have programmed many projects and games. I also have a hobby in graphic design and in the <a href="photography.html">photography page</a>, you can see my work. Make sure that you click the follow button on my <a href="https://bhaviksblogs.wordpress.com/">blog</a>. In the <a href="experience.html">experience page</a>, I have listed all the volunteering experience and the computer science projects that I have completed. You can find my social media accounts and my email address on the <a href="contact.html">contact page</a>. I have included much more about myself including my hobbies and topics that I am interested in <a href="https://bhaviksblogs.wordpress.com/2017/05/27/welcome-to-my-blog/">here</a>. Below, I have listed the skills I have in computer science and graphic design. </p>
+        </div>
+        <div class="hideme" id='wrapper' style=" display: inline-block;width: 100%;">
+            <div id="cs">
+                <ul>
+                    <a>
+                        <h7>Computer Science</h7>
+                    </a>
 
-					<li>I have experience in
-						<bold>Java</bold> and worked in object-oriented programming. </li>
-					<li> Programmed in
-						<bold>Python</bold> and also have used object oriented programming. </li>
-					<li>Worked with
-						<bold>Android Studio</bold> to make apps for Android handheld devices using Java.</li>
-					<li>Some experience in
-						<bold>Javascript</bold>.</li>
-					<li>Used HTML and CSS multiple times and have created many websites using this language.</li>
-					<br>
+                    <li>I have experience in
+                        <bold>Java</bold> and worked in object-oriented programming. </li>
+                    <li> Programmed in
+                        <bold>Python</bold> and also have used object oriented programming. </li>
+                    <li>Worked with
+                        <bold>Android Studio</bold> to make apps for Android handheld devices using Java.</li>
+                    <li>Some experience in
+                        <bold>Javascript</bold>.</li>
+                    <li>Used HTML and CSS multiple times and have created many websites using this language.</li>
+                    <br>
 
-				</ul>
-			</div>
-			<div id="gd">
-				<ul>
-					<a>
-						<h7>Graphic Design</h7>
-					</a>
-					<li>I have used Adobe Photoshop and created a lot of edits of photographs, some of them are in the <a href="photography.html">photography</a> page. </li>
-					<li>Applied the Adobe Illustrator program to create logos.</li>
-					<li>Experimented with Gimp and paint.net.</li>
-					<li>Used Adobe Indesign, After Effects, Premiere to create short films and movies.</li>
-					<br>
-					<br>
-				</ul>
-			</div>
-		</div>
-		<br>
-		<br>
-	</div>
-	<style>
-		#header {
-			background-image: url(pictures/sunset1.jpg);
-			background-size: cover;
-			background-attachment: scroll;
-			position: absolute;
-			width: 100%;
-			margin-left: -1%;
-			margin-top: -1%;
-			height: 105%;
-			margin-left: -9px;
-		}
-		
-		#title p {
-			color: white;
-			font-style: normal;
-			font-size: 20px;
-			line-height: 1.7;
-			margin-left: 3%;
-			font-family: Century Gothic, sans-serif;
-			margin-right: 3%
-		}
-		
-		@media screen and (max-device-width: 450px) {
-			#title h8 {
-				font-size: 3228px;
-			}
-			#gd li,
-			#cs li {
-				font-size: 26px;
-			}
-			#gd a h7,
-			#cs a h7 {
-				font-size: 35px;
-			}
-			#title p {
-				font-size: 28px;
-			}
-			#title a h8 {
-				font-size: 30px;
-			}
-			#title a h7 {
-				font-size: 35px;
-			}
-		}
-		
-		content a {
-			text-decoration: none
-		}
-		
-		#content a:hover {
-			color: orangered
-		}
-		
-		#title h7 {
-			font-family: Century Gothic, sans-serif;
-			font-size: 30px;
-			color: white;
-			align-self: center;
-			border-bottom: 4px solid #FFF;
-			padding-bottom: 5px
-		}
-		
-		#title h8 {
-			font-family: Century Gothic, sans-serif;
-			font-size: 20px;
-			color: white;
-			border-bottom: 3px solid #FFF;
-			padding-bottom: 5px;
-			margin-left: 3%;
-			margin-right: 3%
-		}
-		
-		#title p a {
-			color: orange;
-			text-decoration: none;
-		}
-		
-		#my {
-			position: absolute;
-			transform: translateX(20%) translateY(-10%);
-			font-size: 40px;
-		}
-		
-		#cs {
-			position: relative;
-			float: left;
-			color: white;
-			font-style: normal;
-			font-size: 20px;
-			font-family: Century Gothic, sans-serif;
-			width: 40%;
-			padding: 10px;
-			margin-left: 6%;
-			line-height: 1.6;
-			background-color: rgba(255, 138, 33, 1);
-		}
-		
-		#gd {
-			position: relative;
-			float: right;
-			margin-right: 6%;
-			width: 40%;
-			padding: 5px;
-			color: white;
-			font-style: normal;
-			font-size: 20px;
-			font-family: Century Gothic, sans-serif;
-			line-height: 1.9;
-			background-color: rgba(255, 138, 33, 1);
-		}
-		
-		#cs li {
-			margin-top: 2%;
-		}
-		
-		#gd li {
-			margin-top: 2%
-		}
-		
-		#cs h7 {
-			color: white;
-			margin-left: 10px;
-			font-style: normal;
-			font-size: 25px;
-			font-family: Tahoma, Geneva, sans-serif;
-			border-bottom: 4px solid #FFF;
-			padding-bottom: 6px;
-		}
-		
-		#gd h7 {
-			color: white;
-			margin-left: 10px;
-			font-style: normal;
-			font-size: 25px;
-			font-family: Tahoma, Geneva, sans-serif;
-			border-bottom: 4px solid #FFF;
-			padding-bottom: 6px
-		}
-		
-		#gd a {
-			color: black;
-			text-decoration: none;
-		}
-		
-		nav.shift ul li a {
-			z-index: 1;
-			position: relative;
-		}
-		
-		nav.shift ul li a:hover {
-			color: black;
-		}
-		
-		nav.shift ul li a:after {
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			margin: auto;
-			width: 100%;
-			height: 1px;
-			content: '.';
-			color: transparent;
-			background: orange;
-			visibility: none;
-			opacity: 0;
-			z-index: -1;
-		}
-		
-		nav.shift ul li a:hover:after {
-			opacity: 1;
-			visibility: visible;
-			height: 100%;
-		}
-
-	</style>
+                </ul>
+            </div>
+            <div id="gd">
+                <ul>
+                    <a>
+                        <h7>Graphic Design</h7>
+                    </a>
+                    <li>I have used Adobe Photoshop and created a lot of edits of photographs, some of them are in the <a href="photography.html">photography</a> page. </li>
+                    <li>Applied the Adobe Illustrator program to create logos.</li>
+                    <li>Experimented with Gimp and paint.net.</li>
+                    <li>Used Adobe Indesign, After Effects, Premiere to create short films and movies.</li>
+                    <br>
+                    <br>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <style>
+        #header {
+            background-image: url(pictures/sunset1.jpg);
+            background-size: cover;
+            background-attachment: scroll;
+            position: absolute;
+            width: 100%;
+            margin-left: -1%;
+            margin-top: -1%;
+            height: 105%;
+            margin-left: -9px;
+        }
+        
+        #title p {
+            color: white;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 1.7;
+            margin-left: 3%;
+            font-family: Century Gothic, sans-serif;
+            margin-right: 3%
+        }
+        
+        @media screen and (max-device-width: 450px) {
+            #title h8 {
+                font-size: 3228px;
+            }
+            #gd li,
+            #cs li {
+                font-size: 26px;
+            }
+            #gd a h7,
+            #cs a h7 {
+                font-size: 35px;
+            }
+            #title p {
+                font-size: 28px;
+            }
+            #title a h8 {
+                font-size: 30px;
+            }
+            #title a h7 {
+                font-size: 35px;
+            }
+        }
+        
+        content a {
+            text-decoration: none
+        }
+        
+        #content a:hover {
+            color: orangered
+        }
+        
+        #title h7 {
+            font-family: Century Gothic, sans-serif;
+            font-size: 30px;
+            color: white;
+            align-self: center;
+            border-bottom: 4px solid #FFF;
+            padding-bottom: 5px
+        }
+        
+        #title h8 {
+            font-family: Century Gothic, sans-serif;
+            font-size: 20px;
+            color: white;
+            border-bottom: 3px solid #FFF;
+            padding-bottom: 5px;
+            margin-left: 3%;
+            margin-right: 3%
+        }
+        
+        #title p a {
+            color: orange;
+            text-decoration: none;
+        }
+        
+        #my {
+            position: absolute;
+            transform: translateX(20%) translateY(-10%);
+            font-size: 40px;
+        }
+        
+        #cs {
+            position: relative;
+            float: left;
+            color: white;
+            font-style: normal;
+            font-size: 20px;
+            font-family: Century Gothic, sans-serif;
+            width: 40%;
+            padding: 10px;
+            margin-left: 6%;
+            line-height: 1.6;
+            background-color: rgba(255, 138, 33, 1);
+        }
+        
+        #gd {
+            position: relative;
+            float: right;
+            margin-right: 6%;
+            width: 40%;
+            padding: 5px;
+            color: white;
+            font-style: normal;
+            font-size: 20px;
+            font-family: Century Gothic, sans-serif;
+            line-height: 1.9;
+            background-color: rgba(255, 138, 33, 1);
+        }
+        
+        #cs li {
+            margin-top: 2%;
+        }
+        
+        #gd li {
+            margin-top: 2%
+        }
+        
+        #cs h7 {
+            color: white;
+            margin-left: 10px;
+            font-style: normal;
+            font-size: 25px;
+            font-family: Tahoma, Geneva, sans-serif;
+            border-bottom: 4px solid #FFF;
+            padding-bottom: 6px;
+        }
+        
+        #gd h7 {
+            color: white;
+            margin-left: 10px;
+            font-style: normal;
+            font-size: 25px;
+            font-family: Tahoma, Geneva, sans-serif;
+            border-bottom: 4px solid #FFF;
+            padding-bottom: 6px
+        }
+        
+        #gd a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        nav.shift ul li a {
+            z-index: 1;
+            position: relative;
+        }
+        
+        nav.shift ul li a:hover {
+            color: black;
+        }
+        
+        nav.shift ul li a:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            height: 1px;
+            content: '.';
+            color: transparent;
+            background: orange;
+            visibility: none;
+            opacity: 0;
+            z-index: -1;
+        }
+        
+        nav.shift ul li a:hover:after {
+            opacity: 1;
+            visibility: visible;
+            height: 100%;
+        }
+    </style>
 </body>
 
 </html>
