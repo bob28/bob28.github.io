@@ -7,34 +7,187 @@
     <meta name="theme-color" content="#222229">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+<style>
+    #header {
+        background-image: url(pictures/sunset1.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        position: absolute;
+        width: 100%;
+        margin-left: -1%;
+        margin-top: -1%;
+        height: 105%;
+        margin-left: -9px;
+    }
+    
+    #title p {
+        color: white;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 1.7;
+        margin-left: 3%;
+        font-family: Century Gothic, sans-serif;
+        margin-right: 3%
+    }
+    
+    @media screen and (max-device-width: 450px) {
+        #title h8 {
+            font-size: 3228px;
+        }
+        #gd li,
+        #cs li {
+            font-size: 26px;
+        }
+        #gd a h7,
+        #cs a h7 {
+            font-size: 35px;
+        }
+        #title p {
+            font-size: 28px;
+        }
+        #title a h8 {
+            font-size: 30px;
+        }
+        #title a h7 {
+            font-size: 35px;
+        }
+    }
+    
+    content a {
+        text-decoration: none
+    }
+    
+    #content a:hover {
+        color: orangered
+    }
+    
+    #title h7 {
+        font-family: Century Gothic, sans-serif;
+        font-size: 30px;
+        color: white;
+        align-self: center;
+        border-bottom: 4px solid #FFF;
+        padding-bottom: 5px
+    }
+    
+    #title h8 {
+        font-family: Century Gothic, sans-serif;
+        font-size: 20px;
+        color: white;
+        border-bottom: 3px solid #FFF;
+        padding-bottom: 5px;
+        margin-left: 3%;
+        margin-right: 3%
+    }
+    
+    #title p a {
+        color: orange;
+        text-decoration: none;
+    }
+    
+    #my {
+        position: absolute;
+        transform: translateX(20%) translateY(-10%);
+        font-size: 40px;
+    }
+    
+    #cs {
+        position: relative;
+        float: left;
+        color: white;
+        font-style: normal;
+        font-size: 20px;
+        font-family: Century Gothic, sans-serif;
+        width: 40%;
+        padding: 10px;
+        margin-left: 6%;
+        line-height: 1.6;
+        background-color: rgba(255, 138, 33, 1);
+    }
+    
+    #gd {
+        position: relative;
+        float: right;
+        margin-right: 6%;
+        width: 40%;
+        padding: 5px;
+        color: white;
+        font-style: normal;
+        font-size: 20px;
+        font-family: Century Gothic, sans-serif;
+        line-height: 1.9;
+        background-color: rgba(255, 138, 33, 1);
+    }
+    
+    #cs li {
+        margin-top: 2%;
+    }
+    
+    #gd li {
+        margin-top: 2%
+    }
+    
+    #cs h7 {
+        color: white;
+        margin-left: 10px;
+        font-style: normal;
+        font-size: 25px;
+        font-family: Tahoma, Geneva, sans-serif;
+        border-bottom: 4px solid #FFF;
+        padding-bottom: 6px;
+    }
+    
+    #gd h7 {
+        color: white;
+        margin-left: 10px;
+        font-style: normal;
+        font-size: 25px;
+        font-family: Tahoma, Geneva, sans-serif;
+        border-bottom: 4px solid #FFF;
+        padding-bottom: 6px
+    }
+    
+    #gd a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    nav.shift ul li a {
+        z-index: 1;
+        position: relative;
+    }
+    
+    nav.shift ul li a:hover {
+        color: black;
+    }
+    
+    nav.shift ul li a:after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 1px;
+        content: '.';
+        color: transparent;
+        background: orange;
+        visibility: none;
+        opacity: 0;
+        z-index: -1;
+    }
+    
+    nav.shift ul li a:hover:after {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+    }
+</style>
 
 <body style="background-color: #000;">
-    <script type='text/javascript'>
-        (function () {
-            if (window.localStorage) {
-                if (!localStorage.getItem('firstLoad')) {
-                    localStorage['firstLoad'] = true;
-                    window.location.reload();
-                } else
-                    localStorage.removeItem('firstLoad');
-            }
-        })();
-    </script>
-    <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                $('.hideme').each(function (i) {
-                    var bottom_of_object = $(this).offset().top;
-                    var bottom_of_window = $(window).scrollTop() + $(window).height();
-                    if (bottom_of_window >= bottom_of_object) {
-                        $(this).animate({
-                            'opacity': '1'
-                        }, 1600);
-                    }
-                });
-            });
-        });
-    </script>
+
     <div id="header">
         <div id="name1">
             <h1 style="width:100%">
@@ -114,184 +267,30 @@
         <br>
         <br>
     </div>
-    <style>
-        #header {
-            background-image: url(pictures/sunset1.jpg);
-            background-size: cover;
-            background-attachment: scroll;
-            position: absolute;
-            width: 100%;
-            margin-left: -1%;
-            margin-top: -1%;
-            height: 105%;
-            margin-left: -9px;
-        }
-        
-        #title p {
-            color: white;
-            font-style: normal;
-            font-size: 20px;
-            line-height: 1.7;
-            margin-left: 3%;
-            font-family: Century Gothic, sans-serif;
-            margin-right: 3%
-        }
-        
-        @media screen and (max-device-width: 450px) {
-            #title h8 {
-                font-size: 3228px;
+    <script>
+        (function () {
+            if (window.localStorage) {
+                if (!localStorage.getItem('firstLoad')) {
+                    localStorage['firstLoad'] = true;
+                    window.location.reload();
+                } else
+                    localStorage.removeItem('firstLoad');
             }
-            #gd li,
-            #cs li {
-                font-size: 26px;
-            }
-            #gd a h7,
-            #cs a h7 {
-                font-size: 35px;
-            }
-            #title p {
-                font-size: 28px;
-            }
-            #title a h8 {
-                font-size: 30px;
-            }
-            #title a h7 {
-                font-size: 35px;
-            }
-        }
-        
-        content a {
-            text-decoration: none
-        }
-        
-        #content a:hover {
-            color: orangered
-        }
-        
-        #title h7 {
-            font-family: Century Gothic, sans-serif;
-            font-size: 30px;
-            color: white;
-            align-self: center;
-            border-bottom: 4px solid #FFF;
-            padding-bottom: 5px
-        }
-        
-        #title h8 {
-            font-family: Century Gothic, sans-serif;
-            font-size: 20px;
-            color: white;
-            border-bottom: 3px solid #FFF;
-            padding-bottom: 5px;
-            margin-left: 3%;
-            margin-right: 3%
-        }
-        
-        #title p a {
-            color: orange;
-            text-decoration: none;
-        }
-        
-        #my {
-            position: absolute;
-            transform: translateX(20%) translateY(-10%);
-            font-size: 40px;
-        }
-        
-        #cs {
-            position: relative;
-            float: left;
-            color: white;
-            font-style: normal;
-            font-size: 20px;
-            font-family: Century Gothic, sans-serif;
-            width: 40%;
-            padding: 10px;
-            margin-left: 6%;
-            line-height: 1.6;
-            background-color: rgba(255, 138, 33, 1);
-        }
-        
-        #gd {
-            position: relative;
-            float: right;
-            margin-right: 6%;
-            width: 40%;
-            padding: 5px;
-            color: white;
-            font-style: normal;
-            font-size: 20px;
-            font-family: Century Gothic, sans-serif;
-            line-height: 1.9;
-            background-color: rgba(255, 138, 33, 1);
-        }
-        
-        #cs li {
-            margin-top: 2%;
-        }
-        
-        #gd li {
-            margin-top: 2%
-        }
-        
-        #cs h7 {
-            color: white;
-            margin-left: 10px;
-            font-style: normal;
-            font-size: 25px;
-            font-family: Tahoma, Geneva, sans-serif;
-            border-bottom: 4px solid #FFF;
-            padding-bottom: 6px;
-        }
-        
-        #gd h7 {
-            color: white;
-            margin-left: 10px;
-            font-style: normal;
-            font-size: 25px;
-            font-family: Tahoma, Geneva, sans-serif;
-            border-bottom: 4px solid #FFF;
-            padding-bottom: 6px
-        }
-        
-        #gd a {
-            color: black;
-            text-decoration: none;
-        }
-        
-        nav.shift ul li a {
-            z-index: 1;
-            position: relative;
-        }
-        
-        nav.shift ul li a:hover {
-            color: black;
-        }
-        
-        nav.shift ul li a:after {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            margin: auto;
-            width: 100%;
-            height: 1px;
-            content: '.';
-            color: transparent;
-            background: orange;
-            visibility: none;
-            opacity: 0;
-            z-index: -1;
-        }
-        
-        nav.shift ul li a:hover:after {
-            opacity: 1;
-            visibility: visible;
-            height: 100%;
-        }
-    </style>
+        })();
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $('.hideme').each(function (i) {
+                    var bottom_of_object = $(this).offset().top;
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    if (bottom_of_window >= bottom_of_object) {
+                        $(this).animate({
+                            'opacity': '1'
+                        }, 1600);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
