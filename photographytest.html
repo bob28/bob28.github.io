@@ -22,7 +22,7 @@
 			</nav>
 
 		</header>
-
+		<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
 		<div id="main">
 			<article class="thumb">
 				<a href="pictures/image1.jpg" class="image"><img src="pictures/image1.jpg" alt="" /></a>
@@ -179,11 +179,18 @@
 		<footer id="footer" class="panel">
 			<center>
 				<ul style="list-style-type: none;">
-					<li><a style="text-decoration:none" href="#footer">HOME</a></li>
-					<li><a style="text-decoration:none" href="#footer">BLOG</a></li>
-					<li><a href="#footer">PHOTOGRAPHY</a></li>
-					<li><a href="#footer">EXPERIENCE</a></li>
-					<li><a href="#footer">CONTACT</a></li>
+					<li>
+						<a href="index.html">HOME </a></li>
+					<li>
+						<a href="https://bhaviksblogs.wordpress.com/">BLOG</a></li>
+					<li>
+						<a href="photography.html">PHOTOGRAPHY </a></li>
+
+					<li>
+						<a href="experience.html">EXPERIENCE </a></li>
+					<li>
+
+						<a href="contact.html">CONTACT</a></li>
 				</ul>
 			</center>
 		</footer>
@@ -194,6 +201,25 @@
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("topbtn").style.display = "block";
+			} else {
+				document.getElementById("topbtn").style.display = "none";
+			}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+
+	</script>
 
 </body>
 
