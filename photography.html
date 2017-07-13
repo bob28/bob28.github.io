@@ -48,29 +48,6 @@
 		}
 	}
 	
-	#topbtn {
-		display: none;
-		position: fixed;
-		bottom: 20px;
-		right: 30px;
-		z-index: 999;
-		border: none;
-		outline: none;
-		font-size: 30px;
-		background-color: rgb(188, 212, 196);
-		color: black;
-		cursor: default;
-		padding: 20px;
-		border-radius: 10px;
-		-webkit-box-shadow: -8px 5px 53px 5px rgba(0, 0, 0, 1);
-		-moz-box-shadow: -8px 5px 53px 5px rgba(0, 0, 0, 1);
-		box-shadow: -8px 5px 53px 5px rgba(0, 0, 0, 1);
-	}
-	
-	#topbtn:hover {
-		background-color: #555;
-	}
-	
 	footers {
 		font-family: "calibri";
 		width: 100%;
@@ -213,11 +190,6 @@
 				document.getElementById("topbtn").style.display = "none";
 				document.getElementById("navbar").style.opacity = "#242629";
 			}
-		}
-
-		function topFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
 		}
 
 		function onClick(element) {

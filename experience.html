@@ -179,10 +179,10 @@
 			<h8>Tennis Team | 2012 to present</h8>
 			<a>
 				<p>I represented my high school at tennis tournaments in Ontario. I also take part in the University of Toronto tennis team. I have been playing the sport for 14 years.
-					
+
 				</p>
 			</a>
-			
+
 		</div>
 		<div style="border-color:white" class="footer hideme">
 			<center>
@@ -212,11 +212,11 @@
 			$(window).scroll(function() {
 				$('.hideme').each(function(i) {
 					var bottom_of_object = $(this).offset().top;
-					var bottom_of_window = $(window).scrollTop() + $(window).height();
+					var bottom_of_window = $(window).scrollTop() + $(window).height() + $(window).height();
 					if (bottom_of_window >= bottom_of_object) {
 						$(this).animate({
 							'opacity': '1'
-						}, 1800);
+						}, 2000);
 					}
 				});
 			});
