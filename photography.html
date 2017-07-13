@@ -70,6 +70,20 @@
 	#topbtn:hover {
 		background-color: #555;
 	}
+	
+	footers {
+		font-family: "calibri";
+		width: 100%;
+		position: relative;
+		color: white;
+		font-size: 13px;
+	}
+	
+	footers img {
+		width: 32px;
+		margin-left: 0.5%;
+		margin-right: 0.5%;
+	}
 
 </style>
 
@@ -100,14 +114,14 @@
 
 		</div>
 		<div id="name1">
-			<h1 style="width:99%;font-size:75px;font-weight:600">
+			<h5 style="top:30%;font-size:95px;">
 				<center>PHOTOGRAPHY</center>
-			</h1>
+			</h5>
 		</div>
 	</div>
 
 	<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
-	<div class="w3-row-padding" style="margin-bottom:128px;position:absolute;top:100%;">
+	<div class="w3-row-padding" style="position:absolute;top:100%;">
 		<center>
 			<p style="color:#b6ccbf;font-family: Tahoma, Geneva, sans-serif;font-size:20px;">Click the images to enlarge them!</p>
 		</center>
@@ -129,7 +143,6 @@
 			<img src="pictures/image16.jpg" onclick="onClick(this)" style="width:100%" alt="U of T architecture">
 			<img src="pictures/image18.jpg" onclick="onClick(this)" style="width:100%" alt="Train passing by">
 			<img src="pictures/image19.jpg" onclick="onClick(this)" style="width:100%" alt="Fall colours at University of Toronto">
-
 		</div>
 
 		<div class="w3-third">
@@ -137,7 +150,7 @@
 			<img src="pictures/image24.jpg" onclick="onClick(this)" style="width:100%" alt="Wet night time driving">
 			<img src="pictures/image25.jpg" onclick="onClick(this)" style="width:100%" alt="Sunset highways">
 			<img src="pictures/image26.jpg" onclick="onClick(this)" style="width:100%" alt="Deer at the University of Toronto">
-			<img src="pictures/image27.jpg" onclick="onClick(this)" style="width:100%" alt="Sunsets at Unoversity of Toronto">
+			<img src="pictures/image27.jpg" onclick="onClick(this)" style="width:100%" alt="Sunsets at University of Toronto">
 			<img src="pictures/image28.jpeg" onclick="onClick(this)" style="width:100%" alt="The jellyfish">
 			<img src="pictures/image29.jpg" onclick="onClick(this)" style="width:100%" alt="The University of Toronto sunset">
 			<img src="pictures/image30.jpg" onclick="onClick(this)" style="width:100%" alt="Icicles at Sqaure One">
@@ -154,7 +167,6 @@
 
 		<div class="w3-third">
 			<img src="pictures/image38.jpg" onclick="onClick(this)" style="width:100%" alt="Nighttime walks">
-			<img src="pictures/image55.jpg" onclick="onClick(this)" style="width:100%" alt="The Toronto skyline">
 			<img src="pictures/image40.jpg" onclick="onClick(this)" style="width:100%" alt="The Canadian flag">
 			<img src="pictures/image41.jpg" onclick="onClick(this)" style="width:100%" alt="Nathan Phillips Square">
 			<img src="pictures/image42.jpg" onclick="onClick(this)" style="width:100%" alt="The CN Tower">
@@ -168,8 +180,19 @@
 			<img src="pictures/image49.jpg" onclick="onClick(this)" style="width:100%" alt="The CN Tower">
 			<img src="pictures/image20.jpg" onclick="onClick(this)" style="width:100%" alt="Fall colours">
 			<img src="pictures/image21.jpg" onclick="onClick(this)" style="width:100%" alt="The sink faucet">
+			<img src="pictures/image55.jpg" onclick="onClick(this)" style="width:100%" alt="The Toronto skyline">
 		</div>
+		<center>
+			<footers>
+				<a href="https://www.linkedin.com/in/bhavik-naik/" target="_blank"><img style="border:none" src="pictures/linkedin.png" alt="linkedin"></a>
+				<a href="https://www.instagram.com/bhavik.28/?hl=en" target="_blank"> <img style="border:none" src="pictures/inst.png" alt="instagram"></a>
+				<a href="https://twitter.com/bhavikn28" target="_blank"><img style="border:none" src="pictures/twitterLogo.png" alt="twitter" width="500px;"></a>
+				<a href="mailto:bhavik.naik28@gmail.com"><img src="pictures/email.png" style="border:none" alt="email"></a>
+				<p style="margin-top:-0.5%;">All images © 2011-2017 Bhavik Naik.</p>
+			</footers>
+		</center>
 	</div>
+
 	<div id="modal" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
 		<span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
 		<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">

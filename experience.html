@@ -5,7 +5,6 @@
 	<title>Experience</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<a name="top"></a>
 	<meta name="theme-color" content="#488FEE">
 </head>
 <style>
@@ -34,7 +33,7 @@
 		font-size: 30px;
 		color: #AFDDEC;
 		align-items: center;
-		border-bottom: 5px solid;
+		border-bottom: 3px solid;
 		padding-bottom: 7px;
 	}
 	
@@ -130,9 +129,9 @@
 
 		</div>
 		<div id="name1">
-			<h1 style="width:99%">
+			<h5>
 				<center>EXPERIENCE</center>
-			</h1>
+			</h5>
 		</div>
 	</div>
 	<div id="mainexp" style="position: absolute;top: 102%;width: 98%;">
@@ -180,12 +179,21 @@
 			<h8>Tennis Team | 2012 to present</h8>
 			<a>
 				<p>I represented my high school at tennis tournaments in Ontario. I also take part in the University of Toronto tennis team. I have been playing the sport for 14 years.
-					<br>
+					
 				</p>
 			</a>
-			<a href='#top'><strong>Back to Top</strong></a>
-			<br>
-			<br>
+			
+		</div>
+		<div style="border-color:white" class="footer hideme">
+			<center>
+				<br>
+				<a href="https://www.linkedin.com/in/bhavik-naik/" target="_blank"><img src="pictures/linkedin.png" alt="linkedin"></a>
+				<a href="https://www.instagram.com/bhavik.28/?hl=en" target="_blank"> <img src="pictures/inst.png" alt="instagram"></a>
+				<a href="https://twitter.com/bhavikn28" target="_blank"><img src="pictures/twitterLogo.png" alt="twitter"></a>
+				<a href="mailto:bhavik.naik28@gmail.com"><img src="pictures/email.png" alt="email"></a>
+				<br>
+				<p>© 2017 Bhavik Naik All Rights Reserved</p>
+			</center>
 		</div>
 	</div>
 
@@ -218,17 +226,8 @@
 
 			$(window).scroll(function() {
 				$scrollingDiv.stop()
-
-				$scrollingDiv.css("background-color", (($(window).scrollTop() / $(document).height()) > 0.30) ? "#242629" : "");
-			});
-		});
-		$(document).ready(function() {
-			var $scrollingDiv = $("#navbar");
-
-			$(window).scroll(function() {
-				$scrollingDiv.stop()
-
-				$scrollingDiv.css("background-color", (($(window).scrollTop() / $(document).height()) > 0.25) ? "#242629" : "");
+				$scrollingDiv.css("background-color", (($(window).scrollTop() / $(document).height()) > 0.15) ? "#242629" : "");
+				$scrollingDiv.css("transition", (($(window).scrollTop() / $(document).height()) > 0.15) ? "5s ease;" : "");
 			});
 		});
 
