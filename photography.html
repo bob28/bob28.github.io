@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#b6ccbf">
 <link rel="stylesheet" type="text/css" href="styles.css">
 <style>
-    #header {
+#header {
         background-image: url(pictures/IMG_20161017_135403.jpg);
         background-size: cover;
         background-attachment: scroll;
@@ -38,33 +38,48 @@
             width: 101%;
             display: inline-grid;
         }
-    }
-    
-    @media screen and (max-device-width: 850px) {
-        #navbar {
-            height: 6%;
-        }
-    }
-    
-    @media screen and (max-device-width: 850px) and (orientation:landscape) {
-        #navbar {
-            height: 15%;
-        }
+        width: 57px;
     }
     
     footers {
-        font-family: "calibri";
-        width: 100%;
-        position: relative;
-        color: white;
-        font-size: 13px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-device-width: 450px) {
+    #navbar {
+        height: 5%;
     }
     
     footers img {
-        width: 32px;
-        margin-left: 0.5%;
-        margin-right: 0.5%;
+        width: 37px;
     }
+    
+    footers{
+        font-size: 17px;
+    }
+}
+@media screen and (max-device-width: 850px) {
+    #navbar {
+        height: 6%;
+    }
+}
+@media screen and (max-device-width: 850px) and (orientation:landscape) {
+    #navbar {
+        height: 15%;
+    }
+}
+footers {
+    font-family: "calibri";
+    width: 100%;
+    position: relative;
+    color: white;
+    font-size: 13px;
+}
+footers img {
+    width: 32px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
 </style>
 
 <body style="background-color:black">
