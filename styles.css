@@ -92,10 +92,9 @@ nav1 h1 {
 }
 
 .footer {
-    font-family: "calibri";
+    font-family: Century Gothic, sans-serif;
     border-top: 2px dashed rgba(255, 165, 0, 0.9);
     width: 100%;
-    background-color: ;
     position: relative;
     height: 30%;
     color: white;
