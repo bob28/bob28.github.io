@@ -41,8 +41,8 @@ nav1 a {
 	font-size: 23px;
 	font-family: Century Gothic, sans-serif;
 	transition: 1s ease;
-	padding-bottom: 10px;
-	padding-top: 10px;
+	padding-top:5px;
+	padding-bottom: 5px;
 }
 
 nav1 a:hover {
@@ -54,7 +54,7 @@ nav1 a:hover {
 nav1 h1 {
 	color: white;
 	font-weight: 300;
-	font-size: 32px;
+	font-size: 30px;
 	font-family: Century Gothic, sans-serif;
 	float: left;
 	margin-left: 1%;

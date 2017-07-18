@@ -7,14 +7,13 @@
 <meta name="theme-color" content="#b6ccbf">
 <link rel="stylesheet" type="text/css" href="styles.css">
 <style>
-#header {
+	#header {
 		background-image: url(pictures/IMG_20161017_135403.jpg);
 		background-size: cover;
 		background-attachment: scroll;
 		position: absolute;
 		width: 102%;
 		margin-left: -1%;
-		margin-top: -1%;
 		height: 100%;
 		margin-left: -9px;
 	}
@@ -31,58 +30,54 @@
 	}
 	
 	@media screen and (max-device-width: 450px) {
-		#navbar {
-			height: 2%;
-		}
 		.w3-third {
 			width: 101%;
 			display: inline-grid;
 		}
-		width: 57px;
 	}
 	
 	footers {
 		font-size: 20px;
 	}
-}
-@media screen and (max-device-width: 450px) {
-	#navbar {
-		height: 5%;
+	
+	@media screen and (max-device-width: 450px) {
+		footers img {
+			width: 37px;
+		}
+		footers {
+			font-size: 17px;
+		}
+
+		#navbar{ 
+			height: 2%;
+		}
 	}
 	
-	footers img {
-		width: 37px;
+	@media screen and (max-device-width: 850px) {
+		#navbar {
+			height: 6%;
+		}
+	}
+	
+	@media screen and (max-device-width: 850px) and (orientation:landscape) {
+		#navbar {
+			height: 15%;
+		}
 	}
 	
 	footers {
-		font-size: 17px;
+		font-family: "calibri";
+		width: 100%;
+		position: relative;
+		color: white;
+		font-size: 13px;
 	}
-}
-@media screen and (max-device-width: 850px) {
-	#navbar {
-		height: 6%;
+	
+	footers img {
+		width: 32px;
+		margin-left: 0.5%;
+		margin-right: 0.5%;
 	}
-}
-@media screen and (max-device-width: 850px) and (orientation:landscape) {
-	#navbar {
-		height: 15%;
-	}
-}
-footers {
-	font-family: "calibri";
-	width: 100%;
-	position: relative;
-	color: white;
-	font-size: 13px;
-}
-footers img {
-	width: 32px;
-	margin-left: 0.5%;
-	margin-right: 0.5%;
-}
-#modal {
-	z-index: 132432224324;
-}
 
 </style>
 
