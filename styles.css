@@ -38,10 +38,11 @@ nav1 li {
 nav1 a {
 	text-decoration: none;
 	color: white;
-	font-size: 25px;
+	font-size: 23px;
 	font-family: Century Gothic, sans-serif;
-	padding: ;
 	transition: 1s ease;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 nav1 a:hover {
@@ -52,8 +53,8 @@ nav1 a:hover {
 
 nav1 h1 {
 	color: white;
-	font-weight: 100;
-	font-size: 30px;
+	font-weight: 300;
+	font-size: 32px;
 	font-family: Century Gothic, sans-serif;
 	float: left;
 	margin-left: 1%;
