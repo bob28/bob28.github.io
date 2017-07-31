@@ -4,6 +4,7 @@
 <head>
 	<title>Bhavik Naik</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
 	<meta name="theme-color" content="#222229">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -12,14 +13,6 @@
 <style>
 	#header {
 		background-image: url(pictures/sunset1.jpg);
-		background-size: cover;
-		background-attachment: scroll;
-		position: absolute;
-		width: 100%;
-		margin-left: -1%;
-		margin-top: -1%;
-		height: 105%;
-		margin-left: -9px;
 	}
 	
 	#title p {
@@ -248,37 +241,6 @@
 	</div>
 
 	<script>
-		(function() {
-			if (window.localStorage) {
-				if (!localStorage.getItem('firstLoad')) {
-					localStorage['firstLoad'] = true;
-					window.location.reload();
-				} else
-					localStorage.removeItem('firstLoad');
-			}
-		})();
-		$(document).ready(function() {
-			$(window).scroll(function() {
-				$('.hideme').each(function(i) {
-					var bottom_of_object = $(this).offset().top;
-					var bottom_of_window = $(window).scrollTop() + $(window).height() + $(window).height();
-					if (bottom_of_window >= bottom_of_object) {
-						$(this).animate({
-							'opacity': '1'
-						}, 2000);
-					}
-				});
-			});
-		});
-		$(document).ready(function() {
-			var $scrollingDiv = $("#navbar");
-
-			$(window).scroll(function() {
-				$scrollingDiv.stop()
-				$scrollingDiv.css("background-color", (($(window).scrollTop() / $(document).height()) > 0.15) ? "#242629" : "");
-				$scrollingDiv.css("transition", (($(window).scrollTop() / $(document).height()) > 0.15) ? "5s ease;" : "");
-			});
-		});
 
 	</script>
 </body>
