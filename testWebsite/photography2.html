@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Bhavik Naik</title>
+    <meta name="theme-color" content="#222229">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</head>
+<style>
+    #header {
+        background-image: url(pictures/image60.jpeg);
+    }
+    
+    #mobile-demo li a {
+        font-size: 18px;
+        color: white
+    }
+    
+    #menubar li a {
+        font-size: 20px;
+    }
+    
+    #mobile-demo li a i {
+        color: white;
+    }
+    
+    .col img {
+        padding-bottom: 14px;
+        width: 101%;
+    }
+    
+    #headertext {
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+    }
+    
+    #headertext h1 {
+        letter-spacing: 6px;
+        font-size: 80px;
+        opacity: 0.5;
+    }
+    
+    .pagination i {
+        color: #ff3d00;
+    }
+    
+    #headertext h3 {
+        opacity: 0.5;
+        font-size: 30px;
+    }
+    
+    @media screen and (max-width: 500px) {
+        .col img {
+            width: 105%;
+        }
+        #headertext h1 {
+            font-size: 40px;
+            letter-spacing: 0px;
+        }
+        #headertext h3 {
+            font-size: 22px;
+        }
+        #headertext {
+            margin-top: 15%;
+        }
+    }
+    
+    #dropdown1 li a {
+        color: #0d47a1;
+    }
+    
+    #dropdown li a {
+        color: #0d47a1;
+    }
+</style>
+
+<body style="background-color:#292929">
+    <div class="navbar-fixed">
+        <ul id="dropdown" class="dropdown-content">
+            <li><a href="photography.html">Page 1</a></li>
+            <li><a href="photography2.html">Page 2</a></li>
+            <li><a href="photography3.html">Page 3</a></li>
+        </ul>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="photography.html">Page 1</a></li>
+            <li><a href="photography2.html">Page 2</a></li>
+            <li><a href="photography3.html">Page 3</a></li>
+        </ul>
+        <nav>
+            <div style="background-color:#7d331a" class="nav-wrapper">
+                <a id="title" href="index.html" class="brand-logo">BHAVIK NAIK</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="menubar" class="right hide-on-med-and-down">
+                    <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="https://bhaviksblogs.wordpress.com/"><i class="material-icons left">description</i>Blog</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="material-icons left">camera</i>Photography<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="collapsible.html"><i class="material-icons left">work</i>Experience</a></li>
+                    <li><a href="mobile.html"><i class="material-icons left">phone</i>Contact</a></li>
+                </ul>
+                <ul style="background-color:#7d331a" class="side-nav navbar-fixed" id="mobile-demo">
+                    <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="https://bhaviksblogs.wordpress.com/"><i class="material-icons left">description</i>Blog</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">camera</i>Photography<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="collapsible.html"><i class="material-icons left">work</i>Experience</a></li>
+                    <li><a href="mobile.html"><i class="material-icons left">phone</i>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="header">
+        <div id="headertext">
+            <h1>PHOTOGRAPHY</h1>
+            <h3>Page 2</h3>
+        </div>
+        <a id="scrolldown" onclick="scrolldown()" class="btn btn-floating pulse btn-floating btn-large waves-effect waves-light deep-orange accent-3     z-depth-2"><i class="material-icons">arrow_downward</i></a>
+    </div>
+    <div id="content">
+        <center>
+            <ul class="pagination align-center">
+                <li><a href="photography.html"><i class="material-icons">chevron_left</i></a></li>
+                <li class="waves-effect"><a href="photography.html">1</a></li>
+                <li style="background-color:#933e21" class="active"><a href="photography2.html">2</a></li>
+                <li class="waves-effect"><a href="photography3.html">3</a></li>
+                <li class="waves-effect"><a href="photography3.html"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+        </center>
+        <div class="align-center">
+            <div id="picturesContent" class="row">
+                <div id="pictures" class="col s6">
+                    <img src="pictures/image23.jpg" class="materialboxed" alt="Candle light">
+                    <img src="pictures/image24.jpg" class="materialboxed" alt="Wet night time driving">
+                    <img src="pictures/image18.jpg" class="materialboxed" alt="Train passing by">
+                    <img src="pictures/image27.jpg" class="materialboxed" alt="Sunsets at University of Toronto">
+                    <img src="pictures/image28.jpeg" class="materialboxed" alt="The jellyfish">
+                    <img src="pictures/image29.jpg" class="materialboxed" alt="The University of Toronto sunset">
+                    <img src="pictures/image30.jpg" class="materialboxed" alt="Icicles at Sqaure One">
+                    <img src="pictures/image53.jpg" class="materialboxed" alt="Fast cars">
+                    <img src="pictures/image8.jpg" class="materialboxed" alt="Rainy car windows">
+                </div>
+                <div id="pictures" class="col s6">
+                    <img src="pictures/image32.jpg" class="materialboxed" alt="Icicles in the cold weather">
+                    <img src="pictures/image33.jpg" class="materialboxed" alt="Speed boats">
+                    <img src="pictures/image34.jpg" class="materialboxed" alt="Fog over the city">
+                    <img src="pictures/image35.jpg" class="materialboxed" alt="Spring blooming">
+                    <img src="pictures/image36.jpg" class="materialboxed" alt="The Universoty of Toronto buildings">
+                    <img src="pictures/image50.jpg" class="materialboxed" alt="Canada 150">
+                    <img src="pictures/image51.jpg" class="materialboxed" alt="Flowers blooming">
+                    <img src="pictures/image52.jpg" class="materialboxed" alt="Lakeshore driving">
+                    <img src="pictures/image59.jpeg" class="materialboxed" alt="Ports in Kingston, Ontario">
+                </div>
+            </div>
+        </div>
+        <center>
+            <ul class="pagination align-center">
+                <li><a href="photography.html"><i class="material-icons">chevron_left</i></a></li>
+                <li class="waves-effect"><a href="photography.html">1</a></li>
+                <li style="background-color:#933e21" class="active"><a href="photography2.html">2</a></li>
+                <li class="waves-effect"><a href="photography3.html">3</a></li>
+                <li class="waves-effect"><a href="photography3.html"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+        </center>
+        <footer class="page-footer grey darken-4">
+            <center>
+                <div class="container">
+                    <a href="https://www.linkedin.com/in/bhavik-naik/" target="_blank"><img src="pictures/linkedin.png" alt="linkedin"></a>
+                    <a href="https://www.instagram.com/bhavik.28/?hl=en" target="_blank"> <img src="pictures/inst.png" alt="instagram"></a>
+                    <a href="https://twitter.com/bhavikn28" target="_blank"><img src="pictures/twitterLogo.png" alt="twitter"></a>
+                    <a href="mailto:bhavik.naik28@gmail.com"><img src="pictures/email.png" alt="email"></a>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        All images © 2011-2017 Bhavik Naik.
+                    </div>
+                </div>
+            </center>
+        </footer>
+    </div>
+    <script>
+        $(".button-collapse").sideNav();
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        });
+
+        function scrolldown() {
+            $('html,body').animate({
+                    scrollTop: $("#content").offset().top - 60
+                },
+                'slow');
+        }
+    </script>
+</body>
+
+</html>

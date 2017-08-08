@@ -2,250 +2,340 @@
 <html>
 
 <head>
-	<title>Bhavik Naik</title>
-	<meta name="theme-color" content="#222229">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-green.min.css" />
-	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-	<script src="script.js"></script>
-
+    <title>Bhavik Naik</title>
+    <meta name="theme-color" content="#222229">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </head>
 <style>
-	#header {
-		background-image: url(pictures/Paranomic.jpeg);
-		width: 100.4%;
-		height: 100%;
-		position: absolute
-	}
-	
-	#content {
-		top: 105%;
-		position: absolute;
-	}
-	
-	#scrollDown {
-		position: absolute;
-		top: 70%;
-		left: 50%;
-		width: 60px;
-		height: 60px;
-		animation: MoveUpDown 1s linear infinite;
-		animation-delay: 5s;
-		-webkit-animation-delay: 5s;
-	}
-	
-	#topTitle {
-		color: #FFF;
-		font-family: "Helvetica";
-		font-size: 30px;
-	}
-	
-	.mdl-layout__header .mdl-layout__drawer-button i {
-		color: #FFF;
-		width: 50px;
-		height: 50px;
-	}
-	
-	#toplink {
-		color: #FFF;
-		font-family: "Helvetica";
-		font-size: 20px;
-	}
-	
-	#hamburger {
-		background-color: rgb(73, 145, 229)
-	}
-	
-	#menuTitle {
-		color: white;
-		font-size: 25px;
-	}
-	
-	#content {
-		position: absolute;
-		top: 100%;
-	}
-	
-	#first {
-		width: 100%;
-		margin-left: 2%;
-	}
-	
-	#text {
-		color: white;
-		font-family: "Helvetica";
-		font-size: 16px;
-		line-height: 1.5
-	}
-	
-	#blog {
-		margin-left: 50%;
-	}
-	
-	@keyframes MoveUpDown {
-		0% {
-			bottom: 20%;
-		}
-		50% {
-			bottom: 25%;
-		}
-		100% {
-			bottom: 20%;
-		}
-	}
-	
-	@media screen and (max-device-width: 450px) {
-		#scrollDown {
-			width: 40px;
-			height: 50px;
-		}
-		#header {
-			margin-top: -4%;
-			width: 110%;
-		}
-		#topTitle {
-			font-size: 20px;
-		}
-		#toplink {
-			font-size: 18px;
-		}
-	}
-
+    #header {
+        background-image: url(pictures/image59.jpeg);
+    }
+    
+    #main {
+        position: absolute;
+        top: 102%;
+        width: 100%;
+    }
+    
+    #mobile-demo li a {
+        font-size: 18px;
+        color: white
+    }
+    
+    #menubar li a {
+        font-size: 20px;
+    }
+    
+    .card-action {
+        text-align: left;
+    }
+    
+    #mobile-demo li a i {
+        color: white;
+    }
+    
+    #blog .col .card .card-action a {
+        color: #00e676
+    }
+    
+    #blog .col .card .card-content p {
+        color: white;
+        text-align: left;
+    }
+    
+    #blog .col .card {
+        background-color: #292929;
+    }
+    
+    .card-image img {
+        opacity: 0.7;
+    }
+    
+    #dropdown1 li a {
+        color: #3d85b1;
+    }
+    
+    #dropdown li a {
+        color: #3d85b1;
+    }
+    
+    #rowpictures img {
+        width: 103%;
+    }
+    
+    #headertext {
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+    }
+    
+    #headertext h1 {
+        opacity: 0.5;
+        letter-spacing: 6px;
+        font-size: 80px;
+    }
+    
+    #headertext h3 {
+        opacity: 0.5;
+        font-size: 30px;
+    }
+    
+    .container h2 {
+        color: #3d85b1;
+        font-size: 30px;
+    }
+    
+    .container p a {
+        color: #00e676
+    }
+    
+    .card-panel {
+        background-color: #3d85b1;
+    }
+    
+    .card-panel h5 {
+        color: #00e676;
+    }
+    
+    #welcometext {
+        color: #00e676;
+        font-size: 30px;
+        text-align: center
+    }
+    
+    #aboutme {
+        color: #3d85b1;
+        font-size: 24px;
+    }
+    
+    #blogcontainer {
+        border-top: 1px solid #3d85b1;
+    }
+    
+    #skills {
+        border-top: 1px solid #3d85b1;
+    }
+    
+    @media screen and (max-width: 500px) {
+        #content1 {
+            width: 100%;
+        }
+        #rowpictures img {
+            padding-bottom: 10px;
+            width: 101%;
+        }
+        #headertext h1 {
+            font-size: 40px;
+            letter-spacing: 0px;
+        }
+        #headertext h3 {
+            font-size: 18px;
+        }
+        #headertext {
+            margin-top: 15%;
+        }
+    }
 </style>
-<script>
-	function scroll() {
-		console.log("eergs");
-	}
 
-</script>
+<body style="background-color:#292929">
+    <div class="navbar-fixed">
+        <ul id="dropdown" class="dropdown-content">
+            <li><a href="photography.html">Page 1</a></li>
+            <li><a href="photography2.html">Page 2</a></li>
+            <li><a href="photography3.html">Page 3</a></li>
+        </ul>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="photography.html">Page 1</a></li>
+            <li><a href="photography2.html">Page 2</a></li>
+            <li><a href="photography3.html">Page 3</a></li>
+        </ul>
+        <nav>
+            <div style="background-color:#3d85b1" class="nav-wrapper">
+                <a id="title" href="index.html" class="brand-logo">BHAVIK NAIK</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="menubar" class="right hide-on-med-and-down">
+                    <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="https://bhaviksblogs.wordpress.com/"><i class="material-icons left">description</i>Blog</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="material-icons left">camera</i>Photography<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="collapsible.html"><i class="material-icons left">work</i>Experience</a></li>
+                    <li><a href="mobile.html"><i class="material-icons left">phone</i>Contact</a></li>
+                </ul>
+                <ul style="background-color:#3d85b1" class="side-nav navbar-fixed" id="mobile-demo">
+                    <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="https://bhaviksblogs.wordpress.com/"><i class="material-icons left">description</i>Blog</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">camera</i>Photography<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="collapsible.html"><i class="material-icons left">work</i>Experience</a></li>
+                    <li><a href="mobile.html"><i class="material-icons left">phone</i>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="header">
+        <div id="headertext">
+            <h1>BHAVIK NAIK</h1>
+            <h3>Developer | Designer | Photographer | Blogger</h3>
+        </div>
+        <a id="scrolldown" onclick="scrolldown()" class="btn btn-floating pulse btn-floating btn-large waves-effect waves-light green accent-3 z-depth-2"><i class="material-icons">arrow_downward</i></a>
+    </div>
+    <div id="main">
+        <div class="section">
+            <div id="container" class="row container">
+                <h3 id="welcometext">Hi! Thank you for visiting to my site!</h3>
+                <!--<h5 id="aboutme">About me</h5>-->
+                <p class="grey-text lighten-3">
+                    Hello, my name is Bhavik Naik. I am an undergraduate student at the University of Toronto, majoring in computer science. I am also a blogger and a photographer. You can find my photography <a href="photography.html">here.</a> You can also read my blog posts at <a href="https://bhaviksblogs.wordpress.com/">this site.</a> Why not say hi at <a href="https://bhaviksblogs.wordpress.com/feedback/">this link.</a></p>
+                <div id="skills">
+                    <h2 style="color:#3d85b1">My Skills and Abilities</h2>
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div class="card-panel z-depth-3">
+                                <center>
+                                    <h5>Computer Science</h5>
+                                    <span class="white-text">These are the programming languages and applications I have used: </span>
+                                    <span class="white-text">
+                                <ul>
+                                    <div class="row">
+                                        <div class="col s6">
+                                            <li>Java</li>
+                                            <li>Python</li>
+                                            <li>Javascript</li>
+                                            <li>FTL</li>
+                                            <li>Cordova</li>
+                                        </div>
+                                        <div class="col s6">
+                                            <li>Jquery</li>
+                                            <li>HTML and CSS</li>
+                                            <li>Android Studio</li>
+                                            <li>XML</li>
+                                            <li>Json</li>
+                                        </div>
+                                    </div>
+                                </ul>                           
+                            </span>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card-panel z-depth-3">
+                                <center>
+                                    <h5>Graphic Design</h5>
+                                    <span class="white-text">These are the programs which I have experience in:</span>
+                                    <span class="white-text">
+                                <ul>
+                                    <div class="row">
+                                        <div class="col s6">
+                                            <li>Adobe Photoshop</li>
+                                            <li>Adobe Illustrator</li>
+                                            <li>GIMP</li>
+                                            <li>Lightworks</li>
+                                        </div>
+                                        <div class="col s6">
+                                            <li>Adobe After Effects</li>
+                                            <li>Adobe Indesign</li>
+                                            <li>Adobe Premiere</li>
+                                            <li>Inkscape</li>
+                                            
+                                        </div>
+                                    </div>
+                                </ul>                           
+                            </span>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="pictures/image5.jpg"></div>
+        </div>
+        <div class="section">
+            <div id="container" class="row container">
+                <h2 style="color:#3d85b1">Recent Pictures</h2>
+                <p class="grey-text lighten-3">These are the most recent pictures that I have taken. To see my entire collection, click <a href="photography.html">here.</a></p>
+                <div id="rowpictures" class="row">
+                    <div class="col s12 m4">
+                        <img src="pictures/image60.jpeg" class="materialboxed" alt="Red Sunsets">
+                    </div>
+                    <div class="col s12 m4">
+                        <img src="pictures/image25.jpeg" class="materialboxed" alt="Sunsets in the car">
+                    </div>
+                    <div class="col s12 m4">
+                        <img src="pictures/image59.jpeg" class="materialboxed" alt="Ports in Kingston, Ontario">
+                    </div>
 
-<body style="background-color:#292929;">
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-		<header class="mdl-layout__header">
-			<div class="mdl-layout__header-row">
-				<div class="mdl-layout-spacer"></div>
-				<span id="topTitle" class="mdl-layout-title">BHAVIK NAIK</span>
-				<!-- Add spacer, to align navigation to the right -->
-				<!---->
-				<!-- Navigation. We hide it in small screens. -->
-				<!--<nav class="mdl-navigation mdl-layout--large-screen-only">
-					<a class="mdl-navigation__link" href="">Link</a>
-					<a class="mdl-navigation__link" href="">Link</a>
-					<a class="mdl-navigation__link" href="">Link</a>
-					<a class="mdl-navigation__link" href="">Link</a>
-				</nav>-->
-			</div>
-		</header>
-		<div id="hamburger" class="mdl-layout__drawer">
-			<span id="menuTitle" class="mdl-layout-title">Bhavik Naik</span>
-			<nav class="mdl-navigation">
-				<a id="toplink" class="mdl-navigation__link" href="">Home</a>
-				<a id="toplink" class="mdl-navigation__link" href="">Blog</a>
-				<a id="toplink" class="mdl-navigation__link" href="">Photography</a>
-				<a id="toplink" class="mdl-navigation__link" href="">Experience</a>
-				<a id="toplink" class="mdl-navigation__link" href="">Contact</a>
-			</nav>
-		</div>
+                </div>
+            </div>
+            <div id="blogcontainer" class="row container">
+                <h2>Recent Blog Posts</h2>
+                <p class="grey-text lighten-3">These are the most recent blog posts that I have written. To follow my blog, click the follow button at the footer on <a href="https://bhaviksblogs.wordpress.com/">this page. </a>To find out more about what I write on, click <a href="https://bhaviksblogs.wordpress.com/2017/05/27/welcome-to-my-blog/">here.</a></p>
+                <div id="blog" class="row">
+                    <div class="col s12 m6">
+                        <div class="card small z-depth-4">
+                            <div class="card-image">
+                                <img src="pictures/image37.jpg">
+                                <span class="card-title">A Picture with a Story: Snug Harbour</span>
+                            </div>
+                            <div class="card-content">
+                                <p>In part 1 of ‘photos with a story’, I give a context of the image, Snug harbour.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://bhaviksblogs.wordpress.com/2017/07/31/snug-harbour/" target="_blank">Read full post</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card small z-depth-4">
+                            <div class="card-image">
+                                <img src="pictures/image50.jpg">
+                                <span class="card-title">Celebrating Canada's 150th Birthday</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I look at what makes me a Canadian on Canada’s 150th birthday.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://bhaviksblogs.wordpress.com/2017/07/02/what-it-means-to-be-a-canadian-celebrating-canadas-150th-birthday/" target="_blank">Read full post</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer grey darken-4">
+            <center>
+                <div class="container">
+                    <a href="https://www.linkedin.com/in/bhavik-naik/" target="_blank"><img src="pictures/linkedin.png" alt="linkedin"></a>
+                    <a href="https://www.instagram.com/bhavik.28/?hl=en" target="_blank"> <img src="pictures/inst.png" alt="instagram"></a>
+                    <a href="https://twitter.com/bhavikn28" target="_blank"><img src="pictures/twitterLogo.png" alt="twitter"></a>
+                    <a href="mailto:bhavik.naik28@gmail.com"><img src="pictures/email.png" alt="email"></a>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        © Bhavik Naik 2017
+                    </div>
+                </div>
+            </center>
+        </footer>
+    </div>
+    <script>
+        $(".button-collapse").sideNav();
+        $(".dropdown-button").dropdown();
 
-		<main class="mdl-layout__content">
-			<div id="header">
-				<div>
-					<button onclick="scroll() " id="scrollDown" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent">
-						<i class="material-icons">arrow_upward</i>
-					</button>
-				</div>
-			</div>
-			<div style="width:100%;" id="content" class="page-content">
-				<center>
-					<div class="mdl-grid">
-						<div class="mdl-cell mdl-cell--4-col">
-
-							<style>
-								.demo-card-wide.mdl-card {
-									width: 412px;
-								}
-								
-								.demo-card-wide>.mdl-card__title {
-									color: #fff;
-									height: 176px;
-									background: url('../assets/demos/welcome_card.jpg') center / cover;
-								}
-								
-								.demo-card-wide>.mdl-card__menu {
-									color: #fff;
-								}
-
-							</style>
-
-							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-								<div class="mdl-card__title">
-									<h2 class="mdl-card__title-text">Welcome</h2>
-								</div>
-								<div class="mdl-card__supporting-text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
-								</div>
-								<div class="mdl-card__actions mdl-card--border">
-									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
-    </a>
-								</div>
-								<div class="mdl-card__menu">
-									<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-      <i class="material-icons">share</i>
-    </button>
-								</div>
-							</div>
-
-						</div>
-						<div class="mdl-cell mdl-cell--4-col">
-							<style>
-								.demo-card-square.mdl-card {
-									width: 420px;
-									height: 320px;
-								}
-								
-								.demo-card-square>.mdl-card__title {
-									color: #fff;
-									background: url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
-								}
-
-							</style>
-
-							<div class="demo-card-square mdl-card mdl-shadow--2dp">
-								<div class="mdl-card__title mdl-card--expand">
-									<h2 class="mdl-card__title-text">Update</h2>
-								</div>
-								<div class="mdl-card__supporting-text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
-								</div>
-								<div class="mdl-card__actions mdl-card--border">
-									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      View Updates
-    </a>
-								</div>
-							</div>
-						</div>
-						<div class="mdl-cell mdl-cell--4-col">
-							<div class="mdl-card mdl-shadow--4dp">
-								<div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0" alt="" style="padding:10px;">
-								</div>
-								<div class="mdl-card__supporting-text">
-									Auckland Sky Tower, taken March 24th, 2014
-								</div>
-								<div class="mdl-card__supporting-text">
-									The Sky Tower is an observation and telecommunications tower located in Auckland, New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure in the Southern Hemisphere.
-								</div>
-							</div>
-						</div>
-					</div>
-				</center>
-			</div>
-
-		</main>
-	</div>
+        function scrolldown() {
+            $('html,body').animate({
+                    scrollTop: $("#main").offset().top - 50
+                },
+                'slow');
+        }
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+    </script>
 </body>
 
 </html>
