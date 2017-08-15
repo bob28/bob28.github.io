@@ -1,129 +1,129 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 #header {
-	position: absolute;
-	height: 95%;
-	width: 100%;
-	background-size: cover;
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    background-size: cover;
 }
 
 #headertext {
-	width: 100%;
-	text-align: center;
-	margin-top: 10%;
-	font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #headertext h1 {
-	opacity: 0.5;
-	letter-spacing: 6px;
-	font-size: 80px;
+    opacity: 0.5;
+    letter-spacing: 6px;
+    font-size: 80px;
 }
 
 #headertext h3 {
-	opacity: 0.5;
-	font-size: 30px;
+    opacity: 0.5;
+    font-size: 30px;
 }
 
 #title {
-	letter-spacing: 4px;
+    letter-spacing: 4px;
 }
 
 #content {
-	position: absolute;
-	top: 102%;
-	width: 100%;
+    position: absolute;
+    top: 102%;
+    width: 100%;
 }
 
 #scrolldown {
-	position: absolute;
-	top: 75%;
-	left: 50%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
 }
 
 footer {
-	width: 100%;
+    width: 100%;
 }
 
 footer img {
-	width: 30px;
-	margin-left: 1%;
-	margin-right: 1%;
+    width: 45px;
+    margin-left: 0.3%;
+    margin-right: 0.3%;
 }
 
 .navbar-fixed {
-	z-index: 1000;
+    z-index: 1000;
 }
 
 #picturesContent {
-	width: 80%;
+    width: 80%;
 }
 
 footer img:hover {
-	opacity: 0.8;
+    opacity: 0.8;
 }
 
 .pagination li a {
-	color: white;
+    color: white;
 }
 
 .pagination i {
-	color: #ff6d00
+    color: #ff6d00
 }
 
 #pictures img {
-	padding-bottom: 14px;
-	width: 101%;
+    padding-bottom: 14px;
+    width: 101%;
 }
 
 #mobile-demo li a {
-	font-size: 18px;
-	color: white
+    font-size: 18px;
+    color: white
 }
 
 #menubar li a {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 #mobile-demo li a i {
-	color: white;
+    color: white;
 }
 
 .pagination .disabled {
-	cursor: not-allowed;
+    cursor: not-allowed;
 }
 
 @media screen and (max-width: 500px) {
-	#scrolldown {
-		left: 45%
-	}
-	#picturesContent {
-		width: 100%;
-	}
-	#title {
-		width: 100%;
-		text-align: center;
-		letter-spacing: 1px;
-	}
-	#pictures img {
-		width: 105%;
-	}
-	#headertext h1 {
-		font-size: 40px;
-		letter-spacing: 0px;
-	}
-	#headertext h3 {
-		font-size: 22px;
-	}
-	#headertext {
-		margin-top: 15%;
-	}
+    #scrolldown {
+        left: 45%
+    }
+    #picturesContent {
+        width: 100%;
+    }
+    #title {
+        width: 100%;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    #pictures img {
+        width: 105%;
+    }
+    #headertext h1 {
+        font-size: 40px;
+        letter-spacing: 0px;
+    }
+    #headertext h3 {
+        font-size: 22px;
+    }
+    #headertext {
+        margin-top: 15%;
+    }
 }
 
 @media screen and (min-width: 980px) {
-	#title {
-		margin-left: 3%;
-	}
-	#menubar {
-		margin-right: 3%;
-	}
+    #title {
+        margin-left: 3%;
+    }
+    #menubar {
+        margin-right: 3%;
+    }
 }
