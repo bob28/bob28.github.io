@@ -118,6 +118,7 @@
             padding: 10px 24px;
         }
     }
+
 </style>
 
 
@@ -170,7 +171,7 @@
                         <div id="introtext" class="card-panel z-depth-5">
                             <center>
                                 <p class="black-text">
-                                    Hello, my name is Bhavik Naik. I am an undergraduate student at the University of Toronto, majoring in computer science. I am also a blogger and a photographer. You can find my photography <a href="photography.html">here.</a> You can read my blog posts at <a href="https://bhaviksblogs.wordpress.com/" target="_blank">this site.</a> Learn more about me from my social media accounts and <a href="https://bhaviksblogs.wordpress.com/2017/05/27/welcome-to-my-blog/" target="_blank">this post.</a>
+                                    Hello, my name is Bhavik Naik. I am an undergraduate student at the University of Toronto, majoring in computer science. I am also a blogger and a photographer. You can find my photography <a href="photography.html">here.</a> You can read my blog posts at <a href="https://bhaviksblogs.wordpress.com/" target="_blank">this site.</a> You can send me any inquiries or feedback in the <a href="contact.html">contact page</a> form!
                                 </p>
                             </center>
                         </div>
@@ -221,13 +222,13 @@
                                             <li>Adobe Illustrator</li>
                                             <li>GIMP</li>
                                             <li>Lightworks</li>
+                                            <li>Gravit</li>
                                         </div>
                                         <div class="col s6">
                                             <li>Adobe After Effects</li>
                                             <li>Adobe Indesign</li>
                                             <li>Adobe Premiere</li>
                                             <li>Inkscape</li>
-                                            <br>
                                         </div>
                                     </div>
                                 </ul>                           
@@ -264,6 +265,15 @@
                 <p style="color:#424242">These are the most recent blog posts that I have written. To follow my blog, click the follow button on the footer on <a href="https://bhaviksblogs.wordpress.com/">this page. </a>To find out more about what I write on, click <a href="https://bhaviksblogs.wordpress.com/2017/05/27/welcome-to-my-blog/">here.</a></p>
                 <div class="slider">
                     <ul class="slides">
+                        <li>
+                            <img src="pictures/image36.jpg">
+                            <div class="caption right-align">
+                                <h4>A Picture With a Story, Part 2: The TDHSC Building at UTM</h4>
+                                <h6 class="light white-text text-lighten-3">In part 2 of “Photos with a Story,” I tell the tale of a scenic trail at the University of Toronto Mississauga.</h6>
+                                <br>
+                                <a class="waves-effect waves-light btn light-blue darken-3" href="https://bhaviksblogs.wordpress.com/2017/08/16/a-picture-with-a-story-part-2/" target="_blank">Read Full Post</a>
+                            </div>
+                        </li>
                         <li>
                             <img src="pictures/image37.jpg">
                             <div class="caption left-align">
@@ -306,13 +316,13 @@
     </div>
     <script>
         $(".button-collapse").sideNav();
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.parallax').parallax();
             $('.slider').slider();
         });
 
-        $(document).ready(function () {
-            $(window).scroll(function () {
+        $(document).ready(function() {
+            $(window).scroll(function() {
                 var $scrollingDiv = $("#navbar");
                 $scrollingDiv.stop()
                 $scrollingDiv.css("background-color", (($(window).scrollTop() / $(document).height()) > 0.15) ? "#242629" : "");
@@ -326,6 +336,7 @@
                 },
                 'slow');
         }
+
     </script>
 </body>
 
