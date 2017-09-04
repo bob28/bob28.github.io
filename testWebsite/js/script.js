@@ -1,10 +1,9 @@
 $(document).ready(function () {
-	$('.materialboxed').materialbox();
+    $('.materialboxed').materialbox();
 });
-
 function scrolldown() {
-	$('html,body').animate({
-			scrollTop: $("#content").offset().top - 60
-		},
-		'slow');
+    $('html,body').animate({
+            scrollTop: $("#content").offset().top - 60
+        },
+        'slow');
 }

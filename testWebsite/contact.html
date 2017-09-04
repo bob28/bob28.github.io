@@ -56,12 +56,13 @@
         margin-left: 10px;
     }
     
-    textarea {
-        border: 0px;
+    #contactinfo img {
+        width: 40px;
+        margin: 0px 6px 2px 6px;
     }
     
-    #contactinfo img {
-        width: 50px;
+    #contactinfo {
+        height: 100%;
     }
     
     form {
@@ -75,7 +76,6 @@
     #contactinfo h6 {
         font-size: 18px;
     }
-    /* label color */
     
     .input-field label {
         color: #000;
@@ -90,6 +90,18 @@
         color: #000;
     }
     
+    #follow {
+        position: absolute;
+        width: auto;
+        margin-left: 9.8%;
+    }
+    
+    @media screen and (max-width:900px) {
+        #follow {
+            margin-left: 23%;
+        }
+    }
+    
     @media screen and (max-width: 600px) {
         .col {
             width: 105%;
@@ -98,13 +110,13 @@
             left: 5%;
         }
         #contactinfo img {
-            width: 50px;
-        }
-        #contactinfo {
-            border-top: 8px solid #0277bd;
+            width: 40px;
         }
         #header {
             background-position: center center;
+        }
+        #follow {
+            margin-left: 30%;
         }
     }
 
@@ -121,7 +133,7 @@
         <li><a href="photography3.html">Page 3</a></li>
     </ul>
     <nav>
-        <div class="nav-wrapper light-blue darken-1">
+        <div class="nav-wrapper light-blue darken-3">
             <a id="title" class="brand-logo">BHAVIK NAIK</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="menubar" class="right hide-on-med-and-down">
@@ -131,7 +143,7 @@
                 <li><a href="experience.html"><i class="material-icons left">work</i>Experience</a></li>
                 <li><a href="contact.html"><i class="material-icons left">phone</i>Contact</a></li>
             </ul>
-            <ul class="light-blue darken-1 side-nav navbar-fixed" id="mobile-demo">
+            <ul class="light-blue darken-3 side-nav navbar-fixed" id="mobile-demo">
                 <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
                 <li><a href="https://bhaviksblogs.wordpress.com/"><i class="material-icons left">description</i>Blog</a></li>
                 <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">camera</i>Photography<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -146,15 +158,14 @@
         <h1>CONTACT</h1>
         <h3>Get in Touch</h3>
     </div>
-    <!-- <a id="scrolldown" onclick="scrolldown()" class="btn btn-floating pulse btn-floating btn-large waves-effect waves-light green accent-4 z-depth-2"><i class="material-icons">arrow_downward</i></a>-->
 </div>
 
 <body class="light-blue darken-3">
     <div id="content">
         <div class="section">
             <div id="container" class="row container">
-                <div class="row z-depth-5 blue lighten-5">
-                    <form action="https://docs.google.com/forms/d/e/1FAIpQLScNCQ1Oa125xGWjJRkLrURLW3xZaSIOY2jzhKSIGjufnbVQPQ/formResponse" class="col s12 m7">
+                <div class="row z-depth-5 white">
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLScNCQ1Oa125xGWjJRkLrURLW3xZaSIOY2jzhKSIGjufnbVQPQ/formResponse" class="col s12 l7">
                         <center>
                             <h4>Say Hi!</h4>
                         </center>
@@ -167,7 +178,7 @@
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <textarea name="entry.1479805943" id="message" class="materialize-textarea"></textarea>
+                                <textarea name="entry.1479805943" id="message" class="materialize-textarea" style="max-height: 30px;"></textarea>
                                 <label for="message">Message</label>
                             </div>
                         </div>
@@ -177,29 +188,31 @@
                             </button>
                         </div>
                     </form>
-                    <div id="contactinfo" class="col s12 m5">
+                    <div id="contactinfo" class="col s12 l5 cyan accent-4">
                         <center>
-                            <h4 class="black-text">Contact Information</h4>
+                            <h4 class="white-text">Contact Information</h4>
                             <br>
-                            <h6><a href="https://bhaviksblogs.wordpress.com/2017/05/27/welcome-to-my-blog/">Find out more about me here!</a></h6>
+                            <h6><a href="https://bhaviksblogs.wordpress.com/2017/05/27/welcome-to-my-blog/" class="white-text"><u>Find out more about me here!</u></a></h6>
                             <br>
                             <br>
-                            <a style="margin-left:50%" class="wordpress-follow-button" href="https://bhaviksblogs.wordpress.com" data-blog="https://bhaviksblogs.wordpress.com" data-lang="en">Follow Bhavik's Blog on WordPress.com</a>
-                            <script type="text/javascript">
-                                (function(d) {
-                                    var f = d.getElementsByTagName('SCRIPT')[0],
-                                        p = d.createElement('SCRIPT');
-                                    p.type = 'text/javascript';
-                                    p.async = true;
-                                    p.src = '//widgets.wp.com/platform.js';
-                                    f.parentNode.insertBefore(p, f);
-                                }(document));
+                            <div id="follow" class="container row">
+                                <a style="margin-left:50%" class="wordpress-follow-button" href="https://bhaviksblogs.wordpress.com" data-blog="https://bhaviksblogs.wordpress.com" data-lang="en">Follow Bhavik's Blog on WordPress.com</a>
+                                <script type="text/javascript">
+                                    (function(d) {
+                                        var f = d.getElementsByTagName('SCRIPT')[0],
+                                            p = d.createElement('SCRIPT');
+                                        p.type = 'text/javascript';
+                                        p.async = true;
+                                        p.src = '//widgets.wp.com/platform.js';
+                                        f.parentNode.insertBefore(p, f);
+                                    }(document));
 
-                            </script>
+                                </script>
+                            </div>
                             <br>
                             <br>
                             <br>
-                            <h6>Toronto, Canada</h6>
+                            <h6 class="white-text">Toronto, Canada</h6>
                             <br>
                             <br>
                             <a href="https://www.linkedin.com/in/bhavik-naik/" target="_blank"><img src="pictures/linkedin.png" alt="linkedin"></a>
@@ -207,13 +220,16 @@
                             <a href="https://twitter.com/bhavikn28" target="_blank"><img src="pictures/twitterLogo.png" alt="twitter"></a>
                             <a href="mailto:bhavik.naik28@gmail.com"><img src="pictures/email.png" alt="email"></a>
                             <a href="https://bhaviksblogs.wordpress.com/" target="_blank"><img src="pictures/wordpress.png" alt="wordpress"></a>
+                            <br>
+                            <br>
+                            <br>
                         </center>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-copyright white-text">
-            <center> © 2017 Bhavik Naik</center>
+            <center>© 2017 Bhavik Naik</center>
         </div>
         <br>
     </div>

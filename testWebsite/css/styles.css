@@ -45,9 +45,10 @@ footer {
 }
 
 footer img {
-    width: 45px;
+    width: 35px;
     margin-left: 0.3%;
     margin-right: 0.3%;
+    opacity: 0.8;
 }
 
 .navbar-fixed {
@@ -59,7 +60,7 @@ footer img {
 }
 
 footer img:hover {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .pagination li a {
@@ -116,6 +117,11 @@ footer img:hover {
     }
     #headertext {
         margin-top: 15%;
+    }
+    footer img {
+        width: 28px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 

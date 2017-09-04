@@ -28,25 +28,12 @@
         text-align: left;
     }
     
-    #blog .col .card .card-action a {
-        color: #00e676;
-    }
-    
-    #blog .col .card .card-content p {
-        color: white;
-        text-align: left;
-    }
-    
-    #blog .col .card {
-        background-color: #0277bd;
-    }
-    
     #dropdown1 li a {
-        color: #0277bd;
+        color: #1565c0;
     }
     
     #dropdown li a {
-        color: #0277bd;
+        color: #1565c0;
     }
     
     #rowpictures img {
@@ -58,7 +45,7 @@
     }
     
     .container h2 {
-        color: #0277bd;
+        color: #1565c0;
         font-size: 30px;
     }
     
@@ -67,19 +54,15 @@
     }
     
     .card-panel {
-        background-color: #0277bd;
+        background-color: #1565c0;
     }
     
     .card-panel h5 {
         color: #00c853;
     }
     
-    .card .card-action {
-        border-top: 2px solid #b3e5fc;
-    }
-    
     p a {
-        color: #0277bd
+        color: #1565c0
     }
     
     #introtext a {
@@ -90,20 +73,20 @@
         border-top: 3px solid #00c853;
     }
     
-    #introtext {
-        background-color: #00c853;
+    #skills {
+        border-top: 3px solid #00c853;
+    }
+    
+    .slides img{ 
+        filter: brightness(75%);
     }
     
     body {
         font-family: 'Open Sans', sans-serif;
     }
     
-    .caption {
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-    
-    .slider .indicators .indicator-item {
-        color: #0277bd;
+    #instagram {
+        width: 100%;
     }
     
     @media screen and (max-width: 500px) {
@@ -118,7 +101,6 @@
             padding: 10px 24px;
         }
     }
-
 </style>
 
 
@@ -134,7 +116,7 @@
         <li><a href="photography3.html">Page 3</a></li>
     </ul>
     <nav>
-        <div id="navbar" class="light-blue darken-3 nav-wrapper">
+        <div id="navbar" class="blue darken-3 nav-wrapper">
             <a id="title" class="brand-logo">BHAVIK NAIK</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="menubar" class="right hide-on-med-and-down">
@@ -144,7 +126,7 @@
                 <li><a href="experience.html"><i class="material-icons left">work</i>Experience</a></li>
                 <li><a href="contact.html"><i class="material-icons left">phone</i>Contact</a></li>
             </ul>
-            <ul class="light-blue darken-3 side-nav navbar-fixed" id="mobile-demo">
+            <ul class="blue darken-3 side-nav navbar-fixed" id="mobile-demo">
                 <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
                 <li><a href="https://bhaviksblogs.wordpress.com/"><i class="material-icons left">description</i>Blog</a></li>
                 <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">camera</i>Photography<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -162,13 +144,13 @@
     <a id="scrolldown" onclick="scrolldown()" class="btn btn-floating pulse btn-floating btn-large waves-effect waves-light green accent-4 z-depth-2"><i class="material-icons">arrow_downward</i></a>
 </div>
 
-<body class="light-blue lighten-4">
+<body class="light-blue lighten-4 ">
     <div id="main">
         <div class="section">
             <div id="container" class="row container">
                 <div class="row">
                     <div class="col s12">
-                        <div id="introtext" class="card-panel z-depth-5">
+                        <div id="introtext" class="card-panel z-depth-5 green accent-4">
                             <center>
                                 <p class="black-text">
                                     Hello, my name is Bhavik Naik. I am an undergraduate student at the University of Toronto, majoring in computer science. I am also a blogger and a photographer. You can find my photography <a href="photography.html">here.</a> You can read my blog posts at <a href="https://bhaviksblogs.wordpress.com/" target="_blank">this site.</a> You can send me any inquiries or feedback in the <a href="contact.html">contact page</a> form!
@@ -179,7 +161,7 @@
                 </div>
 
                 <div id="skills">
-                    <h2 style="color:#0277bd">My Skills and Abilities</h2>
+                    <h2 style="color:#1565c0">My Skills and Abilities</h2>
                     <div class="row">
                         <div class="col s12 m6">
                             <div class="card-panel z-depth-3">
@@ -201,7 +183,7 @@
                                             <li>HTML and CSS</li>
                                             <li>Android Studio</li>
                                             <li>XML</li>
-                                            <li>Json</li>
+                                            <li>Git</li>
                                         </div>
                                     </div>
                                 </ul>                           
@@ -220,15 +202,16 @@
                                         <div class="col s6">
                                             <li>Adobe Photoshop</li>
                                             <li>Adobe Illustrator</li>
+                                            <li>Adobe Dreamweaver</li>
                                             <li>GIMP</li>
                                             <li>Lightworks</li>
-                                            <li>Gravit</li>
                                         </div>
                                         <div class="col s6">
                                             <li>Adobe After Effects</li>
                                             <li>Adobe Indesign</li>
                                             <li>Adobe Premiere</li>
                                             <li>Inkscape</li>
+                                            <li>Gravit</li>
                                         </div>
                                     </div>
                                 </ul>                           
@@ -244,34 +227,34 @@
             <div class="parallax"><img src="pictures/image5.jpg"></div>
         </div>
         <div class="section">
-            <div id="container" class="row container">
-                <h2 style="color:#0277bd">Recent Pictures</h2>
-                <p style="color:#424242">These are the most recent pictures that I have taken. To see my entire collection, click <a href="photography.html">here.</a></p>
+            <div id="container" class="row container recentPics">
+                <h2 style="color:#1565c0">Recent Pictures</h2>
+                <p class="grey-text text-darken-3">These are the most recent pictures that I have taken. To see my entire collection, click <a href="photography.html">here.</a></p>
                 <div id="rowpictures" class="row">
                     <div class="col s12 m4">
-                        <img src="pictures/image60.jpeg" class="materialboxed" alt="Red Sunsets">
+                        <img src="pictures/image61.jpg" class="materialboxed" alt="Red Sunsets">
                     </div>
                     <div class="col s12 m4">
-                        <img src="pictures/image25.jpeg" class="materialboxed" alt="Sunsets in the car">
+                        <img src="pictures/image62.jpeg" class="materialboxed" alt="Sunsets in the car">
                     </div>
                     <div class="col s12 m4">
-                        <img src="pictures/image59.jpeg" class="materialboxed" alt="Ports in Kingston, Ontario">
+                        <img src="pictures/image25.jpeg" class="materialboxed" alt="Ports in Kingston, Ontario">
                     </div>
 
                 </div>
             </div>
             <div id="blogcontainer" class="row container">
                 <h2>Recent Blog Posts</h2>
-                <p style="color:#424242">These are the most recent blog posts that I have written. To follow my blog, click the follow button on the footer on <a href="https://bhaviksblogs.wordpress.com/">this page. </a>To find out more about what I write on, click <a href="https://bhaviksblogs.wordpress.com/2017/05/27/welcome-to-my-blog/">here.</a></p>
+                <p class="grey-text text-darken-3">These are the most recent blog posts that I have written. To follow my blog, click the follow button on the footer on <a href="https://bhaviksblogs.wordpress.com/">this page. </a>To find out more about what I write on, click <a href="https://bhaviksblogs.wordpress.com/2017/05/27/welcome-to-my-blog/">here.</a></p>
                 <div class="slider">
                     <ul class="slides">
                         <li>
                             <img src="pictures/image36.jpg">
-                            <div class="caption right-align">
-                                <h4>A Picture With a Story, Part 2: The TDHSC Building at UTM</h4>
+                            <div class="caption left-align">
+                                <h4>A Picture With a Story, Part 2: The TDHSC Building</h4>
                                 <h6 class="light white-text text-lighten-3">In part 2 of “Photos with a Story,” I tell the tale of a scenic trail at the University of Toronto Mississauga.</h6>
                                 <br>
-                                <a class="waves-effect waves-light btn light-blue darken-3" href="https://bhaviksblogs.wordpress.com/2017/08/16/a-picture-with-a-story-part-2/" target="_blank">Read Full Post</a>
+                                <a class="waves-effect waves-light btn green accent-4 black-text" target="_blank" href="https://bhaviksblogs.wordpress.com/2017/08/16/a-picture-with-a-story-part-2/" target="_blank">Read Full Post</a>
                             </div>
                         </li>
                         <li>
@@ -280,7 +263,7 @@
                                 <h4>A Picture With A Story: Snug Harbour</h4>
                                 <h6 class="light white-text text-lighten-3">In part 1 of 'photos with a story', I give a context of the image, Snug harbour. </h6>
                                 <br>
-                                <a class="waves-effect waves-light btn light-blue darken-3" href="https://bhaviksblogs.wordpress.com/2017/07/31/snug-harbour/" target="_blank">Read Full Post</a>
+                                <a class="waves-effect waves-light btn green accent-4 black-text" target="_blank" href="https://bhaviksblogs.wordpress.com/2017/07/31/snug-harbour/" target="_blank">Read Full Post</a>
                             </div>
                         </li>
                         <li>
@@ -289,7 +272,7 @@
                                 <h4>What it Means to be a Canadian on Canada's 150th Birthday</h4>
                                 <h6 class="light white-text text-lighten-3">I look at what makes me a Canadian on Canada's 150th birthday</h6>
                                 <br>
-                                <a class="waves-effect waves-light btn light-blue darken-3" href="https://bhaviksblogs.wordpress.com/2017/07/02/what-it-means-to-be-a-canadian-celebrating-canadas-150th-birthday" target="_blank">Read Full Post</a>
+                                <a class="waves-effect waves-light btn green accent-4 black-text" href="https://bhaviksblogs.wordpress.com/2017/07/02/what-it-means-to-be-a-canadian-celebrating-canadas-150th-birthday" target="_blank">Read Full Post</a>
                             </div>
                         </li>
                     </ul>
@@ -316,18 +299,9 @@
     </div>
     <script>
         $(".button-collapse").sideNav();
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.parallax').parallax();
             $('.slider').slider();
-        });
-
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                var $scrollingDiv = $("#navbar");
-                $scrollingDiv.stop()
-                $scrollingDiv.css("background-color", (($(window).scrollTop() / $(document).height()) > 0.15) ? "#242629" : "");
-                $scrollingDiv.css("transition", (($(window).scrollTop() / $(document).height()) > 0.15) ? "5s ease;" : "");
-            });
         });
 
         function scrolldown() {
@@ -336,7 +310,6 @@
                 },
                 'slow');
         }
-
     </script>
 </body>
 
