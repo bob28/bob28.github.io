@@ -1,227 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<title>Bhavik Naik | Photography</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<meta name="theme-color" content="#b6ccbf">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<head>
+    <title>Bhavik Naik</title>
+    <meta name="theme-color" content="#4890e3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
 <style>
-    #header1 {
-        background-image: url(pictures/IMG_20161017_135403.jpg);
-        background-size: cover;
-        background-attachment: scroll;
-        position: absolute;
-        width: 102%;
-        margin-left: -1%;
-        height: 100%;
-        margin-left: -9px;
+    #header {
+        background-image: url(pictures/Paranomic.jpeg);
     }
     
-    .w3-row-padding img {
-        margin-bottom: 12px;
-        border: 3px solid rgb(182, 204, 191);
+    .col img {
+        padding-bottom: 14px;
+        width: 101%;
     }
     
-    .w3-row-padding img:hover {
-        opacity: 0.6;
-        cursor: pointer;
-        transition: 0.3s
+    .pagination i {
+        color: #00c853;
     }
     
-    @media screen and (max-device-width: 450px) {
-        .w3-third {
-            width: 101%;
-            display: inline-grid;
+    #dropdown1 li a {
+        color: #42a5f5;
+    }
+    
+    #dropdown li a {
+        color: #42a5f5;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .col img {
+            width: 105%;
         }
     }
-    
-    footers {
-        font-size: 20px;
-    }
-    
-    @media screen and (max-device-width: 450px) {
-        footers img {
-            width: 37px;
-        }
-        footers {
-            font-size: 17px;
-        }
-        #navbar {
-            height: 2%;
-        }
-    }
-    
-    @media screen and (max-device-width: 850px) {
-        #navbar {
-            height: 6%;
-        }
-    }
-    
-    @media screen and (max-device-width: 850px) and (orientation:landscape) {
-        #navbar {
-            height: 15%;
-        }
-    }
-    
-    footers {
-        font-family: "calibri";
-        width: 100%;
-        position: relative;
-        color: white;
-        font-size: 13px;
-    }
-    
-    footers img {
-        width: 32px;
-        margin-left: 0.5%;
-        margin-right: 0.5%;
-    }
-    
-    .w3-row-padding {
-        position: absolute;
-        top: 100%;
-    }
-    
-    #name1 h5 {
-        top: 30%;
-        font-size: 95px;
-    }
-    
-    .shift h1 {
-        font-size: 30px;
-        margin-left: 1%
-    }
+
 </style>
 
-<body style="background-color:#242629">
-
-    <div id="header1">
-        <div id="navbar" style="width:100%">
-            <nav1 class="shift">
-                <h1>BHAVIK NAIK</h1>
-                <ul style="margin-top:-0.5%;">
-                    <li>
-                        <a href="contact.html">CONTACT</a></li>
-                    <li>
-                        <a href="experience.html">EXPERIENCE </a></li>
-
-                    <li>
-                        <a href="photography.html">PHOTOGRAPHY </a></li>
-
-                    <li>
-                        <a href="https://bhaviksblogs.wordpress.com/">BLOG</a></li>
-                    <li>
-                        <a href="index.html">HOME </a></li>
+<body style="background-color:#292929">
+    <div class="navbar-fixed">
+        <ul id="dropdown" class="dropdown-content">
+            <li><a href="photography.html">Page 1</a></li>
+            <li><a href="photography2.html">Page 2</a></li>
+            <li><a href="photography3.html">Page 3</a></li>
+        </ul>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="photography.html">Page 1</a></li>
+            <li><a href="photography2.html">Page 2</a></li>
+            <li><a href="photography3.html">Page 3</a></li>
+        </ul>
+        <nav>
+            <div style="background-color:#4890e3" class="nav-wrapper">
+                <a id="title" class="brand-logo">BHAVIK NAIK</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="menubar" class="right hide-on-med-and-down">
+                    <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="https://bhaviksblogs.wordpress.com/"><i class="material-icons left">description</i>Blog</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="material-icons left">camera</i>Photography<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="experience.html"><i class="material-icons left">work</i>Experience</a></li>
+                    <li><a href="contact.html"><i class="material-icons left">phone</i>Contact</a></li>
                 </ul>
-            </nav1>
-        </div>
-        <div id="name1">
-            <h5><center>PHOTOGRAPHY</center></h5>
-        </div>
+                <ul style="background-color:#4890e3" class="side-nav navbar-fixed" id="mobile-demo">
+                    <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="https://bhaviksblogs.wordpress.com/"><i class="material-icons left">description</i>Blog</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">camera</i>Photography<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="experience.html"><i class="material-icons left">work</i>Experience</a></li>
+                    <li><a href="contact.html"><i class="material-icons left">phone</i>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
-
-    <button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
-    <div class="w3-row-padding">
-        <div class="w3-third">
-            <img src="pictures/image1.jpg" onclick="onClick(this)" style="width:100%" alt="The Monarch Butterfly">
-            <img src="pictures/image2.jpg" onclick="onClick(this)" style="width:100%" alt="Spring blooming">
-            <img src="pictures/image3.jpg" onclick="onClick(this)" style="width:100%" alt="Leaves in fall">
-            <img src="pictures/image10.jpg" onclick="onClick(this)" style="width:100%" alt="Sunsets">
-            <img src="pictures/image5.jpg" onclick="onClick(this)" style="width:100%" alt="Trees above a open roof">
-            <img src="pictures/image6.jpg" onclick="onClick(this)" style="width:100%" alt="Lake Ontario from the Toronto Islands">
-            <img src="pictures/image7.jpg" onclick="onClick(this)" style="width:100%" alt="Sunsets over the tennis court">
-            <img src="pictures/image8.jpg" onclick="onClick(this)" style="width:100%" alt="Rainy car windows">
-            <img src="pictures/image9.jpg" onclick="onClick(this)" style="width:100%" alt="Flowers blooming">
-            <img src="pictures/image11.jpg" onclick="onClick(this)" style="width:100%" alt="Farmland">
-            <img src="pictures/image12.jpg" onclick="onClick(this)" style="width:100%" alt="Leaves reflected by the sunlight">
-            <img src="pictures/image13.jpg" onclick="onClick(this)" style="width:100%" alt="Sunsets">
-            <img src="pictures/image14.jpg" onclick="onClick(this)" style="width:100%" alt="Night time tennis">
-            <img src="pictures/image15.jpg" onclick="onClick(this)" style="width:100%" alt="Boats in the water">
-            <img src="pictures/image16.jpg" onclick="onClick(this)" style="width:100%" alt="U of T architecture">
-            <img src="pictures/image18.jpg" onclick="onClick(this)" style="width:100%" alt="Train passing by">
-            <img src="pictures/image19.jpg" onclick="onClick(this)" style="width:100%" alt="Fall colours at University of Toronto">
+    <div id="header">
+        <div id="headertext">
+            <h1>PHOTOGRAPHY</h1>
+            <h3>Page 1</h3>
         </div>
-
-        <div class="w3-third">
-            <img src="pictures/image23.jpg" onclick="onClick(this)" style="width:100%" alt="Candle light">
-            <img src="pictures/image24.jpg" onclick="onClick(this)" style="width:100%" alt="Wet night time driving">
-            <img src="pictures/image25.jpg" onclick="onClick(this)" style="width:100%" alt="Sunset highways">
-            <img src="pictures/image26.jpg" onclick="onClick(this)" style="width:100%" alt="Deer at the University of Toronto">
-            <img src="pictures/image27.jpg" onclick="onClick(this)" style="width:100%" alt="Sunsets at University of Toronto">
-            <img src="pictures/image28.jpeg" onclick="onClick(this)" style="width:100%" alt="The jellyfish">
-            <img src="pictures/image29.jpg" onclick="onClick(this)" style="width:100%" alt="The University of Toronto sunset">
-            <img src="pictures/image30.jpg" onclick="onClick(this)" style="width:100%" alt="Icicles at Sqaure One">
-            <img src="pictures/image32.jpg" onclick="onClick(this)" style="width:100%" alt="Icicles in the cold weather">
-            <img src="pictures/image33.jpg" onclick="onClick(this)" style="width:100%" alt="Speed boats">
-            <img src="pictures/image34.jpg" onclick="onClick(this)" style="width:100%" alt="Fog over the city">
-            <img src="pictures/image35.jpg" onclick="onClick(this)" style="width:100%" alt="Spring blooming">
-            <img src="pictures/image36.jpg" onclick="onClick(this)" style="width:100%" alt="The Universoty of Toronto buildings">
-            <img src="pictures/image50.jpg" onclick="onClick(this)" style="width:100%" alt="Canada 150">
-            <img src="pictures/image51.jpg" onclick="onClick(this)" style="width:100%" alt="Flowers blooming">
-            <img src="pictures/image52.jpg" onclick="onClick(this)" style="width:100%" alt="Lakeshore driving">
-            <img src="pictures/image53.jpg" onclick="onClick(this)" style="width:100%" alt="Fast cars">
-        </div>
-
-        <div class="w3-third">
-            <img src="pictures/image38.jpg" onclick="onClick(this)" style="width:100%" alt="Nighttime walks">
-            <img src="pictures/image40.jpg" onclick="onClick(this)" style="width:100%" alt="The Canadian flag">
-            <img src="pictures/image41.jpg" onclick="onClick(this)" style="width:100%" alt="Nathan Phillips Square">
-            <img src="pictures/image42.jpg" onclick="onClick(this)" style="width:100%" alt="The CN Tower">
-            <img src="pictures/image43.jpg" onclick="onClick(this)" style="width:100%" alt="Queens park">
-            <img src="pictures/image44.jpg" onclick="onClick(this)" style="width:100%" alt="The CN tower from ground level">
-            <img src="pictures/image45.jpg" onclick="onClick(this)" style="width:100%" alt="Dark clouds over a tennis court">
-            <img src="pictures/image46.jpg" onclick="onClick(this)" style="width:100%" alt="The Rogers Center">
-            <img src="pictures/image48.jpg" onclick="onClick(this)" style="width:100%" alt="The ball game at the Rogers Center">
-            <img src="pictures/image47.jpg" onclick="onClick(this)" style="width:100%" alt="The ball game at the Rogers Center">
-            <img src="pictures/image39.jpg" onclick="onClick(this)" style="width:100%" alt="The CN tower from U of T">
-            <img src="pictures/image49.jpg" onclick="onClick(this)" style="width:100%" alt="The CN Tower">
-            <img src="pictures/image20.jpg" onclick="onClick(this)" style="width:100%" alt="Fall colours">
-            <img src="pictures/image21.jpg" onclick="onClick(this)" style="width:100%" alt="The sink faucet">
-            <img src="pictures/image55.jpg" onclick="onClick(this)" style="width:100%" alt="The Toronto skyline">
+        <a id="scrolldown" onclick="scrolldown()" class="btn btn-floating pulse btn-floating btn-large waves-effect waves-light green accent-4 z-depth-2"><i class="material-icons">arrow_downward</i></a>
+    </div>
+    <div id="content">
+        <center>
+            <ul class="pagination align-center">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active blue lighten-1"><a href="photography.html">1</a></li>
+                <li class="waves-effect"><a href="photography2.html">2</a></li>
+                <li class="waves-effect"><a href="photography3.html">3</a></li>
+                <li class="waves-effect"><a href="photography2.html"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+        </center>
+        <div class="align-center">
+            <div id="picturesContent" class="row">
+                <div id="pictures" class="col s6">
+                    <img src="pictures/image42.jpeg" class="materialboxed" alt="The CN Tower">
+                    <img src="pictures/image48.jpg" class="materialboxed" alt="The ball game at the Rogers Center">
+                    <img src="pictures/image38.jpg" class="materialboxed" alt="Nighttime walks">
+                    <img src="pictures/image61.jpg" class="materialboxed" alt="flowers">
+                    <img src="pictures/image5.jpg" class="materialboxed" alt="Trees above a open roof">
+                    <img src="pictures/image6.jpg" class="materialboxed" alt="Lake Ontario from the Toronto Islands">
+                    <img src="pictures/image7.jpg" class="materialboxed" alt="Sunsets over the tennis court">
+                    <img src="pictures/image60.jpeg" class="materialboxed" alt="Red Sunsets">
+                    <img src="pictures/image.jpeg" class="materialboxed">
+                </div>
+                <div id="pictures" class="col s6">
+                    <img src="pictures/image49.jpg" class="materialboxed" alt="The CN Tower">
+                    <img src="pictures/image1.jpg" class="materialboxed" alt="The Monarch Butterfly">
+                    <img src="pictures/image12.jpg" class="materialboxed" alt="Leaves reflected by the sunlight">
+                    <img src="pictures/sunset1.jpg" class="materialboxed" alt="Sunsets">
+                    <img src="pictures/image25.jpeg" class="materialboxed" alt="Sunsets in the car">
+                    <img src="pictures/image39.jpg" class="materialboxed" alt="The CN tower from U of T">
+                    <img src="pictures/image26.jpg" class="materialboxed" alt="Deer at the University of Toronto">
+                    <img src="pictures/image19.jpg" class="materialboxed" alt="Fall colours at University of Toronto">
+                </div>
+            </div>
         </div>
         <center>
-            <footers>
-                <a href="https://www.linkedin.com/in/bhavik-naik/" target="_blank"><img style="border:none" src="pictures/linkedin.png" alt="linkedin"></a>
-                <a href="https://www.instagram.com/bhavik.28/?hl=en" target="_blank"> <img style="border:none" src="pictures/inst.png" alt="instagram"></a>
-                <a href="https://twitter.com/bhavikn28" target="_blank"><img style="border:none" src="pictures/twitterLogo.png" alt="twitter" width="500px;"></a>
-                <a href="mailto:bhavik.naik28@gmail.com"><img src="pictures/email.png" style="border:none" alt="email"></a>
-                <p style="margin-top:-0.5%;">All images © 2011-2017 Bhavik Naik.</p>
-            </footers>
+            <ul class="pagination align-center">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active blue lighten-1"><a href="photography.html">1</a></li>
+                <li class="waves-effect"><a href="photography2.html">2</a></li>
+                <li class="waves-effect"><a href="photography3.html">3</a></li>
+                <li class="waves-effect"><a href="photography2.html"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
         </center>
-    </div>
-
-    <div id="modal" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-        <span class="w3-button w3-black w3-xlarge w3-display-topright">X</span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img style="width:100%" id="img1" class="w3-image">
-            <p style="font-family: 'Open Sans', sans-serif;" id="caption"></p>
-        </div>
+        <footer class="page-footer grey darken-4">
+            <center>
+                <div class="container">
+                    <a href="https://www.linkedin.com/in/bhavik-naik/" target="_blank"><img src="pictures/linkedin.png" alt="linkedin"></a>
+                    <a href="https://www.instagram.com/bhavik.28/?hl=en" target="_blank"> <img src="pictures/inst.png" alt="instagram"></a>
+                    <a href="https://twitter.com/bhavikn28" target="_blank"><img src="pictures/twitterLogo.png" alt="twitter"></a>
+                    <a href="mailto:bhavik.naik28@gmail.com"><img src="pictures/email.png" alt="email"></a>
+                    <a href="https://bhaviksblogs.wordpress.com/" target="_blank"><img src="pictures/wordpress.png" alt="wordpress"></a>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        All images © 2011-2017 Bhavik Naik.
+                    </div>
+                </div>
+            </center>
+        </footer>
     </div>
     <script>
-        window.onscroll = function () {
-            scrollFunction()
-        };
+        $(".button-collapse").sideNav();
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("topbtn").style.display = "block";
-                document.getElementById("navbar").style.backgroundColor = "#242629";
-            } else {
-                document.getElementById("topbtn").style.display = "none";
-                document.getElementById("navbar").style.opacity = "#242629";
-            }
-        }
-
-        function onClick(element) {
-            document.getElementById("img1").src = element.src;
-            document.getElementById("modal").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-            document.getElementById("modal").style.zIndex = "9999";
-        }
     </script>
-
 </body>
 
 </html>

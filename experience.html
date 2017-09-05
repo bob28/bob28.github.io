@@ -2,212 +2,487 @@
 <html>
 
 <head>
-    <title>Bhavik Naik | Experience</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta name="theme-color" content="#488FEE">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Bhavik Naik</title>
+    <meta name="theme-color" content="#1b5e20">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <style>
     #header {
-        background-image: url(pictures/Paranomic.jpeg);
+        background-image: url(pictures/image61.jpg);
+        background-position: center center;
     }
     
-    #volunteer h8 {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 22px;
-        color: #D6DEDB;
-        margin-left: 3%;
-        font-weight: 500;
+    .col img {
+        padding-bottom: 14px;
+        width: 101%;
     }
     
-    #mainexp h7 {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 30px;
-        color: #AFDDEC;
-        align-items: center;
-        padding-bottom: 7px;
+    #dropdown1 li a {
+        color: #0d47a1;
     }
     
-    #volunteer a {
+    #dropdown li a {
+        color: #0d47a1;
+    }
+    
+    #headertext {
         color: white;
-        text-decoration: none;
-        font-size: 20px;
-        font-family: 'Open Sans', sans-serif;
-        margin-left: 4%;
     }
     
-    @media screen and (max-device-width: 450px) {
-        #volunteer h8 {
-            font-size: 28px;
-        }
-        #mainexp h7 {
-            font-size: 42px;
-        }
-        #volunteer a {
-            font-size: 28px;
-        }
-        #mainexp a p {
-            font-size: 28px;
-        }
-        #program a p {
-            margin-top: 1.5%;
-        }
-        #navbar {
-            height: 5%;
-        }
-    }
-    
-    #volunteer p {
-        color: white;
-        margin-left: 4%;
-        font-size: 19px;
-        font-weight: 500;
-        line-height: 1.7;
+    body {
         font-family: 'Open Sans', sans-serif;
     }
     
-    #program p {
-        color: white;
-        margin-top: -5px;
-        margin-left: 4%;
-        font-size: 19px;
-        font-weight: 500;
-        line-height: 1.7;
-        font-family: 'Open Sans', sans-serif;
+    .card-content h5 {
+        font-size: 18px;
     }
     
-    @media screen and (max-device-width: 450px) {
-        .footer img {
-            width: 37px;
-        }
-        .footer {
-            font-size: 17px;
-        }
+    .card-content .card-title {
+        font-size: 25px;
     }
     
-    @media screen and (max-device-width: 850px) and (orientation:landscape) {
-        #navbar {
-            height: 15%;
-        }
+    .container h2 {
+        font-size: 28px;
+        color: #00b0ff;
     }
     
-    #mainexp {
-        position: absolute;
-        top: 105%;
-        width: 98%;
+    .modal {
+        background-color: #292929;
     }
     
-    #volunteer {
+    .modal-content {
+        color: #e0e0e0;
+        line-height: 1.9;
+    }
+    
+    .close {
         position: relative;
-        padding-top: 1%
+        align-content: flex-end;
+    }
+    
+    #secondbox ul li strong {
+        font-weight: 700;
+    }
+    
+    .slider {
+        width: 50%;
+    }
+    
+    #secondbox ul {
+        text-align: left;
+    }
+    
+    #strong {
+        font-weight: 700;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .col {
+            width: 105%;
+        }
+        .slider {
+            width: 100%;
+        }
+        #work button {
+            margin-top: 10px;
+        }
     }
 </style>
-
-<body style="background-color: #063C84;">
-    <div id="header">
-        <div id="navbar" style="width:100%">
-            <nav1 class="shift">
-                <h1>BHAVIK NAIK</h1>
-                <ul>
-                    <li>
-                        <a href="contact.html">CONTACT</a></li>
-                    <li>
-                        <a href="experience.html">EXPERIENCE </a></li>
-
-                    <li>
-                        <a href="photography.html">PHOTOGRAPHY </a></li>
-
-                    <li>
-                        <a href="https://bhaviksblogs.wordpress.com/">BLOG</a></li>
-                    <li>
-                        <a href="index.html">HOME </a></li>
-                </ul>
-            </nav1>
+<div class="navbar-fixed">
+    <ul id="dropdown" class="dropdown-content">
+        <li><a href="photography.html">Page 1</a></li>
+        <li><a href="photography2.html">Page 2</a></li>
+        <li><a href="photography3.html">Page 3</a></li>
+    </ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="photography.html">Page 1</a></li>
+        <li><a href="photography2.html">Page 2</a></li>
+        <li><a href="photography3.html">Page 3</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper green darken-4">
+            <a id="title" class="brand-logo">BHAVIK NAIK</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="menubar" class="right hide-on-med-and-down">
+                <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+                <li><a href="https://bhaviksblogs.wordpress.com/"><i class="material-icons left">description</i>Blog</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="material-icons left">camera</i>Photography<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="experience.html"><i class="material-icons left">work</i>Experience</a></li>
+                <li><a href="contact.html"><i class="material-icons left">phone</i>Contact</a></li>
+            </ul>
+            <ul class="green darken-4 side-nav navbar-fixed" id="mobile-demo">
+                <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+                <li><a href="https://bhaviksblogs.wordpress.com/"><i class="material-icons left">description</i>Blog</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">camera</i>Photography<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="experience.html"><i class="material-icons left">work</i>Experience</a></li>
+                <li><a href="contact.html"><i class="material-icons left">phone</i>Contact</a></li>
+            </ul>
         </div>
-        <div id="name1">
-            <h5>
-				<center>EXPERIENCE</center>
-			</h5>
-        </div>
+    </nav>
+</div>
+<div id="header">
+    <div id="headertext">
+        <h1>EXPERIENCE</h1>
+        <h3>My work experiences and projects</h3>
     </div>
-    <div id="mainexp" style="">
-        <div class="hideme" id="program">
-            <center>
-                <h7>Programming Experience</h7>
-            </center>
-            <br>
-            <a>
-                <p>I have taken both ICS3U and ICS4U in high School. Throughout these courses, I have completed a lot of projects and have gained a lot of experience in Java. This also allowed me to improve my time management skills as there were due dates to follow. During ICS4U, I was given the task to create some classic games namely Asteroids and Checkers. Other games include Hangman, Tic-tac-toe, Connect 4 and Tetris.</p>
-            </a>
-            <br>
-            <a>
-                <p>In CSC148 and CSC108, introduction of computer science and computer programming at the University of Toronto, I have gained a lot of experience in Python. The projects that I had to complete allowed me use my skills in this language.</p>
-            </a>
-            <br>
-            <a>
-                <p>In CSC148, one of the assignments were to create to Tower of Hanoi game. I had to implement code to make the code work in the console and after I was finished the assignment, I had a full game of The Towers of Hanoi working in a GUI window and in the console. A feature that I had to implement was an algorithm that solves the game with the optimal number of moves from a number of disks and pegs, selected by the user.</p>
-            </a>
-            <br>
-            <a>
-                <p>Another project that I completed in CSC148 at the University of Toronto was to use Huffman coding to compress and decompress files. I had to program the functions which followed an algorithm which used Huffman Trees to compress or decompress files without losing data. </p>
-            </a>
-            <a>
-                <p>I have a lot of experience in HTML and CSS and have created many websites that showcase my work.</p>
-            </a>
-            <a>
-                <p>During my work, I used JQuery to send JSON data via network calls to a large scale program made by Kloudville.</p>
-            </a>
-        </div>
-        <div class="hideme" id="volunteer">
-            <center>
-                <h7>Work Experience</h7>
-            </center>
-            <br>
-            <h8>ZCOM Systems | May 2017 - Present</h8>
-            <a>
-                <p>I created desktop and mobile apps which connected to the Kloudville software. Used my Javascript and JQuery knowledge to create responsive websites. I passed JSON data into the network calls to edit information in the Kloudville software. Worked with FTL to create simple but effective templates for viewing documents and email updates. Tested numerous large scale websites for user interface issues and design flaws. </p>
-            </a>
-        </div>
+    <a id="scrolldown" onclick="scrolldown()" class="btn btn-floating pulse btn-floating btn-large waves-effect waves-light yellow accent-4 z-depth-2"><i class="material-icons black-text">arrow_downward</i></a>
+</div>
 
-        <div class="hideme" id="volunteer">
-            <center>
-                <h7>Volunteering and Extracurricular Experiences</h7>
-            </center>
-            <br>
-            <h8>Model United Nations | 2014 to present</h8>
-            <a>
-                <p>I have used my communication skills and my innovative ideas to solve major world issues. I joined in grade 10 and still continue to represent the University of Toronto at conferences. This experience has taught me how a communicate my ideas effectively and this allowed me to more concise when speaking my thoughts. </p>
-            </a>
-            <h8>City of Mississauga Tennis Lessons | Nov 2013 - Jan 2014</h8>
-            <a>
-                <p>I worked with the coach on improving skills of students between the ages of six to adult. I used my leadership skills to manage the students and I accurately conveyed instructions to the students. This experience made my communication skills better and I learned how to be leader in a group. </p>
-            </a>
+<body style="background-color:#292929">
+    <div id="content">
 
-            <h8>DECA | 2014</h8>
-            <a>
-                <p>I have taken part in the partner regionals in grade 11. This activity has also allowed me to gain experience in communicating ideas to people. </p>
-            </a>
-            <h8>Tennis Team | 2012 to present</h8>
-            <a>
-                <p>I represented my high school at tennis tournaments in Ontario. I also take part in the University of Toronto tennis team. I have been playing the sport for 14 years.
-                </p>
-            </a>
+        <div id="container" class="container">
+            <h2 class="green-text">Programming Experience</h2>
+            <p style="color:#e0e0e0">All the projects that I completed either as a side project, a task at a corporation or an assignment at school.</p>
+            <div class="row">
+                <center>
+                    <div id="programming" class="col s12 l6">
+                        <div class="green darken-4 card-panel hoverable">
+                            <h5 class="white-text">Barcode Scanner</h5>
+                            <span class="white-text">Zcom Systems - August 2017</span>
+                            <span class="white-text">
+                                    <p>A barcode scanner app for Android and iPhone using Cordova to display and update information for products.</p>
+                                    <button data-target="barcodescanner" class="waves-effect waves-light btn modal-trigger green darken-3">Read More</button>
+                            <div id="barcodescanner" class="modal" >
+                                <div class="modal-content">
+                                     <h4>Barcode Scanner</h4>
+                                     <p>Used Android Studio, Xcode, and Cordova to build and test a barcode scanner app. The app first asks the user to sign into the Kloudville platform. Once signed in, the user will be able to scan a barcode and receive information about the product. The user will be able to update the inventory and edit the batch of the product from the app. Every time the user scanned the barcode, updated the inventory or edited the batch, Json was passed to the Kloudville software which updated the data in the program. I individually created this application.</p>
+                                    <div class="modal-footer" style="background-color: #292929;">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
+                                    </div>
+                                 </div>
+                            </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="programming" class="col s12 l6">
+                        <div class="green darken-3 card-panel hoverable">
+                            <h5 class="white-text">Contact Us Page</h5>
+                            <span class="white-text">Zcom Systems - July 2017</span>
+                            <span class="white-text">
+                                    <p>A simple contact us page for Clearoute Inc. Once sumbitted, a contact is created in the Kloudville software.</p>
+                                 <button data-target="contactus" class="waves-effect waves-light btn modal-trigger green darken-2">Read More</button>
+                            </span>
+                            <div id="contactus" class="modal">
+                                <div class="modal-content">
+                                    <h4>Contact Us Page</h4>
+                                    <p>Used Javascript, Jquery, HTML, and CSS to create a contact page for Clearoute Inc. I had to create the form and the captcha section which would interact with the user. Once the "Contact us" button was clicked, Json was passed to the Kloudville software which created a customer or an organization in the database using network calls. I individually created this application.</p>
+                                </div>
+                                <div class="modal-footer" style="background-color: #292929;">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="row">
+                <div id="programming" class="col s12 l4">
+                    <div class="green darken-4 card-panel hoverable">
+                        <center>
+                            <h5 class="white-text">High School</h5>
+                            <span class="white-text">ICS3U and ICS4U</span>
+                            <span class="white-text">
+                                <p>Created many classic games with Java using object orientated programming.</p>
+                                 <button data-target="highschool" class="waves-effect waves-light btn modal-trigger green darken-3">Read More</button>
+                            </span>
+                            <div id="highschool" class="modal">
+                                <div class="modal-content">
+                                    <h4>High School</h4>
+                                    <p>Using Java and object oriented programming, I created many classic games. These are the games I created:</p>
+                                    <div class="row">
+                                        <div class="col s6">
+                                            <ul>
+                                                <li>Checkers</li>
+                                                <li>Tetris</li>
+                                                <li>Connect 4</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col s6">
+                                            <ul>
+                                                <li>Asteroids</li>
+                                                <li>Hangman</li>
+                                                <li>Tick Tac Toe</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>Additionally, I also experimented with data files for reading and writing. Using this knowledge, I was able to create a calendar application to display information for specfic dates. Everytime the user created a event, the data was saved in a text file.</p>
+                                </div>
+                                <div class="modal-footer" style="background-color: #292929;">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
 
+                <div id="programming" class="col s12 l4">
+                    <div class="green darken-3 card-panel hoverable">
+                        <center>
+                            <h5 class="white-text">Towers of Hanoi</h5>
+                            <span class="white-text">CSC148 - University of Toronto</span>
+                            <span class="white-text">
+                                <p>Created a GUI enabled game with an algorthim that solves the game.</p>
+                                <button data-target="towersOfHanoi" class="waves-effect waves-light btn modal-trigger green darken-2">Read More</button>
+                            </span>
+                            <div id="towersOfHanoi" class="modal">
+                                <div class="modal-content align-center">
+                                    <h4>Towers of Hanoi</h4>
+                                    <p>Using Python, I was able to create a fully functional GUI enabled version of the game. I also was able to create an AI which solved the game with the least amount of moves from the number disks and towers chosen by the user. Once the user had entered the information, the console window would show the entire game being solved, step by step. </p>
+                                </div>
+                                <div class="modal-footer" style="background-color: #292929;">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div id="programming" class="col s12 l4">
+                    <div class="green darken-4 card-panel hoverable">
+                        <center>
+                            <h5 class="white-text">Huffman Coding</h5>
+                            <span class="white-text">CSC148 - University of Toronto </span>
+                            <span class="white-text">
+                                <p>A program that compresses and decompresses files using Huffman Trees.</p>
+                                <button data-target="huffman" class="waves-effect waves-light btn modal-trigger green darken-3">Read More</button>
+                            </span>
+                            <div id="huffman" class="modal">
+                                <div class="modal-content align-center">
+                                    <h4>Huffman Coding</h4>
+                                    <p>The task was to create a compressing and decompressing program which used Huffman trees. Using the node class, I had to construct and traverse Huffman trees to store and collect data. Once the nine functions were written, I was able to compress and decompress any types of files without the loss of any data. The code was written in Python using object oriented programming.</p>
+                                </div>
+                                <div class="modal-footer" style="background-color: #292929;">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div style="border-color:white" class="footer hideme">
+        <div id="container" class="container">
+            <h2 class="teal-text">Work Experience</h2>
+            <div class="col s12">
+                <div id="introtext" class="teal darken-3 card-panel z-depth-5">
+                    <center>
+                        <h5 class="white-text">Zcom Systems </h5>
+                        <span class="white-text">May 2017 - August 2017</span>
+                        <br>
+                        <span class="white-text">Developer	Intern</span>
+                        <br>
+                        <span class="white-text">In a four-month internship, I excelled myself in numerous computer science areas, especially in web development.</span>
+
+                        <div class="row" id="work">
+                            <br>
+                            <div class="col s12 m6">
+                                <button data-target="SkillsZ" class="waves-effect waves-light btn modal-trigger teal darken-2">Skills I learnt</button>
+
+                            </div>
+                            <div class="col s12 m6">
+                                <button data-target="projectsZ" class="waves-effect waves-light btn modal-trigger teal darken-2">Accomplishments</button>
+                            </div>
+                        </div>
+                    </center>
+                    <div id="SkillsZ" class="modal">
+                        <div class="modal-content align-center">
+                            <h4 style="text-align:center">Skills I Learnt</h4>
+                            <ul>
+                                <li><strong id="strong">JAVASCRIPT:</strong> During the four months, I was able to develop myself into the web development spectrum with Javascript. Throughout the assignments I accomplished during the time, Javascript was an important tool that I used a lot to create websites and apps.</li>
+                                <br>
+                                <li><strong id="strong">JQUERY:</strong> This internship gave me a lot of experience in JQuery and it allowed to me to learn an important tool in web development. When entering this internship, I had no experience in the language but with the help of my co-workers, I was able to enhance myself and complete projects with ease.</li>
+                                <br>
+                                <li><strong id="strong">CORDOVA:</strong> While making a barcode scanner app, I had to use Cordova to create the app for Android and iOS. I had to use a barcode plugin that scans both barcodes and QR codes. Other plugins were the date and time picker and a permission component to ask for camera permissions.</li>
+                                <br>
+                                <li><strong id="strong">FTL (FreeMarker Template Language):</strong> I had to use FTL to create and update email templates for Kloudville. The Java library was used for receiving data and updating information for multiple email reminders that were sent to customers. </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer" style="background-color: #292929;">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
+                        </div>
+                    </div>
+                    <div id="projectsZ" class="modal">
+                        <div class="modal-content align-center">
+                            <h4 style="text-align:center">Accomplishments</h4>
+                            <ul>
+                                <li><strong id="strong">BARCODE SCANNER:</strong> A barcode scanner app for Android and iPhone using Cordova to display and update information for products.</li>
+                                <br>
+                                <li><strong id="strong">CONTACT US PAGE:</strong> A simple contact us page for Clearoute Inc. Once submitted, a contact is created in the Kloudville software.</li>
+                                <br>
+                                <li><strong id="strong">I'M RECRUITABLE TESTING:</strong> Tested the I'm Recruitable website for bugs, UI issues and more. I had to go page per page for any flaws with the launch of the new website. Tested both the desktop site and the mobile site for any issues.</li>
+                                <br>
+                                <li><strong id="strong">TEMPLATES:</strong> XML and FTL were used to update and fix templates for both emails and documents that are displayed when the user wants information for certain products and shipments. </li>
+                                <br>
+                                <li><strong id="strong">PDIVILLE:</strong> Assisted in creating a website for customers to upload and edit information for products and services using the Kloudville software. Used Javascript and JQuery to send and receive information from the user. </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer" style="background-color: #292929;">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container" class="container">
+            <h2 class="indigo-text">Volunteering and Extra-Curricular Activities</h2>
+            <p style="color:#e0e0e0">The volunteering experiences and the extra-curricular activities I did at school.</p>
+            <div class="row">
+                <div class="col s12 l3">
+                    <div class="indigo darken-3 card-panel hoverable">
+                        <center>
+                            <h5 class="white-text">Tennis Coaching</h5>
+                            <span class="white-text">Nov 2013 - Jan 2014</span>
+                            <br>
+                            <span class="white-text">Volunteering</span>
+                            <br>
+                            <br>
+                            <button data-target="tennislessons" class="waves-effect waves-light btn modal-trigger indigo darken-2">READ MORE</button>
+                            <div id="tennislessons" class="modal">
+                                <div class="modal-content align-center">
+                                    <h4 style="text-align:center">City of Mississauga Tennis Lessons</h4>
+                                    <p>I volunteered with the coach on improving skills of students between the ages of six to adult. This experience made my communication skills better and I learned how to be a leader in a group. I volunteered for over 60 hours for the City of Mississauga.</p>
+                                </div>
+                                <div class="modal-footer" style="background-color: #292929;">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div class="col s12 l3">
+                    <div class="indigo darken-4 card-panel hoverable">
+                        <center>
+                            <h5 class="white-text">Model United Nations</h5>
+                            <span class="white-text">2014-Present</span>
+                            <br>
+                            <span class="white-text">Extra-Curricular Activity</span>
+                            <br>
+                            <br>
+                            <button data-target="modelUn" class="waves-effect waves-light btn modal-trigger indigo darken-3">READ MORE</button>
+                            <div id="modelUn" class="modal">
+                                <div class="modal-content align-center">
+                                    <h4 style="text-align:center">Model United Nations</h4>
+                                    <p>I enhanced my communication skills and my innovative ideas to solve major world issues. I joined the club in grade 10 and still continue to represent the University of Toronto at conferences. These experiences have taught me how a communicate my ideas effectively and this allowed me to more concise when speaking my thoughts. I also represented my high school at the Upper Canada College Model UN conference.</p>
+                                </div>
+                                <div class="modal-footer" style="background-color: #292929;">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div class="col s12 l3">
+                    <div class="indigo darken-3 card-panel hoverable">
+                        <center>
+                            <h5 class="white-text">DECA</h5>
+                            <span class="white-text">2014</span>
+                            <br>
+                            <span class="white-text">Extra-Curricular Activity</span>
+                            <br>
+                            <br>
+                            <button data-target="deca" class="waves-effect waves-light btn modal-trigger indigo darken-2">READ MORE</button>
+                            <div id="deca" class="modal">
+                                <div class="modal-content align-center">
+                                    <h4 style="text-align:center">DECA</h4>
+                                    <p>I took part in the partner regionals in grade 11. My partner and I had to create a presentation to a judge about a certain topic that was given to us. We had 10 minutes to set an outline and present the idea. This activity helped me work under stressful circumstances and improved my communication skills.</p>
+                                </div>
+                                <div class="modal-footer" style="background-color: #292929;">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div class="col s12 l3">
+                    <div class="indigo darken-4 card-panel hoverable">
+                        <center>
+                            <h5 class="white-text">Tennis Team</h5>
+                            <span class="white-text">2012 to Present </span>
+                            <br>
+                            <span class="white-text">Extra-Curricular Activity</span>
+                            <br>
+                            <br>
+                            <button data-target="tennisteam" class="waves-effect waves-light btn modal-trigger indigo darken-3">READ MORE</button>
+                            <div id="tennisteam" class="modal">
+                                <div class="modal-content align-center">
+                                    <h4 style="text-align:center">Tennis Team</h4>
+                                    <p>I represented my high school at tennis tournaments in Ontario. I also take part in the University of Toronto tennis team. I have been playing the sport for 14 years and currently am playing club level tennis.</p>
+                                </div>
+                                <div class="modal-footer" style="background-color: #292929;">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container" class="container">
+            <h2 class="deep-purple-text">Education</h2>
+            <div class="row">
+                <div class="col s12 l6">
+                    <div class="purple darken-4 card-panel hoverable white-text">
+                        <center>
+                            <h5>John Cabot Catholic Secondary School</h5>
+                            <span>September 2012 - June 2016</span>
+                            <br>
+                            <span>High School Diploma</span>
+                            <br>
+                            <span>Honor Roll (2012-2016) | Perfect Attendance (2014)</span>
+
+                        </center>
+                    </div>
+                </div>
+                <div class="col s12 l6">
+                    <div class="purple darken-4 card-panel hoverable white-text">
+                        <center>
+                            <h5>University of Toronto</h5>
+                            <span>September 2016-Present</span>
+                            <br>
+                            <span>Bachelor of Science</span>
+                            <br>
+                            <span>Majoring in Computer Science</span>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer grey darken-4">
             <center>
+                <div class="container">
+                    <a href="https://www.linkedin.com/in/bhavik-naik/" target="_blank"><img src="pictures/linkedin.png" alt="linkedin"></a>
+                    <a href="https://www.instagram.com/bhavik.28/?hl=en" target="_blank"> <img src="pictures/inst.png" alt="instagram"></a>
+                    <a href="https://twitter.com/bhavikn28" target="_blank"><img src="pictures/twitterLogo.png" alt="twitter"></a>
+                    <a href="mailto:bhavik.naik28@gmail.com"><img src="pictures/email.png" alt="email"></a>
+                    <a href="https://bhaviksblogs.wordpress.com/" target="_blank"><img src="pictures/wordpress.png" alt="wordpress"></a>
+                    <br>
+                    <br> © Bhavik Naik 2017
+                </div>
                 <br>
-                <a href="https://www.linkedin.com/in/bhavik-naik/" target="_blank"><img src="pictures/linkedin.png" alt="linkedin"></a>
-                <a href="https://www.instagram.com/bhavik.28/?hl=en" target="_blank"> <img src="pictures/inst.png" alt="instagram"></a>
-                <a href="https://twitter.com/bhavikn28" target="_blank"><img src="pictures/twitterLogo.png" alt="twitter"></a>
-                <a href="mailto:bhavik.naik28@gmail.com"><img src="pictures/email.png" alt="email"></a>
-                <br>
-                <p>© 2017 Bhavik Naik. All Rights Reserved.</p>
             </center>
-        </div>
+        </footer>
     </div>
+    <script>
+        $(".button-collapse").sideNav();
+        $(document).ready(function () {
+            $('.parallax').parallax();
+            $('.modal').modal({
+                dismissible: true, // Modal can be dismissed by clicking outside of the modal
+                opacity: 0.7, // Opacity of modal background
+                inDuration: 300, // Transition in duration
+                outDuration: 300, // Transition out duration
+                startingTop: '50%'
+            });
+            $('.slider').slider();
+        });
+    </script>
 </body>
 
 </html>
