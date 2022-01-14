@@ -111,30 +111,24 @@
         </div>
     </div>
 
-
-
-
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-    <script type="module" src="js/js.cookie.min.mjs"></script>
-    <script nomodule defer src="js/js.cookie.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script src="js/newscript.js"></script>
     <script type="module">
-        if (typeof Cookies.get("seen_splash") !== "undefined") {
+        consoleText(['Hi!', 'I\'m Bhavik'], 'text', ['#e76f51', '#2a9d8f']);
+        if ($.cookie('seenSplash') == undefined){ 
             var splash = document.getElementsByClassName("splash");
             window.addEventListener('DOMContentLoaded', (e) => {
                 setTimeout(() => {
                     splash[0].classList.add("display-none");
-                }, 2000);
-            })
+                }, 5000);
+            }); 
+            $.cookie('seenSplash', 'true', { expires: 5 });
         }
-        Cookies.set("seen_splash", true, {
-            expires: 5
-        });
       </script>
-</body> 
+</body>
 
 </html>

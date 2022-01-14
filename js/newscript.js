@@ -1,9 +1,9 @@
-var splash = document.getElementsByClassName("splash");
-window.addEventListener('DOMContentLoaded', (e) => {
-  setTimeout(() => {
-    splash[0].classList.add("display-none");
-  }, 2000);
-})
+// var splash = document.getElementsByClassName("splash");
+// window.addEventListener('DOMContentLoaded', (e) => {
+//   setTimeout(() => {
+//     splash[0].classList.add("display-none");
+//   }, 5000);
+// })
 
 $('.toggle-menu').click(function () {
   $(this).toggleClass('active');
@@ -15,26 +15,10 @@ function setBackgroundColour(color) {
   document.getElementById('menu').style.backgroundColor = color;
 }
 
-mybutton = document.getElementById("gototopbutton");
-window.onscroll = function () {
-  scrollFunction()
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
 function goToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-// function([string1, string2],target id,[color1,color2])    
-consoleText(['Hi!', 'I\'m Bhavik'], 'text', ['#e76f51', '#2a9d8f']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
