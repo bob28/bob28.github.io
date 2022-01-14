@@ -118,8 +118,11 @@
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script src="js/newscript.js"></script>
     <script type="module">
-        consoleText(['Hi!', 'I\'m Bhavik'], 'text', ['#e76f51', '#2a9d8f']);
-        if ($.cookie('seenSplash') == undefined){ 
+        if ($.cookie('seenSplash') == 'true'){ 
+            $('.splash').remove();
+        }
+        else{ 
+            consoleText(['Hi!', 'I\'m Bhavik'], 'text', ['#e76f51', '#2a9d8f']);
             var splash = document.getElementsByClassName("splash");
             window.addEventListener('DOMContentLoaded', (e) => {
                 setTimeout(() => {
