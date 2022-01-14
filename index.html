@@ -26,7 +26,7 @@
 
     </div>
     <nav class="nav">
-        <button class="toggle-menu" style="background-color: var(--second)">
+        <button class="toggle-menu" >
             <span></span>
         </button>
     </nav>
@@ -98,16 +98,21 @@
     </div>
     <div id="outer" class="container mx-auto">
         <div id="inner" class="hometext mx-auto fade-in">
-            <p><span>Hi!</span> I am <span>Bhavik Naik</span>, a developer in the
-                <span>Greater Toronto Area</span>. I have over <span>5 years</span> of experience in a wide range of
-                topics, from <span>web design</span> to
-                <span> blockchain network</span> creation. I am currently projected to complete my <span>Masters in
+            <p><span>Welcome!</span> I'm <span>Bhavik Naik</span>, a developer in the
+                <span>Greater Toronto Area</span>. I have over <span style="color:var(--third)">5 years</span> of
+                experience in a wide range of
+                topics, from <span style="color:var(--third)">web design</span> to
+                <span style="color:var(--third)"> blockchain network</span> creation. I am  projected to
+                complete my <span style="color:var(--fourth)">Masters in
                     I.T
-                    Security</span> in August 2022. Have a look at my <span><a href="resume.html">resume</a></span>
+                    Security</span> in August 2022. Have a look at my <span><a style="color:var(--sixth)"
+                        href="resume.html">resume</a></span>
                 to
-                see my experiences so far! Outside of development, I am a <span> freelance <a href="photography.html">
-                        photographer</a></span>, an <span>Enactus alumni</span>, and I enjoy playing <span>tennis</span>
-                and <span>writing!</span> I look forward working with you!</p>
+                see my experiences so far! Outside of development, I am a <span style="color:var(--fifth)"> freelance <a
+                        style="color:var(--fifth)" href="photography.html">
+                        photographer</a></span>, an <span style="color:var(--fifth)">Enactus alumni</span>, and I enjoy
+                playing <span style="color:var(--fifth)">tennis</span>
+                and <span style="color:var(--fifth )">writing!</span> I look forward working with you!</p>
         </div>
     </div>
 
@@ -122,7 +127,7 @@
             $('.splash').remove();
         }
         else{ 
-            consoleText(['Hi!', 'I\'m Bhavik'], 'text', ['#e76f51', '#2a9d8f']);
+            consoleText(['Hi!', 'I\'m Bhavik!'], 'text', ['#e76f51', '#2a9d8f']);
             var splash = document.getElementsByClassName("splash");
             window.addEventListener('DOMContentLoaded', (e) => {
                 setTimeout(() => {

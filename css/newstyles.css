@@ -752,19 +752,19 @@ body {
 }
 
 #gototopbutton:hover {
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .language i {
-    color: var(--second)
+    color: var(--fourth);
 }
 
 .framework i {
-    color: var(--fourth)
+    color: var(--fifth);
 }
 
 .other i {
-    color: var(--fifth)
+    color: var(--sixth);
 }
 
 .footer {
@@ -782,19 +782,38 @@ body {
     color: #e1e1e1
 }
 
+.footersocials a :hover {
+    opacity: 0.6;
+}
+
 .console-container {
-font-size: 2em;
-text-align: center;
-/* height: 200px; */
-width: 75%;
-display: block;
-position: absolute;
-color: white;
-top: 35vh;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
+    font-size: 2em;
+    text-align: center;
+    /* height: 200px; */
+    width: 75%;
+    display: block;
+    position: absolute;
+    color: white;
+    top: 35vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.downloadResume {
+    background-color: var(--third);
+    border: 0;
+    font-weight: bold;
+    color: #242424
+}
+
+.downloadResume:hover,
+.downloadResume:focus,
+.downloadResume:active {
+    background-color: var(--first);
+    border: 0;
+    box-shadow:0px 0px 0px 0px
 }
 
 .console-underscore {
@@ -972,7 +991,7 @@ margin: auto;
         margin-left: -8%;
     }
 
-    .console-container{
+    .console-container {
         font-size: 5rem;
         width: 50%;
     }
