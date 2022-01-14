@@ -5,324 +5,136 @@
     <title>Bhavik Naik</title>
     <meta name="theme-color" content="#0277bd">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="Bhavik Naik" content="Hello. welcome to Bhavik Naik's website. I am a photographer, designer, blogger and programmer.
-                                                                    Come check out my recent pictures and blog posts!">
-    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/script.js"></script>
+    <meta name="Bhavik Naik" content="Hello. welcome to Bhavik Naik's website. I am a programmer & photographer.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/newstyles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 </head>
-<style>
-    #header {
-        background-image: url(pictures/image59.jpeg);
-    }
-    
-    #main {
-        position: absolute;
-        top: 102%;
-        width: 100%;
-    }
-    
-    .card-action {
-        text-align: left;
-    }
-    
-    #dropdown1 li a {
-        color: #1565c0;
-    }
-    
-    #dropdown li a {
-        color: #1565c0;
-    }
-    
-    #rowpictures img {
-        width: 100%;
-    }
-    
-    .nav-wrapper {
-        font-family: 'Ubuntu', sans-serif;
-    }
-    
-    .container h2 {
-        color: #1565c0;
-        font-size: 30px;
-    }
-    
-    .container p a {
-        color: #00c853
-    }
-    
-    .card-panel {
-        background-color: #1565c0;
-    }
-    
-    .card-panel h5 {
-        color: #00c853;
-    }
-    
-    p a {
-        color: #1565c0
-    }
-    
-    #introtext a {
-        color: #004cff;
-    }
-    
-    #blogcontainer {
-        border-top: 3px solid #00c853;
-    }
-    
-    #skills {
-        border-top: 3px solid #00c853;
-    }
-    
-    .slides img {
-        filter: brightness(75%);
-    }
-    
-    body {
-        font-family: 'Open Sans', sans-serif;
-    }
-    
-    #instagram {
-        width: 100%;
-    }
-    
-    @media screen and (max-width: 500px) {
-        #content1 {
-            width: 100%;
-        }
-        #rowpictures img {
-            padding-bottom: 10px;
-            width: 101%;
-        }
-        .card .card-action {
-            padding: 10px 24px;
-        }
-    }
-</style>
 
-
-<div class="navbar-fixed">
-    <ul id="dropdown" class="dropdown-content">
-        <li><a href="photography.html">Page 1</a></li>
-        <li><a href="photography2.html">Page 2</a></li>
-        <li><a href="photography3.html">Page 3</a></li>
-    </ul>
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="photography.html">Page 1</a></li>
-        <li><a href="photography2.html">Page 2</a></li>
-        <li><a href="photography3.html">Page 3</a></li>
-    </ul>
-    <nav>
-        <div id="navbar" class="blue darken-3 nav-wrapper">
-            <a id="title" class="brand-logo">BHAVIK NAIK</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul id="menubar" class="right hide-on-med-and-down">
-                <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
-                <li><a href="https://bhaviksblogs.wordpress.com/"><i class="material-icons left">description</i>Bhavik's Blurs</a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="material-icons left">camera</i>Photography<i class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a href="experience.html"><i class="material-icons left">work</i>Experience</a></li>
-                <li><a href="contact.html"><i class="material-icons left">phone</i>Contact</a></li>
-            </ul>
-            <ul class="blue darken-3 side-nav navbar-fixed" id="mobile-demo">
-                <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
-                <li><a href="https://bhaviksblogs.wordpress.com/"><i class="material-icons left">description</i>Blog</a></li>
-                <li><a href="https://bobstechsupport.wordpress.com/"><i class="material-icons left">star</i>Bob's Tech Support</a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">camera</i>Photography<i class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a href="experience.html"><i class="material-icons left">work</i>Experience</a></li>
-                <li><a href="contact.html"><i class="material-icons left">phone</i>Contact</a></li>
-            </ul>
+<body>
+    <div class="splash my-auto">
+        <div class='console-container'><span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
         </div>
-    </nav>
-</div>
-<div id="header">
-    <div id="headertext">
-        <h1>BHAVIK NAIK</h1>
-        <h3>Developer | Designer | Photographer | Blogger</h3>
+
     </div>
-    <a id="scrolldown" onclick="scrolldown()" class="btn btn-floating pulse btn-floating btn-large waves-effect waves-light green accent-4 z-depth-2"><i class="material-icons">arrow_downward</i></a>
-</div>
-
-<body class="light-blue lighten-4 ">
-    <div id="main">
-        <div class="section">
-            <div id="container" class="row container">
-                <div class="row">
-                    <div class="col s12">
-                        <div id="introtext" class="card-panel z-depth-5 green accent-4">
-                            <center>
-                                <p class="black-text">
-                                    Hello, my name is Bhavik Naik. I am an undergraduate student at the University of Ontario Institute of Technology (Ontario Tech University), majoring in networking and I.T security. I am also a blogger and a photographer. You can find my photography <a href="photography.html">here.</a> You can read my blog posts at <a href="https://bhaviksblogs.wordpress.com/" target="_blank">this site.</a> You can send me any inquiries or feedback in the <a href="contact.html">contact page</a> form!
-                                </p>
-                            </center>
-                        </div>
-                    </div>
+    <nav class="nav">
+        <button class="toggle-menu" style="background-color: var(--second)">
+            <span></span>
+        </button>
+    </nav>
+    <div id="menu" class="">
+        <nav class="main-nav">
+            <div class="row mx-auto" id="fadein">
+                <!-- <div class="col-md-5 my-auto"> -->
+                <ul>
+                    <li>
+                        <a class="mx-auto" onmouseover="setBackgroundColour('var(--third)')"
+                            onmouseout="setBackgroundColour('var(--second)')" href="resume.html">
+                            Resume.
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a class="mx-auto" onmouseover="setBackgroundColour('var(--fourth)')"
+                            onmouseout="setBackgroundColour('var(--second)')" href="#">
+                            Projects.
+                        </a>
+                    </li> -->
+                    <li>
+                        <a class="mx-auto" onmouseover="setBackgroundColour('var(--fifth)')"
+                            onmouseout="setBackgroundColour('var(--second)')" href="photography.html">
+                            Photography.
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mx-auto" onmouseover="setBackgroundColour('var(--sixth)')"
+                            onmouseout="setBackgroundColour('var(--second)')" href="https://bhaviksblogs.wordpress.com/"
+                            id="blogmenu" target="_blank">
+                            Blog.
+                        </a>
+                    </li>
+                </ul>
+                <hr class="mx-auto">
+                <div class="contact" id="fadein">
+                    <a href="mailto:bhavik.naik28@gmail.com" class="mx-auto email">
+                        <p>bhavik.naik28@gmail.com</p>
+                    </a>
+                    <p>Mississauga, Ontario, Canada</p>
+                    <p>647-862-2809</p>
                 </div>
-
-                <div id="skills">
-                    <h2 style="color:#1565c0">My Skills and Abilities</h2>
-                    <div class="row">
-                        <div class="col s12 m6">
-                            <div class="card-panel z-depth-3">
-                                <center>
-                                    <h5>Computer Science</h5>
-                                    <span class="white-text">These are the programming languages and applications I have used: </span>
-                                    <span class="white-text">
-                                <ul>
-                                    <div class="row">
-                                        <div class="col s6">
-                                            <li>Java</li>
-                                            <li>Python</li>
-                                            <li>Javascript</li>
-                                            <li>FTL</li>
-                                            <li>Cordova</li>
-                                            <li>C</li>
-                                            <li>Express.JS</li>
-                                            <li>Cisco Networking Devices </li>
-                                            <li>Latex</li>
-                                            <li>Bash and Unix </li>
-                                        </div>
-                                        <div class="col s6">
-                                            <li>Jquery</li>
-                                            <li>HTML and CSS</li>
-                                            <li>Android Studio</li>
-                                            <li>XML</li>
-                                            <li>Git</li>
-                                            <li>Angular.JS</li>
-                                            <li>Wordpress</li>
-                                            <li>JSON</li>
-                                            <li>Node.JS</li>
-                                            <li>Object Oriented Design  </li>
-                                        </div>
-                                    </div>
-                                </ul>                           
-                            </span>
-                                </center>
-                            </div>
-                        </div>
-                        <div class="col s12 m6">
-                            <div class="card-panel z-depth-3">
-                                <center>
-                                    <h5>Graphic Design</h5>
-                                    <span class="white-text">These are the programs which I have experience in:</span>
-                                    <span class="white-text">
-                                <ul>
-                                    <div class="row">
-                                        <div class="col s6">
-                                            <li>Adobe Photoshop</li>
-                                            <li>Adobe Illustrator</li>
-                                            <li>Adobe Dreamweaver</li>
-                                            <li>GIMP</li>
-                                            <li>Lightworks</li>
-                                        </div>
-                                        <div class="col s6">
-                                            <li>Adobe After Effects</li>
-                                            <li>Adobe Indesign</li>
-                                            <li>Adobe Premiere</li>
-                                            <li>Inkscape</li>
-                                            <li>Gravit</li>
-                                        </div>
-                                    </div>
-                                </ul>                           
-                            </span>
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="parallax-container">
-            <div class="parallax"><img src="pictures/image5.jpg"></div>
-        </div>
-        <div class="section">
-            <div id="container" class="row container recentPics">
-                <h2 style="color:#1565c0">Recent Pictures</h2>
-                <p class="grey-text text-darken-3">These are the most recent pictures that I have taken. To see my entire collection, click <a href="photography.html">here.</a></p>
-                <div id="rowpictures" class="row">
-                    <div class="col s12 m4">
-                        <img src="pictures/image65.jpeg" class="materialboxed" alt="Red Sunsets">
-                    </div>
-                    <div class="col s12 m4">
-                        <img src="pictures/image63.jpeg" class="materialboxed" alt="Sunsets in the car">
-                    </div>
-                    <div class="col s12 m4">
-                        <img src="pictures/image67.jpg" class="materialboxed" alt="Ports in Kingston, Ontario">
-                    </div>
-
-                </div>
-            </div>
-            <div id="blogcontainer" class="row container">
-                <h2>Blog Posts</h2>
-                <p class="grey-text text-darken-3">These are some of the long editorials that I have written. They range from a wide array of topics<a href="https://bhaviksblogs.wordpress.com/">this page. </a>To find out more about what I write on, click <a href="https://bhaviksblogs.wordpress.com/2017/05/27/welcome-to-my-blog/">here.</a></p>
-                <div class="slider">
-                    <ul class="slides">
+                <nav class="footer-nav">
+                    <ul>
                         <li>
-                            <img src="pictures/UofT.jpg">
-                            <div class="caption left-align">
-                                  <h4>Series | The Problems With The Ontario Post-Secondary School System</h4>
-                                <h6 class="light white-text text-lighten-3"></h6>
-                                <br>
-                                <a class="waves-effect waves-light btn green accent-4 black-text" target="_blank" href="https://bhaviksblogs.wordpress.com/category/series-the-problems-with-the-ontario-post-secondary-school-system/" target="_blank">Read Full Series</a>
-                            </div>
+                            <a target="_blank" href="https://www.linkedin.com/in/bhavik-naik/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
                         </li>
                         <li>
-                            <img src="pictures/polar-bear.jpg">
-                            <div class="caption left-align">
-                                <h4>Global Warming | The Series</h4>
-                                <br>
-                                <a class="waves-effect waves-light btn green accent-4 black-text" target="_blank" href="https://bhaviksblogs.wordpress.com/tag/global-warming/" target="_blank">Read Full Post</a>
-                            </div>
+                            <a target="_blank" href="https://twitter.com/bhavikn28">
+                                <i class="fab fa-twitter"></i>
+                            </a>
                         </li>
                         <li>
-                            <img src="pictures/image37.jpg">
-                            <div class="caption left-align">
-                                <h4>A Picture With A Story | The Series</h4>
-                                <h6 class="light white-text text-lighten-3">A collection of true stories that give context to the images that I have taken                                    "</h6>
-                                <br>
-                                <a class="waves-effect waves-light btn green accent-4 black-text" target="_blank" href="https://bhaviksblogs.wordpress.com/category/a-picture-with-a-story/" target="_blank">Read Full Post</a>
-                            </div>
+                            <a target="_blank" href="https://www.instagram.com/bhavikn28/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="mailto:bhavik.naik28@gmail.com">
+                                <i class="fas fa-at"></i>
+                            </a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </div>
-        <footer class="page-footer blue darken-3">
-            <center>
-                <div class="container">
-                    <a href="https://www.linkedin.com/in/bhavik-naik/" target="_blank"><img src="pictures/linkedin.png" alt="linkedin"></a>
-                    <a href="https://www.instagram.com/bhavik.28/?hl=en" target="_blank"> <img src="pictures/inst.png" alt="instagram"></a>
-                    <a href="https://twitter.com/bhavikn28" target="_blank"><img src="pictures/twitterLogo.png" alt="twitter"></a>
-                    <a href="mailto:bhavik.naik28@gmail.com"><img src="pictures/email.png" alt="email"></a>
-                    <a href="https://bhaviksblogs.wordpress.com/" target="_blank"><img src="pictures/wordpress.png" alt="wordpress"></a>
-                </div>
-                <div class="footer">
-                    <div class="container">
-                        <br> © Bhavik Naik 2018
-                    </div>
-                </div>
-                <br>
-            </center>
-        </footer>
+        </nav>
     </div>
-    <script>
-        $(".button-collapse").sideNav();
-        $(document).ready(function () {
-            $('.parallax').parallax();
-            $('.slider').slider();
-        });
+    <div id="outer" class="container mx-auto">
+        <div id="inner" class="hometext mx-auto fade-in">
+            <p><span>Hi!</span> I am <span>Bhavik Naik</span>, a developer in the
+                <span>Greater Toronto Area</span>. I have over <span>5 years</span> of experience in a wide range of
+                topics, from <span>web design</span> to
+                <span> blockchain network</span> creation. I am currently projected to complete my <span>Masters in
+                    I.T
+                    Security</span> in August 2022. Have a look at my <span><a href="resume.html">resume</a></span>
+                to
+                see my experiences so far! Outside of development, I am a <span> freelance <a href="photography.html">
+                        photographer</a></span>, an <span>Enactus alumni</span>, and I enjoy playing <span>tennis</span>
+                and <span>writing!</span> I look forward working with you!</p>
+        </div>
+    </div>
 
-        function scrolldown() {
-            $('html,body').animate({
-                    scrollTop: $("#main").offset().top - 60
-                },
-                'slow');
-        }
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <script type="module" src="js/js.cookie.min.mjs"></script>
+    <script nomodule defer src="js/js.cookie.min.js"></script>
+    <script src="js/newscript.js"></script>
+    <script type="module">
+        if (typeof Cookies.get("seen_splash") !== "undefined") {
+            var splash = document.getElementsByClassName("splash");
+            window.addEventListener('DOMContentLoaded', (e) => {
+                setTimeout(() => {
+                    splash[0].classList.add("display-none");
+                }, 2000);
+            })
+        }
+        Cookies.set("seen_splash", true, {
+            expires: 5
+        });
+      </script>
 </body>
 
 </html>
