@@ -388,6 +388,7 @@ body {
     text-overflow: inherit;
     line-height: 150%;
     font-size: 1.25rem;
+    text-align: center;
 }
 
 .timeline-row .timeline-content p {
@@ -954,6 +955,15 @@ body {
 
  .homeread:hover{
      background-color: var(--second) !important;
+ }
+
+ #skillsExperience{
+    color:var(--sixth);
+    font-weight:bold;
+ }
+
+ .modal-content{
+    text-align: left;
  }
  
 
