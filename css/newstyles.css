@@ -742,9 +742,9 @@ body {
     bottom: 20px;
     right: 30px;
     border: none;
-    width: 50px;
-    z-index: 1;
-    height: 50px;
+    width: 70px;
+    z-index: 4;
+    height: 70px;
     font-weight: bold;
     outline: none;
     background-color: var(--third);
@@ -752,12 +752,12 @@ body {
     cursor: pointer;
     padding: 5px;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 30px;
 }
 
-#gototopbutton:hover {
+/* #gototopbutton:hover {
     opacity: 0.6;
-}
+} */
 
 .language i {
     color: var(--fourth);
@@ -874,44 +874,44 @@ body {
 
 .contactcard {
     position: absolute;
-    float:left;
+    float: left;
     text-align: left;
     top: 50%;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     padding: 2rem 3rem;
     border-radius: 17px;
     /* background: rgba(36, 36, 36, 0.5); */
 }
 
-.contactcard a{
+.contactcard a {
     color: #fbfbfb;
     text-decoration: none;
 }
 
-.contactcard a:hover{
+.contactcard a:hover {
     opacity: 0.6 !important;
 }
 
-.contactsocials{ 
+.contactsocials {
     display: inline-block;
     padding: 0;
     margin: 0 !important;
-    
+
 }
 
-.contactsocials li{ 
+.contactsocials li {
     display: inline-block;
     text-align: left;
-    color: #FAFAFA ;
+    color: #FAFAFA;
 }
 
-.contactsocials a{
-    color: #FAFAFA ;
+.contactsocials a {
+    color: #FAFAFA;
 }
 
-.contactsocials i{
+.contactsocials i {
     /* font-size: 16px; */
 }
 
@@ -920,52 +920,113 @@ body {
     margin-bottom: 1%;
 }
 
-.labelsanswers{
+.labelsanswers {
     /* margin-bottom: 10%; */
 }
 
 .contactcardmobile {
     position: absolute;
-    float:left;
+    float: left;
     text-align: left;
     top: 50%;
     left: 2%;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     padding: 2rem 2rem;
     border-radius: 17px;
     background: rgba(36, 36, 36, 0.5);
- }
+}
 
- .desktopcontact{
-     position: relative;
-     width: 75%;
- }
+.desktopcontact {
+    position: relative;
+    width: 75%;
+}
 
- 
- .contactcardmobile a{
-     color: #fbfbfb;
-     text-decoration: none;
- }
- 
- .contactcardmobile a:hover{
-     opacity: 0.6 !important;
- }
 
- .homeread:hover{
-     background-color: var(--second) !important;
- }
+.contactcardmobile a {
+    color: #fbfbfb;
+    text-decoration: none;
+}
 
- #skillsExperience{
-    color:var(--sixth);
-    font-weight:bold;
- }
+.contactcardmobile a:hover {
+    opacity: 0.6 !important;
+}
 
- .modal-content{
+.homeread:hover {
+    background-color: var(--second) !important;
+}
+
+#skillsExperience {
+    color: var(--sixth);
+    font-weight: bold;
+}
+
+.modal-content {
     text-align: left;
- }
- 
+}
+
+.loader {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* filter: blur(10px) ; */
+}
+
+.blob-1,
+.blob-2 {
+    width: 4.5rem;
+    height: 4.5rem;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blob-1 {
+    left: 20%;
+    animation: osc-l 2.5s ease infinite;
+}
+
+.blob-2 {
+    left: 80%;
+    animation: osc-r 2.5s ease infinite;
+    background: var(--fifth);
+}
+
+@keyframes osc-l {
+    0% {
+        left: 20%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    100% {
+        left: 20%;
+    }
+}
+
+@keyframes osc-r {
+    0% {
+        left: 80%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    100% {
+        left: 80%;
+    }
+}
+
 
 @keyframes content {
     from {
@@ -998,7 +1059,8 @@ body {
     .homecopy {
         display: none;
     }
-    .mobilecontact{
+
+    .mobilecontact {
         display: none;
     }
 }
@@ -1128,11 +1190,13 @@ body {
     .homecopy {
         display: none;
     }
-    .desktopcontact{
+
+    .desktopcontact {
         display: block;
         width: 100%;
     }
-    .mobilecontact{
+
+    .mobilecontact {
         display: none;
     }
 
@@ -1140,10 +1204,11 @@ body {
 }
 
 @media (max-width: 767px) {
-    .desktopcontact{
+    .desktopcontact {
         display: none;
     }
-    .mobilecontact{
+
+    .mobilecontact {
         display: block;
     }
 }
@@ -1186,13 +1251,16 @@ body {
     .homecopy {
         display: block;
     }
-    .homeinfo{
+
+    .homeinfo {
         margin-bottom: 5%;
     }
 
+    .securityResume {
+        margin-top: 3%;
+    }
+
 }
-
-
 
 @keyframes dash {
     to {
