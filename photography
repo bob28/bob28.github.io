@@ -45,7 +45,7 @@
                     </li> -->
                     <li>
                         <a class="mx-auto" onmouseover="setBackgroundColour('var(--third)')"
-                            onmouseout="setBackgroundColour('var(--fifth)')" href="resume.html">
+                            onmouseout="setBackgroundColour('var(--fifth)')" href="resume">
                             Resume.
                         </a>
                     </li>
