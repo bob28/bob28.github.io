@@ -15,6 +15,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="icon" href="pictures/logo.webp">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGN47YLCFJ"></script>
     <script>
@@ -116,15 +118,15 @@
         <div class="row">
             <div class="col-md-12 hometext mx-auto fade-in">
                 <p><span>Welcome!</span> I'm <span>Bhavik Naik</span>, a I.T professional, located in the
-                    <span>Greater Toronto Area</span>. I have <span style="color:var(--third)">over 3 years</span> of
+                    <span>Greater Toronto Area</span>. I have <span style="color:var(--third)">over 4 years</span> of
                     experience in a wide range of
                     topics, from <span style="color:var(--third)">web development</span> to
                     <span style="color:var(--third)"> blockchain network</span> creation. I graduated with
                     my <span style="color:var(--fourth)">Master's in
                         I.T
-                        Security, Artificial Intelligence</span> last year. I also have completed the <span
-                        style="color:var(--fourth)">Google Data Analytics</span> and <span
-                        style="color:var(--fourth)">IBM Data Analyst</span> certifications.
+                        Security, Artificial Intelligence</span> last year. I am currently working as a <span
+                        style="color:var(--sixth)">Full Stack Software Developer</span> at <span
+                        style="color:var(--sixth)">Forged Operations</span>.
                     Have a look at my <span><a style="color:var(--sixth)" href="resume.html">resume</a></span>
                     to
                     see my experiences so far! Outside of development, I am a <span style="color:var(--fifth)">
@@ -132,7 +134,8 @@
                             photographer</a></span>, an <span style="color:var(--fifth)">Enactus alumni</span>, and I
                     enjoy
                     playing <span style="color:var(--fifth)">tennis</span>
-                    and <span style="color:var(--fifth )">writing!</span> I look forward to working with you!</p>
+                    and <span style="color:var(--fifth )">writing!</span> I look forward to working with you!
+                </p>
             </div>
         </div>
         <br>
@@ -238,8 +241,8 @@
                         style="float:left;border-radius: 17px;filter:brightness(80%)">
                     <div class="contactcard " style="float:right">
                         <h2 style="font-weight: bold;color:var(--second);text-align: center;">Get in Touch!</h2>
-                        <p>I'm actively looking for new opportunities and if you have any, please feel free to
-                            contact me, or just drop in to say hello! </p>
+                        <p>I'm actively seeking new opportunities, so please don't hesitate to reach out to me or simply
+                            say hello!</p>
 
 
                         <p class="labels">Email</p>
@@ -321,30 +324,30 @@
     <footer class="footer fade-in">
         <div class="container text-center">
 
-            <p style="margin: 0;">&copy; Bhavik Naik 2023</p>
+            <p style="margin: 0;">&copy; Bhavik Naik 2024</p>
         </div>
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+        </script>
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script src="js/newscript.js"></script>
     <script type="module">
-        if ($.cookie('seenSplash') == 'true'){ 
+        if ($.cookie('seenSplash') == 'true') {
             $('.splash').remove();
         }
-        else{ 
+        else {
             consoleText(['Hi!', 'I\'m Bhavik!'], 'text', ['#e76f51', '#2a9d8f']);
             var splash = document.getElementsByClassName("splash");
             window.addEventListener('DOMContentLoaded', (e) => {
                 setTimeout(() => {
                     splash[0].classList.add("display-none");
                 }, 5000);
-            }); 
+            });
             $.cookie('seenSplash', 'true', { expires: 5 });
         }
-      </script>
+    </script>
 </body>
 
 </html>
