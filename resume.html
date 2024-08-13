@@ -16,8 +16,12 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="icon" href="pictures/logo.webp">
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGN47YLCFJ"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -28,6 +32,8 @@
 
         gtag('config', 'G-RGN47YLCFJ');
     </script>
+
+
 </head>
 
 <body>
@@ -109,6 +115,7 @@
         </nav>
     </div>
 
+
     <button onclick="goToTop()" id="gototopbutton" title="Go to top"><i class="fas fa-arrow-up"></i>
 
     </button>
@@ -143,64 +150,74 @@
             <div class="slider">
                 <div class="indicator"></div>
             </div>
+            <div id="app">
+                <div class="content">
+
+                </div>
+            </div>
+
             <div class="content">
                 <section>
                     <p class="mobileheaders text-center">All</p>
                     <div class="timeline list">
                         <div class="timeline-row   ">
-                            <div class="timeline-content shadow work">
+                            <div class="timeline-content shadow work ">
                                 <i style="color:var(--sixth)" class="fas fa-briefcase"></i>
-                                <h4>Full Stack Software Devloper</h4>
-                                <p><small>May 2023 - Present</small></p>
+                                <h4>Senior Full Stack Developer </h4>
+                                <p><small>April 2024 - Present</small></p>
+                                <p>Forged Operations</p>
                                 <p>
-                                    Forged Operations
+                                    Led the project department and increased efficiency by standardizing frameworks
+                                    and
+                                    client interactions. Mentored junior developers, drove security discussions, and
+                                    built an AI chatbot.
                                 </p>
-                                <p>
-                                    Developing and maintaining multiple web applications that are used by thousands of
-                                    users daily. Utilizing Vue, Node.js, and MongoDB to create a scalable and secure
-                                    application
-                                </p>
-                                <!-- Button trigger modal -->
-                                <!-- Button trigger modal -->
-                                <!-- <button type="button" class="btn btn-primary readmore" data-bs-toggle="modal"
-                                    style="background-color: var(--sixth);border:0px" data-bs-target="#treefrog">
+                                <button type="button" class="btn btn-primary readmore" data-bs-toggle="modal"
+                                    style="background-color: var(--sixth);border:0px" data-bs-target="#seniorForged">
                                     Read More
-                                </button> -->
+                                </button>
 
                                 <!-- Modal -->
-                                <!-- <div class="modal fade" id="forged" tabindex="-1" aria-labelledby="forgedLabel"
+                                <div class="modal fade" id="seniorForged" tabindex="-1" aria-labelledby="forgedsrLabel"
                                     aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content" style="background-color: #383838;text-align: left;">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="forgedLabel">Treefrog Inc</h5>
+                                                <h5 class="modal-title" id="forgedsrLabel">Forged Operations </h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
-                                                Assisted a team of System Administrators to screen and map over 20
-                                                security flaws within a digital marketing agency’s networks and
-                                                applications. Designed and architected structures to secure client and
-                                                admin accounts<br>
+                                                Led the project department at a technology company focused on
+                                                commercial
+                                                energy applications. Developed a transparent project structure that
+                                                reduced scope changes by 30% through improved upfront planning.
+                                                <br>
 
-                                                <br>Managed, troubleshooted, and launched Treefrog.host, a hosting
-                                                platform, while assisting 200+ clients on Zendesk
+                                                <br>Mentored junior developers to enhance team skills and contribute
+                                                to
+                                                a collaborative engineering culture.
 
-                                                <br><br>Boosted Plesk server performance by 20% by analyzing previous
-                                                clients and migrated DNS records using OpenSRS
+                                                <br><br>Directed the development of an AI chatbot to ensure
+                                                regulatory
+                                                compliance and streamline problem resolution.
 
-                                                <br><br>Evaluated GCP as a viable cloud platform by determining
-                                                security, risk,
-                                                infrastructure, and pricing options. Studied and utilized Terraform to
-                                                create testing environments to mimic current framework
+                                                <br><br>Architected scalable system design for internal & client
+                                                projects, leading a migration from MongoDB to MSSQL.
 
-                                                <br><br>Accurately communicated with manager to problem solve and took
-                                                initiative to complete tasks to enhance efficiency<br><br>
-                                                <h5 id="skillsExperience">Skills:</h5>
+                                                <br><br>Drove company-wide security initiatives and built an
+                                                authentication module with Microsoft Sign-On integration.
+
+                                                <br><br>Served as development lead on multiple projects, ensuring
+                                                client
+                                                satisfaction through rigorous code standards.
+
+                                                <br><br>
+                                                <!-- <h5 id="skillsExperience">Skills:</h5>
                                                 Microsoft Excel · Troubleshooting · Attention to Detail · Cybersecurity
                                                 · Risk Management · Research · Problem Solving · Analytical Skills ·
                                                 Google Cloud Platform (GCP) · Terraform · Python · Front-end Development
                                                 · Network Security · jQuery · HTML · Git · Cascading Style Sheets (CSS)
                                                 · Linux · Communication · Organization Skills · Networking ·
-                                                Cryptography · Plesk · PHP · Data Analysis · Google Suite
+                                                Cryptography · Plesk · PHP · Data Analysis · Google Suite -->
                                             </div>
                                             <div class="modal-footer text-center">
                                                 <button type="button" class="btn btn-secondary readmore mx-auto"
@@ -209,7 +226,78 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="timeline-row">
+                            <div class="timeline-content shadow work">
+                                <i style="color:var(--sixth)" class="fas fa-briefcase"></i>
+                                <h4>Full Stack Devloper</h4>
+                                <p><small>May 2023 - April 2024</small></p>
+                                <p>
+                                    Forged Operations
+                                </p>
+                                <p>
+                                    Developed and maintained multiple web applications used by 100,000+ users daily
+                                    utilizing Vue, Node.js, and MongoDB. </p>
+                                <!-- Button trigger modal -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary readmore" data-bs-toggle="modal"
+                                    style="background-color: var(--sixth);border:0px" data-bs-target="#forged">
+                                    Read More
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="forged" tabindex="-1" aria-labelledby="forgedLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content" style="background-color: #383838;text-align: left;">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="forgedLabel">Forged Operations </h5>
+                                            </div>
+                                            <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
+                                                Engineered large-scale full-stack SaaS applications with 100,000+
+                                                users,
+                                                ensuring scalability and performance. <br>
+
+                                                <br>Built RESTful APIs using Node.js and Express for backend
+                                                processes
+                                                and developed Vue frontends with Nuxt and Tailwind.
+
+                                                <br><br>Wrote comprehensive unit tests and performed end user
+                                                testing to
+                                                guarantee application quality and stability.
+
+
+                                                <br><br>Participated in Agile SDLC and CI/CD processes using Jira
+                                                and
+                                                Git, while contributing to sprint planning.
+
+                                                <br><br>Evaluated cutting-edge technologies and tools, communicating
+                                                findings to influence the team’s technology stack.
+
+
+                                                <br><br>Collaborated with product managers and designers to
+                                                understand
+                                                user needs and ensure user-focused solutions.
+                                                <br><br>
+                                                <!-- <h5 id="skillsExperience">Skills:</h5>
+                                                Microsoft Excel · Troubleshooting · Attention to Detail · Cybersecurity
+                                                · Risk Management · Research · Problem Solving · Analytical Skills ·
+                                                Google Cloud Platform (GCP) · Terraform · Python · Front-end Development
+                                                · Network Security · jQuery · HTML · Git · Cascading Style Sheets (CSS)
+                                                · Linux · Communication · Organization Skills · Networking ·
+                                                Cryptography · Plesk · PHP · Data Analysis · Google Suite -->
+                                            </div>
+                                            <div class="modal-footer text-center">
+                                                <button type="button" class="btn btn-secondary readmore mx-auto"
+                                                    style="background-color: var(--sixth);border:0px"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="timeline-row   ">
@@ -221,7 +309,8 @@
                                 <p>Coursera Certification</p>
                                 <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/53DTZQXTE9N7"
                                     target="_blank"><button type="button" class="btn btn-secondary readmore mx-auto"
-                                        style="background-color: var(--second);border:0px">View Credential</button></a>
+                                        style="background-color: var(--second);border:0px">View
+                                        Credential</button></a>
 
                             </div>
                         </div>
@@ -236,7 +325,8 @@
                                 <p>Coursera Certification</p>
                                 <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/L3X5HKKDFER5"
                                     target="_blank"><button type="button" class="btn btn-secondary readmore mx-auto"
-                                        style="background-color: var(--second);border:0px">View Credential</button></a>
+                                        style="background-color: var(--second);border:0px">View
+                                        Credential</button></a>
 
                             </div>
                         </div>
@@ -244,7 +334,8 @@
 
                             <div class="timeline-content shadow education ">
                                 <i style="color:var(--second)" class="fas fa-graduation-cap"></i>
-                                <h4 style="text-overflow: inherit;">Master of I.T Security <br> Artificial Intelligence
+                                <h4 style="text-overflow: inherit;">Master of I.T Security <br> Artificial
+                                    Intelligence
                                 </h4>
                                 <p><small>Sep 2021 - Sep 2022</small></p>
                                 <p>Ontario Tech University</p>
@@ -263,7 +354,8 @@
                                     Treefrog Inc
                                 </p>
                                 <p>
-                                    Researched and mapped security vulnerabilities within company, launched a hosting
+                                    Researched and mapped security vulnerabilities within company, launched a
+                                    hosting
                                     app, and used Terraform to create GCP environments
                                 </p>
                                 <!-- Button trigger modal -->
@@ -284,27 +376,34 @@
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
                                                 Assisted a team of System Administrators to screen and map over 20
                                                 security flaws within a digital marketing agency’s networks and
-                                                applications. Designed and architected structures to secure client and
+                                                applications. Designed and architected structures to secure client
+                                                and
                                                 admin accounts<br>
 
                                                 <br>Managed, troubleshooted, and launched Treefrog.host, a hosting
                                                 platform, while assisting 200+ clients on Zendesk
 
-                                                <br><br>Boosted Plesk server performance by 20% by analyzing previous
+                                                <br><br>Boosted Plesk server performance by 20% by analyzing
+                                                previous
                                                 clients and migrated DNS records using OpenSRS
 
                                                 <br><br>Evaluated GCP as a viable cloud platform by determining
                                                 security, risk,
-                                                infrastructure, and pricing options. Studied and utilized Terraform to
+                                                infrastructure, and pricing options. Studied and utilized Terraform
+                                                to
                                                 create testing environments to mimic current framework
 
-                                                <br><br>Accurately communicated with manager to problem solve and took
+                                                <br><br>Accurately communicated with manager to problem solve and
+                                                took
                                                 initiative to complete tasks to enhance efficiency<br><br>
                                                 <h5 id="skillsExperience">Skills:</h5>
-                                                Microsoft Excel · Troubleshooting · Attention to Detail · Cybersecurity
+                                                Microsoft Excel · Troubleshooting · Attention to Detail ·
+                                                Cybersecurity
                                                 · Risk Management · Research · Problem Solving · Analytical Skills ·
-                                                Google Cloud Platform (GCP) · Terraform · Python · Front-end Development
-                                                · Network Security · jQuery · HTML · Git · Cascading Style Sheets (CSS)
+                                                Google Cloud Platform (GCP) · Terraform · Python · Front-end
+                                                Development
+                                                · Network Security · jQuery · HTML · Git · Cascading Style Sheets
+                                                (CSS)
                                                 · Linux · Communication · Organization Skills · Networking ·
                                                 Cryptography · Plesk · PHP · Data Analysis · Google Suite
                                             </div>
@@ -347,28 +446,37 @@
                                                 <h5 class="modal-title" id="mobilexcoLabel">MobileXCo</h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
-                                                Developed promotional websites for businesses such as Tim Hortons and
-                                                Royale that attracted over 50,000 user visits, with a small team apart
+                                                Developed promotional websites for businesses such as Tim Hortons
+                                                and
+                                                Royale that attracted over 50,000 user visits, with a small team
+                                                apart
                                                 of a data analytics company that focuses on microsite and marketing
                                                 development
                                                 <br><br>
-                                                Integrated best security practices to prevent injection and other OWASP
+                                                Integrated best security practices to prevent injection and other
+                                                OWASP
                                                 Top 10 web app security vulnerabilities
                                                 <br><br>
-                                                Collaborated cross-functionally and utilized agile development processes
+                                                Collaborated cross-functionally and utilized agile development
+                                                processes
                                                 for CI/CD throughout the SDLC
                                                 <br><br>
-                                                Improved site loading times by 70%, optimized pages for SEO, and obeyed
+                                                Improved site loading times by 70%, optimized pages for SEO, and
+                                                obeyed
                                                 the WCAG 2.0 level AA guidelines
                                                 <br><br>
-                                                Documented and outlined new processes to other developers and took on
+                                                Documented and outlined new processes to other developers and took
+                                                on
                                                 additional responsibilities to satisfy clients
                                                 <br><br>
                                                 <h5 id="skillsExperience">Skills:</h5>
-                                                Microsoft Excel · Troubleshooting · Confluence · Attention to Detail ·
+                                                Microsoft Excel · Troubleshooting · Confluence · Attention to Detail
+                                                ·
                                                 Cybersecurity · Problem Solving · Analytical Skills · JavaScript ·
-                                                Front-end Development · jQuery · HTML · Cascading Style Sheets (CSS) ·
-                                                Node.js · SQL · Communication · Organization Skills · Express.js · Jira
+                                                Front-end Development · jQuery · HTML · Cascading Style Sheets (CSS)
+                                                ·
+                                                Node.js · SQL · Communication · Organization Skills · Express.js ·
+                                                Jira
                                                 · Microsoft Office
                                             </div>
                                             <div class="modal-footer text-center">
@@ -385,7 +493,8 @@
                         <div class="timeline-row education secondeducation">
                             <div class="timeline-content shadow ">
                                 <i style="color:var(--second)" class="fas fa-graduation-cap"></i>
-                                <h4 style="text-align: center;">Bachelor of I.T (Hons) <br> Networking and I.T Security
+                                <h4 style="text-align: center;">Bachelor of I.T (Hons) <br> Networking and I.T
+                                    Security
                                 </h4>
                                 <p><small> Sep 2018 - May 2021</small></p>
                                 <p>Ontario Tech University</p>
@@ -422,16 +531,20 @@
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content" style="background-color: #383838;">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="projectleadLabel">Enactus Ontario Tech</h5>
+                                                <h5 class="modal-title" id="projectleadLabel">Enactus Ontario Tech
+                                                </h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
-                                                I was the Project Lead of Skill Series, an Enactus Ontario Tech project
+                                                I was the Project Lead of Skill Series, an Enactus Ontario Tech
+                                                project
                                                 that focuses
-                                                on providing meaningful education on topics that are not covered in a
+                                                on providing meaningful education on topics that are not covered in
+                                                a
                                                 standard
                                                 university or college program. This includes filling taxes, staying
                                                 active, how to
-                                                study better, etc. We ran our workshops online using YouTube Live and
+                                                study better, etc. We ran our workshops online using YouTube Live
+                                                and
                                                 used social
                                                 media such as Facebook and Instagram to gain exposure with students.
                                                 Furthermore,
@@ -439,7 +552,8 @@
                                                 experience to our
                                                 workshops so that students can learn from professionals in the topic
                                                 that we were
-                                                covering. We had the universities' lead fitness representative at our
+                                                covering. We had the universities' lead fitness representative at
+                                                our
                                                 healthy living
                                                 workshop, and the CEO and Founder of CloudTax, a Canadian tax filing
                                                 software, to
@@ -449,31 +563,41 @@
                                                 workshops which had
                                                 over 700 viewers. I oversaw all aspects of Skill Series, from the
                                                 marketing, budget,
-                                                content, and competition talking points. Due to my application to the
+                                                content, and competition talking points. Due to my application to
+                                                the
                                                 RBC Future
-                                                Launch Project Accelerator, Skill Series was able to receive a grant of
+                                                Launch Project Accelerator, Skill Series was able to receive a grant
+                                                of
                                                 $3000 to
                                                 cover our expenses. I worked with the team to create influential
                                                 marketing ads that
-                                                we ran on Facebook and Instagram to attract students to our project, and
+                                                we ran on Facebook and Instagram to attract students to our project,
+                                                and
                                                 spoke
-                                                directly to our guest speakers before and after our workshops. I had to
+                                                directly to our guest speakers before and after our workshops. I had
+                                                to
                                                 manage my
-                                                team effectively so that we could create informative and engaging videos
+                                                team effectively so that we could create informative and engaging
+                                                videos
                                                 for our
-                                                YouTube channel and inspire students to pick up a new skill or hobby.
+                                                YouTube channel and inspire students to pick up a new skill or
+                                                hobby.
                                                 <br> <br>
-                                                On top of Project Lead, I also helped out at the Enactus regional and
+                                                On top of Project Lead, I also helped out at the Enactus regional
+                                                and
                                                 national
-                                                competition where I assisted in directing and editing the presentation
+                                                competition where I assisted in directing and editing the
+                                                presentation
                                                 videos. I
-                                                also taught a fellow Enactus student on how to edit videos so that they
+                                                also taught a fellow Enactus student on how to edit videos so that
+                                                they
                                                 could take
                                                 over my role in the future.
                                                 <br> <br>
                                                 <h5 style="color:var(--fourth)" id="skillsExperience">Skills:</h5>
                                                 Microsoft Excel · Data-driven Decision Making · Data Analysis ·
-                                                Attention to Detail · Research · Problem Solving · Analytical Skills ·
+                                                Attention to Detail · Research · Problem Solving · Analytical Skills
+                                                ·
                                                 Front-end Development · HTML · Cascading Style Sheets (CSS) · Adobe
                                                 Creative Suite · Communication · Organization Skills · Leadership ·
                                                 PowerPoint
@@ -498,7 +622,8 @@
                                     Ontario Tech | Student Life
                                 </p>
                                 <p>
-                                    Tutored over 50 university students in Database Systems, OOP Programming, Computer
+                                    Tutored over 50 university students in Database Systems, OOP Programming,
+                                    Computer
                                     Security, Advanced Networking, and Web & Script Programming, while demonstrating
                                     problem-solving and studying skills
                                 </p>
@@ -531,23 +656,32 @@
                                                 <h5 class="modal-title" id="wilanLabel">WiLAN</h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
-                                                Successfully implemented a custom Hyperledger Fabric blockchain network
-                                                with smart contracts for a intellectual property licensing company which
+                                                Successfully implemented a custom Hyperledger Fabric blockchain
+                                                network
+                                                with smart contracts for a intellectual property licensing company
+                                                which
                                                 generates over $1B in licensing revenue and holds over 500 patents
                                                 <br> <br>
-                                                Analyzed and investigated the various Hyperledger open-sourced projects
-                                                that would be best suited for company to build their blockchain network
+                                                Analyzed and investigated the various Hyperledger open-sourced
+                                                projects
+                                                that would be best suited for company to build their blockchain
+                                                network
                                                 on, while taking in consideration how secure the network is
                                                 <br> <br>
-                                                Documented and communicated all findings and code in weekly reports to
-                                                the supervisor which allowed them to follow along with project progress.
+                                                Documented and communicated all findings and code in weekly reports
+                                                to
+                                                the supervisor which allowed them to follow along with project
+                                                progress.
                                                 Presented the final network in front of executives and managers
                                                 <br><br>
                                                 <h5 id="skillsExperience">Skills:</h5>
-                                                Microsoft Excel · Troubleshooting · Attention to Detail · Cybersecurity
+                                                Microsoft Excel · Troubleshooting · Attention to Detail ·
+                                                Cybersecurity
                                                 · Risk Management · Research · Problem Solving · Analytical Skills ·
-                                                Google Cloud Platform (GCP) · Terraform · Python · Front-end Development
-                                                · Network Security · jQuery · HTML · Git · Cascading Style Sheets (CSS)
+                                                Google Cloud Platform (GCP) · Terraform · Python · Front-end
+                                                Development
+                                                · Network Security · jQuery · HTML · Git · Cascading Style Sheets
+                                                (CSS)
                                                 · Linux · Communication · Organization Skills · Networking ·
                                                 Cryptography · Plesk · PHP · Data Analysis · Google Suite
                                             </div>
@@ -588,42 +722,55 @@
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content" style="background-color: #383838;">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="socialmediaLabel">Enactus Ontario Tech</h5>
+                                                <h5 class="modal-title" id="socialmediaLabel">Enactus Ontario Tech
+                                                </h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
                                                 I was the lead for managing the Enactus Ontario Tech main Instagram,
                                                 Facebook, and
-                                                Twitter accounts. I had to create a content plan that showcased the work
+                                                Twitter accounts. I had to create a content plan that showcased the
+                                                work
                                                 that we
-                                                were doing to a wide range of users. I had to also stay creative on what
+                                                were doing to a wide range of users. I had to also stay creative on
+                                                what
                                                 type of
-                                                content would be shared so that we can get the most engagement on our
+                                                content would be shared so that we can get the most engagement on
+                                                our
                                                 posts. This
-                                                also included creating meaningful ads to boost our recognition on and
+                                                also included creating meaningful ads to boost our recognition on
+                                                and
                                                 off campus. I
-                                                also assisted in creating videos to promote Enactus on campus and get
+                                                also assisted in creating videos to promote Enactus on campus and
+                                                get
                                                 other students
                                                 motivated to join our projects.
                                                 <br> <br>
-                                                I continued on as lead photographer and documented our events on campus
+                                                I continued on as lead photographer and documented our events on
+                                                campus
                                                 on our
-                                                social media accounts. I took my knowledge as a photographer and held a
+                                                social media accounts. I took my knowledge as a photographer and
+                                                held a
                                                 Skill Series
-                                                Introduction to Photography workshop where I showcased various tips and
+                                                Introduction to Photography workshop where I showcased various tips
+                                                and
                                                 tricks to 25
                                                 eager students.
                                                 <br> <br>
-                                                Due to the COVID-19 pandemic, the regional and national presentations
+                                                Due to the COVID-19 pandemic, the regional and national
+                                                presentations
                                                 were video
-                                                submissions. I helped direct these videos for both competitions and was
+                                                submissions. I helped direct these videos for both competitions and
+                                                was
                                                 the sole
                                                 editor on all of the videos. I had to help make them engaging and
                                                 creative so that
                                                 our work could be presented in an unique manner to stand out.
                                                 <br> <br>
                                                 <h5 style="color:var(--fourth)" id="skillsExperience">Skills:</h5>
-                                                Microsoft Excel · Data-driven Decision Making · Attention to Detail ·
-                                                Research · Problem Solving · Analytical Skills · Adobe Creative Suite ·
+                                                Microsoft Excel · Data-driven Decision Making · Attention to Detail
+                                                ·
+                                                Research · Problem Solving · Analytical Skills · Adobe Creative
+                                                Suite ·
                                                 Communication · Organization Skills · Leadership · PowerPoint
                                             </div>
                                             <div class="modal-footer text-center">
@@ -647,7 +794,8 @@
                                     Enactus Ontario Tech
                                 </p>
                                 <p>
-                                    Assisted competition and media teams with content while being main photographer at
+                                    Assisted competition and media teams with content while being main photographer
+                                    at
                                     events
                                 </p>
 
@@ -675,7 +823,8 @@
                                                 national
                                                 competition, I was tasked with photographing the events and helping
                                                 setup the
-                                                presentations. I also designed the PowerPoint presentations that were
+                                                presentations. I also designed the PowerPoint presentations that
+                                                were
                                                 used to
                                                 accompany the presenters.
                                             </div>
@@ -716,25 +865,33 @@
                                                 <h5 class="modal-title" id="kloudvilleLabel">Kloudville</h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
-                                                Worked independently to design and engineer a fully-fledged Android and
-                                                iOS app based on the Kloudville platform, for a Software as a Service
+                                                Worked independently to design and engineer a fully-fledged Android
+                                                and
+                                                iOS app based on the Kloudville platform, for a Software as a
+                                                Service
                                                 B2B company that specializes in creating apps for CRM and ERP
                                                 <br><br>
-                                                Tested and implemented best security practices to ensure that user app
+                                                Tested and implemented best security practices to ensure that user
+                                                app
                                                 data is secure and REST data is encrypted
                                                 <br><br>
-                                                Acquired potential shareholders and future clients after pitching the
+                                                Acquired potential shareholders and future clients after pitching
+                                                the
                                                 app, which led to an increase of revenue
                                                 <br><br>
-                                                Shared comments and documentation with other developers to ensure that
+                                                Shared comments and documentation with other developers to ensure
+                                                that
                                                 the project continues to improve
                                                 <br><br>
 
                                                 <h5 id="skillsExperience">Skills:</h5>
                                                 Troubleshooting · Attention to Detail · Research · Problem Solving ·
-                                                Analytical Skills · JavaScript · Front-end Development · Object-Oriented
-                                                Programming (OOP) · jQuery · HTML · Git · Cascading Style Sheets (CSS) ·
-                                                WordPress · Node.js · Communication · Organization Skills · Express.js ·
+                                                Analytical Skills · JavaScript · Front-end Development ·
+                                                Object-Oriented
+                                                Programming (OOP) · jQuery · HTML · Git · Cascading Style Sheets
+                                                (CSS) ·
+                                                WordPress · Node.js · Communication · Organization Skills ·
+                                                Express.js ·
                                                 UI/UX Design · Cordova · Android · iOS
                                             </div>
                                             <div class="modal-footer text-center">
@@ -775,22 +932,29 @@
                                                 <h5 class="modal-title" id="zcomLabel">Zcom</h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
-                                                Assisted in a wide range of web related development, from auditing sites
+                                                Assisted in a wide range of web related development, from auditing
+                                                sites
                                                 to ensuring that client data is secure, for a systems integration
-                                                service provider which provides exclusive R&D solutions and numerous I.T
+                                                service provider which provides exclusive R&D solutions and numerous
+                                                I.T
                                                 services
                                                 <br><br>
                                                 Worked with the project manager to understand client demands and
-                                                accordingly shifted priorities to complete websites on time which led to
+                                                accordingly shifted priorities to complete websites on time which
+                                                led to
                                                 a greater client satisfaction
                                                 <br><br>
-                                                Collaborated with a small team made up of three developers which led to
+                                                Collaborated with a small team made up of three developers which led
+                                                to
                                                 taking on unique responsibilities everyday
                                                 <br><br>
                                                 <h5 id="skillsExperience">Skills:</h5>
-                                                Attention to Detail · Research · Problem Solving · Analytical Skills ·
-                                                JavaScript · Front-end Development · Object-Oriented Programming (OOP) ·
-                                                jQuery · HTML · Git · Cascading Style Sheets (CSS) · WordPress · Node.js
+                                                Attention to Detail · Research · Problem Solving · Analytical Skills
+                                                ·
+                                                JavaScript · Front-end Development · Object-Oriented Programming
+                                                (OOP) ·
+                                                jQuery · HTML · Git · Cascading Style Sheets (CSS) · WordPress ·
+                                                Node.js
                                                 · Communication · Organization Skills · Express.js
                                             </div>
                                             <div class="modal-footer text-center">
@@ -809,60 +973,64 @@
                 <section>
                     <p class="mobileheaders text-center">Employment</p>
                     <div class="timeline list">
-                        <div class="timeline-row work ">
-                            <div class="timeline-content shadow work">
-                                <i style="color:var(--sixth)" class="fas fa-briefcase"></i>
-                                <h4>Full Stack Software Devloper</h4>
-                                <p><small>May 2023 - Present</small></p>
-                                <p>
-                                    Forged Operations
-                                </p>
-                                <p>
-                                    Developing and maintaining multiple web applications that are used by thousands of
-                                    users daily. Utilizing Vue, Node.js, and MongoDB to create a scalable and secure
-                                    application
-                                </p>
-                                <!-- Button trigger modal -->
-                                <!-- Button trigger modal -->
-                                <!-- <button type="button" class="btn btn-primary readmore" data-bs-toggle="modal"
-                                    style="background-color: var(--sixth);border:0px" data-bs-target="#treefrog">
-                                    Read More
-                                </button> -->
+                        <div class="timeline-row  ">
 
+                            <div class="timeline-content shadow work ">
+                                <i style="color:var(--sixth)" class="fas fa-briefcase"></i>
+                                <h4>Senior Full Stack Developer </h4>
+                                <p><small>April 2024 - Present</small></p>
+                                <p>Forged Operations</p>
+                                <p>
+                                    Led the project department and increased efficiency by standardizing frameworks
+                                    and
+                                    client interactions. Mentored junior developers, drove security discussions, and
+                                    built an AI chatbot.
+                                </p>
+                                <button type="button" class="btn btn-primary readmore" data-bs-toggle="modal"
+                                    style="background-color: var(--sixth);border:0px" data-bs-target="#seniorForged2">
+                                    Read More
+                                </button>
                                 <!-- Modal -->
-                                <!-- <div class="modal fade" id="forged" tabindex="-1" aria-labelledby="forgedLabel"
-                                    aria-hidden="true">
+                                <div class="modal fade" id="seniorForged2" tabindex="-1"
+                                    aria-labelledby="forgedsrLabel2" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content" style="background-color: #383838;text-align: left;">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="forgedLabel">Treefrog Inc</h5>
+                                                <h5 class="modal-title" id="forgedsrLabel2">Forged Operations </h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
-                                                Assisted a team of System Administrators to screen and map over 20
-                                                security flaws within a digital marketing agency’s networks and
-                                                applications. Designed and architected structures to secure client and
-                                                admin accounts<br>
+                                                Led the project department at a technology company focused on
+                                                commercial
+                                                energy applications. Developed a transparent project structure that
+                                                reduced scope changes by 30% through improved upfront planning.
+                                                <br>
 
-                                                <br>Managed, troubleshooted, and launched Treefrog.host, a hosting
-                                                platform, while assisting 200+ clients on Zendesk
+                                                <br>Mentored junior developers to enhance team skills and contribute
+                                                to
+                                                a collaborative engineering culture.
 
-                                                <br><br>Boosted Plesk server performance by 20% by analyzing previous
-                                                clients and migrated DNS records using OpenSRS
+                                                <br><br>Directed the development of an AI chatbot to ensure
+                                                regulatory
+                                                compliance and streamline problem resolution.
 
-                                                <br><br>Evaluated GCP as a viable cloud platform by determining
-                                                security, risk,
-                                                infrastructure, and pricing options. Studied and utilized Terraform to
-                                                create testing environments to mimic current framework
+                                                <br><br>Architected scalable system design for internal & client
+                                                projects, leading a migration from MongoDB to MSSQL.
 
-                                                <br><br>Accurately communicated with manager to problem solve and took
-                                                initiative to complete tasks to enhance efficiency<br><br>
-                                                <h5 id="skillsExperience">Skills:</h5>
-                                                Microsoft Excel · Troubleshooting · Attention to Detail · Cybersecurity
-                                                · Risk Management · Research · Problem Solving · Analytical Skills ·
-                                                Google Cloud Platform (GCP) · Terraform · Python · Front-end Development
-                                                · Network Security · jQuery · HTML · Git · Cascading Style Sheets (CSS)
-                                                · Linux · Communication · Organization Skills · Networking ·
-                                                Cryptography · Plesk · PHP · Data Analysis · Google Suite
+                                                <br><br>Drove company-wide security initiatives and built an
+                                                authentication module with Microsoft Sign-On integration.
+
+                                                <br><br>Served as development lead on multiple projects, ensuring
+                                                client
+                                                satisfaction through rigorous code standards.
+
+                                                <br><br>
+                                                <!-- <h5 id="skillsExperience">Skills:</h5>
+              Microsoft Excel · Troubleshooting · Attention to Detail · Cybersecurity
+              · Risk Management · Research · Problem Solving · Analytical Skills ·
+              Google Cloud Platform (GCP) · Terraform · Python · Front-end Development
+              · Network Security · jQuery · HTML · Git · Cascading Style Sheets (CSS)
+              · Linux · Communication · Organization Skills · Networking ·
+              Cryptography · Plesk · PHP · Data Analysis · Google Suite -->
                                             </div>
                                             <div class="modal-footer text-center">
                                                 <button type="button" class="btn btn-secondary readmore mx-auto"
@@ -871,7 +1039,79 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="timeline-row work">
+                            <div class="timeline-content shadow work">
+                                <i style="color:var(--sixth)" class="fas fa-briefcase"></i>
+                                <h4>Full Stack Devloper</h4>
+                                <p><small>May 2023 - April 2024</small></p>
+                                <p>
+                                    Forged Operations
+                                </p>
+                                <p>
+                                    Developed and maintained multiple web applications used by 100,000+ users daily
+                                    utilizing Vue, Node.js, and MongoDB. </p>
+                                <!-- Button trigger modal -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary readmore" data-bs-toggle="modal"
+                                    style="background-color: var(--sixth);border:0px" data-bs-target="#forged2">
+                                    Read More
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="forged2" tabindex="-1" aria-labelledby="forgedLabel2"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content" style="background-color: #383838;text-align: left;">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="forgedLabel2">Forged Operations </h5>
+                                            </div>
+                                            <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
+                                                Engineered large-scale full-stack SaaS applications with 100,000+
+                                                users,
+                                                ensuring scalability and performance. <br>
+
+                                                <br>Built RESTful APIs using Node.js and Express for backend
+                                                processes
+                                                and developed Vue frontends with Nuxt and Tailwind.
+
+                                                <br><br>Wrote comprehensive unit tests and performed end user
+                                                testing to
+                                                guarantee application quality and stability.
+
+
+                                                <br><br>Participated in Agile SDLC and CI/CD processes using Jira
+                                                and
+                                                Git, while contributing to sprint planning.
+
+                                                <br><br>Evaluated cutting-edge technologies and tools, communicating
+                                                findings to influence the team’s technology stack.
+
+
+                                                <br><br>Collaborated with product managers and designers to
+                                                understand
+                                                user needs and ensure user-focused solutions.
+                                                <br><br>
+                                                <!-- <h5 id="skillsExperience">Skills:</h5>
+                                                Microsoft Excel · Troubleshooting · Attention to Detail · Cybersecurity
+                                                · Risk Management · Research · Problem Solving · Analytical Skills ·
+                                                Google Cloud Platform (GCP) · Terraform · Python · Front-end Development
+                                                · Network Security · jQuery · HTML · Git · Cascading Style Sheets (CSS)
+                                                · Linux · Communication · Organization Skills · Networking ·
+                                                Cryptography · Plesk · PHP · Data Analysis · Google Suite -->
+                                            </div>
+                                            <div class="modal-footer text-center">
+                                                <button type="button" class="btn btn-secondary readmore mx-auto"
+                                                    style="background-color: var(--sixth);border:0px"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="timeline-row work  ">
@@ -883,7 +1123,8 @@
                                     Treefrog Inc
                                 </p>
                                 <p>
-                                    Researched and mapped security vulnerabilities within company, launched a hosting
+                                    Researched and mapped security vulnerabilities within company, launched a
+                                    hosting
                                     app, and used Terraform to create GCP environments
                                 </p>
                                 <!-- Button trigger modal -->
@@ -904,27 +1145,34 @@
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
                                                 Assisted a team of System Administrators to screen and map over 20
                                                 security flaws within a digital marketing agency’s networks and
-                                                applications. Designed and architected structures to secure client and
+                                                applications. Designed and architected structures to secure client
+                                                and
                                                 admin accounts<br>
 
                                                 <br>Managed, troubleshooted, and launched Treefrog.host, a hosting
                                                 platform, while assisting 200+ clients on Zendesk
 
-                                                <br><br>Boosted Plesk server performance by 20% by analyzing previous
+                                                <br><br>Boosted Plesk server performance by 20% by analyzing
+                                                previous
                                                 clients and migrated DNS records using OpenSRS
 
                                                 <br><br>Evaluated GCP as a viable cloud platform by determining
                                                 security, risk,
-                                                infrastructure, and pricing options. Studied and utilized Terraform to
+                                                infrastructure, and pricing options. Studied and utilized Terraform
+                                                to
                                                 create testing environments to mimic current framework
 
-                                                <br><br>Accurately communicated with manager to problem solve and took
+                                                <br><br>Accurately communicated with manager to problem solve and
+                                                took
                                                 initiative to complete tasks to enhance efficiency<br><br>
                                                 <h5 id="skillsExperience">Skills:</h5>
-                                                Microsoft Excel · Troubleshooting · Attention to Detail · Cybersecurity
+                                                Microsoft Excel · Troubleshooting · Attention to Detail ·
+                                                Cybersecurity
                                                 · Risk Management · Research · Problem Solving · Analytical Skills ·
-                                                Google Cloud Platform (GCP) · Terraform · Python · Front-end Development
-                                                · Network Security · jQuery · HTML · Git · Cascading Style Sheets (CSS)
+                                                Google Cloud Platform (GCP) · Terraform · Python · Front-end
+                                                Development
+                                                · Network Security · jQuery · HTML · Git · Cascading Style Sheets
+                                                (CSS)
                                                 · Linux · Communication · Organization Skills · Networking ·
                                                 Cryptography · Plesk · PHP · Data Analysis ·
 
@@ -967,28 +1215,37 @@
                                                 <h5 class="modal-title" id="mobilexcoLabel">MobileXCo</h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
-                                                Developed promotional websites for businesses such as Tim Hortons and
-                                                Royale that attracted over 50,000 user visits, with a small team apart
+                                                Developed promotional websites for businesses such as Tim Hortons
+                                                and
+                                                Royale that attracted over 50,000 user visits, with a small team
+                                                apart
                                                 of a data analytics company that focuses on microsite and marketing
                                                 development
                                                 <br><br>
-                                                Integrated best security practices to prevent injection and other OWASP
+                                                Integrated best security practices to prevent injection and other
+                                                OWASP
                                                 Top 10 web app security vulnerabilities
                                                 <br><br>
-                                                Collaborated cross-functionally and utilized agile development processes
+                                                Collaborated cross-functionally and utilized agile development
+                                                processes
                                                 for CI/CD throughout the SDLC
                                                 <br><br>
-                                                Improved site loading times by 70%, optimized pages for SEO, and obeyed
+                                                Improved site loading times by 70%, optimized pages for SEO, and
+                                                obeyed
                                                 the WCAG 2.0 level AA guidelines
                                                 <br><br>
-                                                Documented and outlined new processes to other developers and took on
+                                                Documented and outlined new processes to other developers and took
+                                                on
                                                 additional responsibilities to satisfy clients
                                                 <br><br>
                                                 <h5 id="skillsExperience">Skills:</h5>
-                                                Microsoft Excel · Troubleshooting · Confluence · Attention to Detail ·
+                                                Microsoft Excel · Troubleshooting · Confluence · Attention to Detail
+                                                ·
                                                 Cybersecurity · Problem Solving · Analytical Skills · JavaScript ·
-                                                Front-end Development · jQuery · HTML · Cascading Style Sheets (CSS) ·
-                                                Node.js · SQL · Communication · Organization Skills · Express.js · Jira
+                                                Front-end Development · jQuery · HTML · Cascading Style Sheets (CSS)
+                                                ·
+                                                Node.js · SQL · Communication · Organization Skills · Express.js ·
+                                                Jira
                                                 · Microsoft Office
                                             </div>
                                             <div class="modal-footer text-center">
@@ -1012,7 +1269,8 @@
                                     Ontario Tech | Student Life
                                 </p>
                                 <p>
-                                    Tutored over 50 university students in Database Systems, OOP Programming, Computer
+                                    Tutored over 50 university students in Database Systems, OOP Programming,
+                                    Computer
                                     Security, Advanced Networking, and Web & Script Programming, while demonstrating
                                     problem-solving and studying skills
                                 </p>
@@ -1045,23 +1303,32 @@
                                                 <h5 class="modal-title" id="wilanLabel">WiLAN</h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
-                                                Successfully implemented a custom Hyperledger Fabric blockchain network
-                                                with smart contracts for a intellectual property licensing company which
+                                                Successfully implemented a custom Hyperledger Fabric blockchain
+                                                network
+                                                with smart contracts for a intellectual property licensing company
+                                                which
                                                 generates over $1B in licensing revenue and holds over 500 patents
                                                 <br> <br>
-                                                Analyzed and investigated the various Hyperledger open-sourced projects
-                                                that would be best suited for company to build their blockchain network
+                                                Analyzed and investigated the various Hyperledger open-sourced
+                                                projects
+                                                that would be best suited for company to build their blockchain
+                                                network
                                                 on, while taking in consideration how secure the network is
                                                 <br> <br>
-                                                Documented and communicated all findings and code in weekly reports to
-                                                the supervisor which allowed them to follow along with project progress.
+                                                Documented and communicated all findings and code in weekly reports
+                                                to
+                                                the supervisor which allowed them to follow along with project
+                                                progress.
                                                 Presented the final network in front of executives and managers
                                                 <br><br>
                                                 <h5 id="skillsExperience">Skills:</h5>
-                                                Microsoft Excel · Troubleshooting · Attention to Detail · Cybersecurity
+                                                Microsoft Excel · Troubleshooting · Attention to Detail ·
+                                                Cybersecurity
                                                 · Risk Management · Research · Problem Solving · Analytical Skills ·
-                                                Google Cloud Platform (GCP) · Terraform · Python · Front-end Development
-                                                · Network Security · jQuery · HTML · Git · Cascading Style Sheets (CSS)
+                                                Google Cloud Platform (GCP) · Terraform · Python · Front-end
+                                                Development
+                                                · Network Security · jQuery · HTML · Git · Cascading Style Sheets
+                                                (CSS)
                                                 · Linux · Communication · Organization Skills · Networking ·
                                                 Cryptography · Plesk · PHP · Data Analysis · Google Suite
                                             </div>
@@ -1104,25 +1371,33 @@
                                                 <h5 class="modal-title" id="kloudvilleLabel">Kloudville</h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
-                                                Worked independently to design and engineer a fully-fledged Android and
-                                                iOS app based on the Kloudville platform, for a Software as a Service
+                                                Worked independently to design and engineer a fully-fledged Android
+                                                and
+                                                iOS app based on the Kloudville platform, for a Software as a
+                                                Service
                                                 B2B company that specializes in creating apps for CRM and ERP
                                                 <br><br>
-                                                Tested and implemented best security practices to ensure that user app
+                                                Tested and implemented best security practices to ensure that user
+                                                app
                                                 data is secure and REST data is encrypted
                                                 <br><br>
-                                                Acquired potential shareholders and future clients after pitching the
+                                                Acquired potential shareholders and future clients after pitching
+                                                the
                                                 app, which led to an increase of revenue
                                                 <br><br>
-                                                Shared comments and documentation with other developers to ensure that
+                                                Shared comments and documentation with other developers to ensure
+                                                that
                                                 the project continues to improve
                                                 <br><br>
 
                                                 <h5 id="skillsExperience">Skills:</h5>
                                                 Troubleshooting · Attention to Detail · Research · Problem Solving ·
-                                                Analytical Skills · JavaScript · Front-end Development · Object-Oriented
-                                                Programming (OOP) · jQuery · HTML · Git · Cascading Style Sheets (CSS) ·
-                                                WordPress · Node.js · Communication · Organization Skills · Express.js ·
+                                                Analytical Skills · JavaScript · Front-end Development ·
+                                                Object-Oriented
+                                                Programming (OOP) · jQuery · HTML · Git · Cascading Style Sheets
+                                                (CSS) ·
+                                                WordPress · Node.js · Communication · Organization Skills ·
+                                                Express.js ·
                                                 UI/UX Design · Cordova · Android · iOS
                                             </div>
                                             <div class="modal-footer text-center">
@@ -1163,22 +1438,29 @@
                                                 <h5 class="modal-title" id="zcomLabel">Zcom</h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
-                                                Assisted in a wide range of web related development, from auditing sites
+                                                Assisted in a wide range of web related development, from auditing
+                                                sites
                                                 to ensuring that client data is secure, for a systems integration
-                                                service provider which provides exclusive R&D solutions and numerous I.T
+                                                service provider which provides exclusive R&D solutions and numerous
+                                                I.T
                                                 services
                                                 <br><br>
                                                 Worked with the project manager to understand client demands and
-                                                accordingly shifted priorities to complete websites on time which led to
+                                                accordingly shifted priorities to complete websites on time which
+                                                led to
                                                 a greater client satisfaction
                                                 <br><br>
-                                                Collaborated with a small team made up of three developers which led to
+                                                Collaborated with a small team made up of three developers which led
+                                                to
                                                 taking on unique responsibilities everyday
                                                 <br><br>
                                                 <h5 id="skillsExperience">Skills:</h5>
-                                                Attention to Detail · Research · Problem Solving · Analytical Skills ·
-                                                JavaScript · Front-end Development · Object-Oriented Programming (OOP) ·
-                                                jQuery · HTML · Git · Cascading Style Sheets (CSS) · WordPress · Node.js
+                                                Attention to Detail · Research · Problem Solving · Analytical Skills
+                                                ·
+                                                JavaScript · Front-end Development · Object-Oriented Programming
+                                                (OOP) ·
+                                                jQuery · HTML · Git · Cascading Style Sheets (CSS) · WordPress ·
+                                                Node.js
                                                 · Communication · Organization Skills · Express.js
                                             </div>
                                             <div class="modal-footer text-center">
@@ -1232,7 +1514,8 @@
                                 <p>Coursera Certification</p>
                                 <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/53DTZQXTE9N7"
                                     target="_blank"><button type="button" class="btn btn-secondary readmore mx-auto"
-                                        style="background-color: var(--second);border:0px">View Credential</button></a>
+                                        style="background-color: var(--second);border:0px">View
+                                        Credential</button></a>
 
                             </div>
                         </div>
@@ -1245,7 +1528,8 @@
                                 <p>Coursera Certification</p>
                                 <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/L3X5HKKDFER5"
                                     target="_blank"><button type="button" class="btn btn-secondary readmore mx-auto"
-                                        style="background-color: var(--second);border:0px">View Credential</button></a>
+                                        style="background-color: var(--second);border:0px">View
+                                        Credential</button></a>
 
                             </div>
                         </div>
@@ -1280,16 +1564,20 @@
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content" style="background-color: #383838;">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="projectleadLabel">Enactus Ontario Tech</h5>
+                                                <h5 class="modal-title" id="projectleadLabel">Enactus Ontario Tech
+                                                </h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
-                                                I was the Project Lead of Skill Series, an Enactus Ontario Tech project
+                                                I was the Project Lead of Skill Series, an Enactus Ontario Tech
+                                                project
                                                 that focuses
-                                                on providing meaningful education on topics that are not covered in a
+                                                on providing meaningful education on topics that are not covered in
+                                                a
                                                 standard
                                                 university or college program. This includes filling taxes, staying
                                                 active, how to
-                                                study better, etc. We ran our workshops online using YouTube Live and
+                                                study better, etc. We ran our workshops online using YouTube Live
+                                                and
                                                 used social
                                                 media such as Facebook and Instagram to gain exposure with students.
                                                 Furthermore,
@@ -1297,7 +1585,8 @@
                                                 experience to our
                                                 workshops so that students can learn from professionals in the topic
                                                 that we were
-                                                covering. We had the universities' lead fitness representative at our
+                                                covering. We had the universities' lead fitness representative at
+                                                our
                                                 healthy living
                                                 workshop, and the CEO and Founder of CloudTax, a Canadian tax filing
                                                 software, to
@@ -1307,31 +1596,41 @@
                                                 workshops which had
                                                 over 700 viewers. I oversaw all aspects of Skill Series, from the
                                                 marketing, budget,
-                                                content, and competition talking points. Due to my application to the
+                                                content, and competition talking points. Due to my application to
+                                                the
                                                 RBC Future
-                                                Launch Project Accelerator, Skill Series was able to receive a grant of
+                                                Launch Project Accelerator, Skill Series was able to receive a grant
+                                                of
                                                 $3000 to
                                                 cover our expenses. I worked with the team to create influential
                                                 marketing ads that
-                                                we ran on Facebook and Instagram to attract students to our project, and
+                                                we ran on Facebook and Instagram to attract students to our project,
+                                                and
                                                 spoke
-                                                directly to our guest speakers before and after our workshops. I had to
+                                                directly to our guest speakers before and after our workshops. I had
+                                                to
                                                 manage my
-                                                team effectively so that we could create informative and engaging videos
+                                                team effectively so that we could create informative and engaging
+                                                videos
                                                 for our
-                                                YouTube channel and inspire students to pick up a new skill or hobby.
+                                                YouTube channel and inspire students to pick up a new skill or
+                                                hobby.
                                                 <br> <br>
-                                                On top of Project Lead, I also helped out at the Enactus regional and
+                                                On top of Project Lead, I also helped out at the Enactus regional
+                                                and
                                                 national
-                                                competition where I assisted in directing and editing the presentation
+                                                competition where I assisted in directing and editing the
+                                                presentation
                                                 videos. I
-                                                also taught a fellow Enactus student on how to edit videos so that they
+                                                also taught a fellow Enactus student on how to edit videos so that
+                                                they
                                                 could take
                                                 over my role in the future.
                                                 <br> <br>
                                                 <h5 style="color:var(--fourth)" id="skillsExperience">Skills:</h5>
                                                 Microsoft Excel · Data-driven Decision Making · Data Analysis ·
-                                                Attention to Detail · Research · Problem Solving · Analytical Skills ·
+                                                Attention to Detail · Research · Problem Solving · Analytical Skills
+                                                ·
                                                 Front-end Development · HTML · Cascading Style Sheets (CSS) · Adobe
                                                 Creative Suite · Communication · Organization Skills · Leadership ·
                                                 PowerPoint
@@ -1373,42 +1672,55 @@
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content" style="background-color: #383838;">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="socialmediaLabel">Enactus Ontario Tech</h5>
+                                                <h5 class="modal-title" id="socialmediaLabel">Enactus Ontario Tech
+                                                </h5>
                                             </div>
                                             <div class="modal-body" style="line-height: 180%;padding: 0rem 1rem;">
                                                 I was the lead for managing the Enactus Ontario Tech main Instagram,
                                                 Facebook, and
-                                                Twitter accounts. I had to create a content plan that showcased the work
+                                                Twitter accounts. I had to create a content plan that showcased the
+                                                work
                                                 that we
-                                                were doing to a wide range of users. I had to also stay creative on what
+                                                were doing to a wide range of users. I had to also stay creative on
+                                                what
                                                 type of
-                                                content would be shared so that we can get the most engagement on our
+                                                content would be shared so that we can get the most engagement on
+                                                our
                                                 posts. This
-                                                also included creating meaningful ads to boost our recognition on and
+                                                also included creating meaningful ads to boost our recognition on
+                                                and
                                                 off campus. I
-                                                also assisted in creating videos to promote Enactus on campus and get
+                                                also assisted in creating videos to promote Enactus on campus and
+                                                get
                                                 other students
                                                 motivated to join our projects.
                                                 <br> <br>
-                                                I continued on as lead photographer and documented our events on campus
+                                                I continued on as lead photographer and documented our events on
+                                                campus
                                                 on our
-                                                social media accounts. I took my knowledge as a photographer and held a
+                                                social media accounts. I took my knowledge as a photographer and
+                                                held a
                                                 Skill Series
-                                                Introduction to Photography workshop where I showcased various tips and
+                                                Introduction to Photography workshop where I showcased various tips
+                                                and
                                                 tricks to 25
                                                 eager students.
                                                 <br> <br>
-                                                Due to the COVID-19 pandemic, the regional and national presentations
+                                                Due to the COVID-19 pandemic, the regional and national
+                                                presentations
                                                 were video
-                                                submissions. I helped direct these videos for both competitions and was
+                                                submissions. I helped direct these videos for both competitions and
+                                                was
                                                 the sole
                                                 editor on all of the videos. I had to help make them engaging and
                                                 creative so that
                                                 our work could be presented in an unique manner to stand out.
                                                 <br> <br>
                                                 <h5 style="color:var(--fourth)" id="skillsExperience">Skills:</h5>
-                                                Microsoft Excel · Data-driven Decision Making · Attention to Detail ·
-                                                Research · Problem Solving · Analytical Skills · Adobe Creative Suite ·
+                                                Microsoft Excel · Data-driven Decision Making · Attention to Detail
+                                                ·
+                                                Research · Problem Solving · Analytical Skills · Adobe Creative
+                                                Suite ·
                                                 Communication · Organization Skills · Leadership · PowerPoint
                                             </div>
                                             <div class="modal-footer text-center">
@@ -1431,7 +1743,8 @@
                                     Enactus Ontario Tech
                                 </p>
                                 <p>
-                                    Assisted competition and media teams with content while being main photographer at
+                                    Assisted competition and media teams with content while being main photographer
+                                    at
                                     events
                                 </p>
 
@@ -1459,7 +1772,8 @@
                                                 national
                                                 competition, I was tasked with photographing the events and helping
                                                 setup the
-                                                presentations. I also designed the PowerPoint presentations that were
+                                                presentations. I also designed the PowerPoint presentations that
+                                                were
                                                 used to
                                                 accompany the presenters.
                                             </div>
@@ -1479,7 +1793,8 @@
                 </section>
             </div>
         </div>
-        <h2 class="text-center" style="color:var(--third);font-weight: bold;font-size: 3rem;margin-bottom: 2%;">Skills.
+        <h2 class="text-center" style="color:var(--third);font-weight: bold;font-size: 3rem;margin-bottom: 2%;">
+            Skills.
         </h2>
         <div class="row mb-5">
             <div class="col skills language shadow ">
@@ -1584,6 +1899,40 @@
             }
         }
     </script>
+    <script>
+        const { createApp, ref } = Vue
+
+        createApp({
+            setup() {
+                const activeTab = ref('all')
+                const data = ref([
+                    {
+                        title: 'Master of I.T Security Artificial Intelligence',
+                        date: 'Sep 2021 - Aug 2022',
+                        location: 'Ontario Tech University',
+                        type: 'education',
+
+                    }
+                ])
+                const message = ref('Hello vue!')
+                return {
+                    message,
+                    activeTab
+                }
+            },
+            computed: {
+                filteredData() {
+                    // return all the data if the activeTab is 'all', otherwise filter the data
+                    return this.data.filter(item => this.activeTab === 'all' || item.tab === this.activeTab)
+                },
+                activeTab() {
+                    return this.tab === 'all' ? 'all' : this.tab
+                }
+            }
+        }).mount('#app')
+    </script>
+
+
 </body>
 
 </html>
